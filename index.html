@@ -122,21 +122,19 @@
   <link href="assets/img/logo.webp" rel="icon" type="image/webp">
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
+  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/bundle.min.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Medical
@@ -174,7 +172,7 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.webp" alt="Medical">
+        <img alt="" width="160" height="160" src="assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
@@ -230,16 +228,16 @@
         </script>
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url('assets/img/health/facilities-3.webp');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/health/showcase-7.webp');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/health/showcase-11.webp');"></div>
+          <div class="swiper-slide" data-bg="assets/img/health/showcase-7.webp"></div>
+          <div class="swiper-slide" data-bg="assets/img/health/showcase-11.webp"></div>
         </div>
         <div class="slide-overlay"></div>
       </div><!-- End Hero Slider Background -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row align-items-center g-5">
 
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7">
             <div class="hero-content">
               <span class="hero-badge">
                 <span class="badge-dot"></span>
@@ -280,7 +278,7 @@
             </div>
           </div><!-- End Hero Content -->
 
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+          <div class="col-lg-5">
             <div class="info-stack">
 
               <div class="info-card emergency-card">
@@ -336,7 +334,7 @@
 
         </div>
 
-        <div class="metrics-bar" data-aos="fade-up" data-aos-delay="300">
+        <div class="metrics-bar">
           <div class="metric-item">
             <div class="metric-icon">
               <i class="bi bi-award"></i>
@@ -782,7 +780,7 @@
                 <p>Deteksi dini hingga rehabilitasi jantung: EKG, echo, treadmill, Holter monitor, dan kateterisasi dengan pendampingan kardiolog.</p>
                 <div class="card-foot">
                   <a href="detail-polijantung.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -802,7 +800,7 @@
                 <p>Evaluasi dan terapi stroke, epilepsi, nyeri kepala, dan vertigo, didukung EEG, EMG, serta pencitraan otak modern.</p>
                 <div class="card-foot">
                   <a href="detail-polisaraf.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -822,7 +820,7 @@
                 <p>Penanganan patah tulang, cedera olahraga, nyeri sendi, dan penggantian sendi dengan rehabilitasi pascaoperasi.</p>
                 <div class="card-foot">
                   <a href="detail-poliortopedi.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -842,7 +840,7 @@
                 <p>Imunisasi lengkap, pemantauan tumbuh kembang, konsultasi laktasi, dan perawatan anak sakit dengan pendekatan ramah anak.</p>
                 <div class="card-foot">
                   <a href="detail-polianak.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -862,7 +860,7 @@
                 <p>Skrining kanker, kemoterapi, dan pendampingan pasien serta keluarga oleh tim multidisiplin.</p>
                 <div class="card-foot">
                   <a href="layanan.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -882,7 +880,7 @@
                 <p>Pemeriksaan darah lengkap, kimia klinik, hingga kultur kuman dengan hasil cepat dan dapat diakses secara digital.</p>
                 <div class="card-foot">
                   <a href="detail-laboratorium.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-                  <span class="status-dot" aria-label="Tersedia"></span>
+                  <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
             </article>
@@ -925,7 +923,7 @@
                 <label class="field-label">Spesialisasi</label>
                 <div class="field-wrap">
                   <i class="bi bi-clipboard2-pulse"></i>
-                  <select class="form-select" name="specialty">
+                  <select class="form-select" name="specialty" aria-label="Spesialisasi">
                     <option value="">Semua spesialisasi</option>
                     <option value="cardiology">Jantung & Pembuluh Darah</option>
                     <option value="neurology">Saraf</option>
@@ -940,7 +938,7 @@
                 <label class="field-label">Lokasi</label>
                 <div class="field-wrap">
                   <i class="bi bi-geo-alt"></i>
-                  <select class="form-select" name="location">
+                  <select class="form-select" name="location" aria-label="Lokasi">
                     <option value="">Semua lokasi</option>
                     <option value="downtown">RS Medical Pusat – Seluruh Indonesia</option>
                     <option value="northside">RS Medical Bandung</option>
@@ -977,7 +975,7 @@
             <article class="clinician-row featured">
               <div class="row-media">
                 <img src="assets/img/health/staff-1.webp" alt="dr. Bagas Wicaksono, Sp.PD-KHOM" class="img-fluid" loading="lazy">
-                <span class="presence active" aria-label="Tersedia"></span>
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1015,7 +1013,7 @@
             <article class="clinician-row">
               <div class="row-media">
                 <img src="assets/img/health/staff-3.webp" alt="dr. Anindya Maharani, Sp.JP" class="img-fluid" loading="lazy">
-                <span class="presence busy" aria-label="Sedang praktik"></span>
+                <span role="img" class="presence busy" aria-label="Sedang praktik"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1052,7 +1050,7 @@
             <article class="clinician-row">
               <div class="row-media">
                 <img src="assets/img/health/staff-5.webp" alt="dr. Hendra Prasetyo, Sp.OT" class="img-fluid" loading="lazy">
-                <span class="presence active" aria-label="Tersedia"></span>
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1089,7 +1087,7 @@
             <article class="clinician-row">
               <div class="row-media">
                 <img src="assets/img/health/staff-7.webp" alt="dr. Wahyu Hidayat, Sp.A" class="img-fluid" loading="lazy">
-                <span class="presence offline" aria-label="Tidak praktik"></span>
+                <span role="img" class="presence offline" aria-label="Tidak praktik"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1126,7 +1124,7 @@
             <article class="clinician-row">
               <div class="row-media">
                 <img src="assets/img/health/staff-9.webp" alt="dr. Salsabila Nurhaliza, Sp.DV" class="img-fluid" loading="lazy">
-                <span class="presence active" aria-label="Tersedia"></span>
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1163,7 +1161,7 @@
             <article class="clinician-row">
               <div class="row-media">
                 <img src="assets/img/health/staff-12.webp" alt="dr. Dewi Anggraeni, Sp.B" class="img-fluid" loading="lazy">
-                <span class="presence active" aria-label="Tersedia"></span>
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
@@ -1400,7 +1398,7 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.webp" alt="Medical">
+              <img alt="" width="160" height="160" src="assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">

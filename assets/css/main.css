@@ -8845,3 +8845,14 @@ section,
 .logo-tile .accr { text-align: center; padding: 6px 4px; color: var(--heading-color); }
 .logo-tile .accr i { font-size: 28px; color: var(--accent-color); display: block; margin-bottom: 4px; }
 .logo-tile .accr b { font-size: 13px; font-weight: 600; line-height: 1.2; display: block; }
+
+
+/* a11y-contrast-overrides: tombol biru lebih gelap agar kontras teks putih >= 4.5:1 */
+.header .btn-getstarted,.header .btn-getstarted:focus,
+.hero .hero-content .action-row .btn.btn-solid,
+.find-a-doctor .clinician-row .row-actions .btn-solid{background:#0369a1;border-color:#0369a1;color:#fff}
+.header .btn-getstarted:hover,.hero .hero-content .action-row .btn.btn-solid:hover,
+.find-a-doctor .clinician-row .row-actions .btn-solid:hover{background:#075985;border-color:#075985}
+/* logo: biarkan rasio aspek mengikuti atribut width/height tanpa distorsi */
+.header .logo img,.footer .footer-about .logo img{width:auto;height:auto}
+.header .logo .sitename{color:#0369a1}

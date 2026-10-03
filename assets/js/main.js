@@ -10,6 +10,15 @@
   "use strict";
 
   /**
+   * Lazy-load background slide hero (selain slide pertama)
+   */
+  window.addEventListener('load', function() {
+    document.querySelectorAll('[data-bg]').forEach(function(el) {
+      el.style.backgroundImage = "url('" + el.getAttribute('data-bg') + "')";
+    });
+  });
+
+  /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
@@ -92,7 +101,7 @@
       mirror: false
     });
   }
-  window.addEventListener('load', aosInit);
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', aosInit); } else { aosInit(); }
 
   /**
    * Init swiper sliders
