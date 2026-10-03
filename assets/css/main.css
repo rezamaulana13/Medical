@@ -615,24 +615,29 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 23px;
+  right: 20px;
   bottom: 80px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
 }
 
+.scroll-top svg,
 .scroll-top i {
-  font-size: 22px;
+  font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll-top:hover {
