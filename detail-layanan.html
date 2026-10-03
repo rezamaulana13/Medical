@@ -1,16 +1,71 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Detail Layanan - MediCare Blitar</title>
-  <meta name="description" content="Detail layanan jantung terpadu MediCare Blitar.">
-  <meta name="keywords" content="rumah sakit Blitar, klinik spesialis Blitar, dokter spesialis, IGD 24 jam, BPJS Kesehatan, medical check up, MediCare Blitar">
+
+  <!-- Primary SEO -->
+  <title>Detail Paket Medical Check-Up (MCU) - Medical Indonesia</title>
+  <meta name="description" content="Pilihan paket Medical Check-Up komprehensif: Paket Basic, Silver, Gold, hingga Executive dengan evaluasi dokter spesialis lengkap.">
+  <meta name="keywords" content="paket medical check up, mcu jakarta, skrining kesehatan rutin, check up eksekutif, mcu jantung">
+  <meta name="author" content="Medical Indonesia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://medical.id/detail-layanan.html">
+
+  <!-- Geo & Local SEO (Jakarta, Indonesia) -->
+  <meta name="geo.region" content="ID-JK">
+  <meta name="geo.placename" content="Jakarta Pusat">
+  <meta name="geo.position" content="-6.2088;106.8456">
+  <meta name="ICBM" content="-6.2088, 106.8456">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medical.id/detail-layanan.html">
+  <meta property="og:title" content="Detail Paket Medical Check-Up (MCU) - Medical Indonesia">
+  <meta property="og:description" content="Pilihan paket Medical Check-Up komprehensif: Paket Basic, Silver, Gold, hingga Executive dengan evaluasi dokter spesialis lengkap.">
+  <meta property="og:image" content="https://medical.id/assets/img/health/consultation-4.webp">
+  <meta property="og:site_name" content="Medical Indonesia">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://medical.id/detail-layanan.html">
+  <meta name="twitter:title" content="Detail Paket Medical Check-Up (MCU) - Medical Indonesia">
+  <meta name="twitter:description" content="Pilihan paket Medical Check-Up komprehensif: Paket Basic, Silver, Gold, hingga Executive dengan evaluasi dokter spesialis lengkap.">
+  <meta name="twitter:image" content="https://medical.id/assets/img/health/consultation-4.webp">
+
+  <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Detail Paket Medical Check-Up (MCU) - Medical Indonesia",
+    "url": "https://medical.id/detail-layanan.html",
+    "description": "Pilihan paket Medical Check-Up komprehensif: Paket Basic, Silver, Gold, hingga Executive dengan evaluasi dokter spesialis lengkap.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://medical.id"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Detail Paket Medical Check-Up (MCU)",
+          "item": "https://medical.id/detail-layanan.html"
+        }
+      ]
+    }
+  }
+  </script>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.webp" rel="icon" type="image/webp">
+  <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,7 +84,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MediCare
+  * Template Name: Medical
   * Template URL: https://bootstrapmade.com/medicare-bootstrap-template/
   * Updated: Apr 28 2026 with Bootstrap v5.3.8
   * Author: BootstrapMade.com
@@ -43,38 +98,36 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <i class="bi bi-heart-pulse"></i>
-        <h1 class="sitename">MediCare</h1>
+        <img src="assets/img/logo.webp" alt="Medical">
+        <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang</a></li>
-          <li><a href="departments.html">Poliklinik</a></li>
-          <li><a href="services.html">Layanan</a></li>
-          <li><a href="doctors.html">Dokter</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="poliklinik.html">Poliklinik</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="dokter.html">Dokter</a></li>
           <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="department-details.html">Detail Poliklinik</a></li>
-              <li><a href="service-details.html" class="active">Detail Layanan</a></li>
-              <li><a href="appointment.html">Janji Temu</a></li>
-              <li><a href="starter-page.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimonials.html">Testimoni</a></li>
+              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
+              <li><a href="detail-layanan.html" class="active">Detail Layanan</a></li>
+              <li><a href="janji-temu.html">Janji Temu</a></li>
+              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
               <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="gallery.html">Galeri</a></li>
-              <li><a href="terms.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="privacy.html">Kebijakan Privasi</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="appointment.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
 
     </div>
   </header>
@@ -93,7 +146,7 @@
       </div>
 
       <div class="title-wrapper">
-        <h1>Detail Layanan</h1>
+        <h2>Detail Layanan</h2>
         <p>Informasi lengkap layanan unggulan kami, mulai dari cakupan pemeriksaan hingga jadwal praktik.</p>
       </div>
     </div><!-- End Page Title -->
@@ -110,13 +163,13 @@
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
               <div class="overview-card">
                 <div class="overview-header">
-                  <span class="badge-tag">Poliklinik Spesialis</span>
-                  <h2>Layanan Jantung Terpadu</h2>
-                  <p class="overview-tagline">Perawatan jantung presisi didukung teknologi modern dan tim klinis yang peduli.</p>
+                  <span class="badge-tag">Layanan Unggulan MCU</span>
+                  <h1 class="overview-title">Paket Medical Check-Up Komprehensif</h1>
+                  <p class="overview-tagline">Deteksi dini faktor risiko kesehatan Anda dengan skrining menyeluruh dan konsultasi dokter spesialis.</p>
                 </div>
 
                 <div class="overview-body">
-                  <p>Layanan jantung kami mencakup deteksi dini, diagnosis, tindakan, hingga rehabilitasi. Setiap pasien mendapat rencana terapi personal yang dijelaskan secara terbuka oleh dokter, termasuk pilihan terapi dan perkiraan biaya.</p>
+                  <p>Program Medical Check-Up (MCU) Medical Indonesia dirancang untuk memberikan gambaran komprehensif mengenai status kesehatan Anda. Mulai dari evaluasi profil darah, fungsi organ vital (jantung, ginjal, hati), hingga skrining radiologi dan konsultasi hasil dengan dokter spesialis.</p>
 
                   <div class="feature-grid">
                     <span class="feature-label">Yang Termasuk</span>
@@ -124,37 +177,37 @@
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Pemeriksaan jantung</span>
+                          <span>Pemeriksaan Fisik & Tanda Vital</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Pencitraan diagnostik</span>
+                          <span>Laboratorium Darah & Urin Lengkap</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Skrining preventif</span>
+                          <span>Rontgen Thorax & EKG Jantung</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Rehabilitasi jantung</span>
+                          <span>USG Abdomen & Treadmill Test</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Intervensi darurat</span>
+                          <span>Konsultasi Dokter Spesialis</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="feature-item">
                           <i class="bi bi-check-circle"></i>
-                          <span>Pemantauan pascaoperasi</span>
+                          <span>Buku Laporan Kesehatan Digital</span>
                         </div>
                       </div>
                     </div>
@@ -162,18 +215,18 @@
                 </div>
 
                 <div class="overview-footer">
-                  <a href="appointment.html" class="btn-primary-action">Reservasi Konsultasi</a>
-                  <a href="service-details.html" class="btn-ghost-action">Selengkapnya</a>
+                  <a href="janji-temu.html" class="btn-primary-action">Reservasi Konsultasi</a>
+                  <a href="detail-layanan.html" class="btn-ghost-action">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
               <div class="media-card">
-                <img src="assets/img/health/cardiology-3.webp" alt="Cardiology Department" class="img-fluid">
+                <img src="assets/img/health/consultation-4.webp" alt="Cardiology Department" class="img-fluid">
                 <div class="media-overlay">
                   <span class="overlay-label">Unit</span>
-                  <span class="overlay-title">Pusat Jantung</span>
+                  <span class="overlay-title">Pusat MCU</span>
                 </div>
               </div>
             </div>
@@ -197,15 +250,15 @@
               <div class="module-card">
                 <div class="module-header">
                   <div class="module-icon">
-                    <i class="bi bi-heart-pulse"></i>
+                    <i class="bi bi-clipboard2-check"></i>
                   </div>
-                  <span class="status-badge">Tersedia</span>
+                  <span class="status-badge">Paket Basic</span>
                 </div>
-                <h4>Pemeriksaan Diagnostik</h4>
-                <p>EKG, echocardiography, treadmill test, dan Holter monitor untuk menilai kondisi jantung secara akurat.</p>
+                <h4>Paket MCU Silver (Dasar)</h4>
+                <p>Pemeriksaan darah rutin, profil lipid/kolesterol, gula darah puasa, fungsi ginjal, rontgen thorax, dan evaluasi dokter umum.</p>
                 <div class="module-footer">
-                  <a href="appointment.html" class="module-link">
-                    <span>Reservasi Sekarang</span>
+                  <a href="janji-temu.html" class="module-link">
+                    <span>Pilih Paket Ini</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
@@ -216,15 +269,15 @@
               <div class="module-card">
                 <div class="module-header">
                   <div class="module-icon">
-                    <i class="bi bi-hospital"></i>
+                    <i class="bi bi-star-fill" style="color:#f59e0b"></i>
                   </div>
-                  <span class="status-badge">Tersedia</span>
+                  <span class="status-badge" style="background:#fef3c7;color:#b45309">Paling Diminati</span>
                 </div>
-                <h4>Tindakan Bedah</h4>
-                <p>Tindakan kateterisasi, pemasangan ring, dan bedah jantung oleh tim berpengalaman dengan dukungan ICU.</p>
+                <h4>Paket MCU Gold (Lengkap)</h4>
+                <p>Seluruh paket Silver ditambah EKG rekam jantung, USG abdomen, fungsi hati lengkap (SGOT/SGPT), asam urat, dan tes urin sedimen.</p>
                 <div class="module-footer">
-                  <a href="appointment.html" class="module-link">
-                    <span>Rencanakan Tindakan</span>
+                  <a href="janji-temu.html" class="module-link">
+                    <span>Pilih Paket Ini</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
@@ -235,15 +288,15 @@
               <div class="module-card">
                 <div class="module-header">
                   <div class="module-icon">
-                    <i class="bi bi-shield-check"></i>
+                    <i class="bi bi-award-fill" style="color:#0284c7"></i>
                   </div>
-                  <span class="status-badge">Tersedia</span>
+                  <span class="status-badge" style="background:#e0f2fe;color:#0369a1">Platinum</span>
                 </div>
-                <h4>Perawatan Preventif</h4>
-                <p>Skrining kolesterol, tekanan darah, dan risiko jantung serta konseling gaya hidup sehat.</p>
+                <h4>Paket Executive Platinum</h4>
+                <p>Skrining komprehensif termasuk Treadmill test kardio, skrining tumor marker dini, HbA1c, dan konsultasi dokter spesialis penyakit dalam.</p>
                 <div class="module-footer">
-                  <a href="appointment.html" class="module-link">
-                    <span>Skrining Sekarang</span>
+                  <a href="janji-temu.html" class="module-link">
+                    <span>Pilih Paket Ini</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
@@ -278,14 +331,14 @@
                     <i class="bi bi-telephone"></i>
                     <div>
                       <strong>Layanan Darurat</strong>
-                      <span>(0342) 555-911</span>
+                      <span>(021) 555-0911</span>
                     </div>
                   </div>
                   <div class="info-tile">
                     <i class="bi bi-geo-alt"></i>
                     <div>
                       <strong>Lokasi</strong>
-                      <span>Jl. Merdeka No. 123, Kepanjenkidul, Kota Blitar, Jawa Timur 66117</span>
+                      <span>Jl. Jenderal Sudirman No. 123, Jakarta Pusat, DKI Jakarta 10220</span>
                     </div>
                   </div>
                 </div>
@@ -297,13 +350,13 @@
                 <span class="action-label">Reservasi Online</span>
                 <h4>Rencanakan Janji Temu Anda</h4>
                 <p>Penjadwalan online yang mudah dengan konfirmasi instan</p>
-                <a href="appointment.html" class="btn-primary-action btn-block">Reservasi Janji Temu</a>
+                <a href="janji-temu.html" class="btn-primary-action btn-block">Reservasi Janji Temu</a>
                 <div class="action-divider">
                   <span>atau</span>
                 </div>
                 <div class="action-call">
                   <span>Hubungi tim kami langsung</span>
-                  <a href="tel:+62342555123">(0342) 555-123</a>
+                  <a href="tel:+62215550123">(021) 555-0123</a>
                 </div>
               </div>
             </div>
@@ -325,15 +378,15 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">MediCare Blitar</span>
+              <img src="assets/img/logo.webp" alt="Medical">
+              <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Jl. Merdeka No. 123, Kepanjenkidul</p>
-              <p>Kota Blitar, Jawa Timur 66117</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(0342) 555-123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(0342) 555-911</span></p>
+              <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
+              <p>DKI Jakarta, Indonesia 10220</p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
               <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
-              <p><strong>Email:</strong> <span>info@medicare-blitar.id</span></p>
             </div>
           </div>
 
@@ -341,34 +394,34 @@
             <h4>Tautan Cepat</h4>
             <ul>
               <li><a href="index.html">Beranda</a></li>
-              <li><a href="about.html">Tentang Kami</a></li>
-              <li><a href="services.html">Layanan</a></li>
-              <li><a href="doctors.html">Dokter</a></li>
-              <li><a href="appointment.html">Janji Temu</a></li>
-              <li><a href="contact.html">Kontak</a></li>
+              <li><a href="tentang.html">Tentang Kami</a></li>
+              <li><a href="layanan.html">Layanan</a></li>
+              <li><a href="dokter.html">Dokter</a></li>
+              <li><a href="janji-temu.html">Janji Temu</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="department-details.html">Poli Jantung</a></li>
-              <li><a href="departments.html">Poli Saraf</a></li>
-              <li><a href="departments.html">Poli Anak</a></li>
-              <li><a href="services.html">Laboratorium</a></li>
-              <li><a href="services.html">IGD 24 Jam</a></li>
+              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
+              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
+              <li><a href="detail-polianak.html">Poli Anak</a></li>
+              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
+              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="starter-page.html">BPJS &amp; Asuransi</a></li>
+              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
               <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimonials.html">Testimoni</a></li>
-              <li><a href="gallery.html">Galeri</a></li>
-              <li><a href="terms.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="privacy.html">Kebijakan Privasi</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -390,7 +443,7 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © 2026 <strong><span>MediCare Blitar</span></strong>. Hak cipta dilindungi.
+            © 2026 <strong><span>Medical Indonesia</span></strong>. Hak cipta dilindungi.
           </div>
         </div>
 
@@ -399,7 +452,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20MediCare%20Blitar%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -409,7 +462,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20MediCare%20Blitar%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

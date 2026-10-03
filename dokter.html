@@ -1,16 +1,71 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Dokter - MediCare Blitar</title>
-  <meta name="description" content="Daftar dokter spesialis MediCare Blitar beserta jadwal praktik.">
-  <meta name="keywords" content="rumah sakit Blitar, klinik spesialis Blitar, dokter spesialis, IGD 24 jam, BPJS Kesehatan, medical check up, MediCare Blitar">
+
+  <!-- Primary SEO -->
+  <title>Direktori Dokter Spesialis - Medical Indonesia</title>
+  <meta name="description" content="Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.">
+  <meta name="keywords" content="jadwal dokter spesialis, cari dokter, dokter jantung jakarta, dokter anak, dokter ortopedi, dokter bedah, dokter penyakit dalam">
+  <meta name="author" content="Medical Indonesia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://medical.id/dokter.html">
+
+  <!-- Geo & Local SEO (Jakarta, Indonesia) -->
+  <meta name="geo.region" content="ID-JK">
+  <meta name="geo.placename" content="Jakarta Pusat">
+  <meta name="geo.position" content="-6.2088;106.8456">
+  <meta name="ICBM" content="-6.2088, 106.8456">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medical.id/dokter.html">
+  <meta property="og:title" content="Direktori Dokter Spesialis - Medical Indonesia">
+  <meta property="og:description" content="Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.">
+  <meta property="og:image" content="https://medical.id/assets/img/health/staff-1.webp">
+  <meta property="og:site_name" content="Medical Indonesia">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://medical.id/dokter.html">
+  <meta name="twitter:title" content="Direktori Dokter Spesialis - Medical Indonesia">
+  <meta name="twitter:description" content="Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.">
+  <meta name="twitter:image" content="https://medical.id/assets/img/health/staff-1.webp">
+
+  <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Direktori Dokter Spesialis - Medical Indonesia",
+    "url": "https://medical.id/dokter.html",
+    "description": "Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://medical.id"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Direktori Dokter Spesialis",
+          "item": "https://medical.id/dokter.html"
+        }
+      ]
+    }
+  }
+  </script>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.webp" rel="icon" type="image/webp">
+  <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,7 +84,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MediCare
+  * Template Name: Medical
   * Template URL: https://bootstrapmade.com/medicare-bootstrap-template/
   * Updated: Apr 28 2026 with Bootstrap v5.3.8
   * Author: BootstrapMade.com
@@ -43,38 +98,36 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <i class="bi bi-heart-pulse"></i>
-        <h1 class="sitename">MediCare</h1>
+        <img src="assets/img/logo.webp" alt="Medical">
+        <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang</a></li>
-          <li><a href="departments.html">Poliklinik</a></li>
-          <li><a href="services.html">Layanan</a></li>
-          <li><a href="doctors.html" class="active">Dokter</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="poliklinik.html">Poliklinik</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="dokter.html" class="active">Dokter</a></li>
           <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="department-details.html">Detail Poliklinik</a></li>
-              <li><a href="service-details.html">Detail Layanan</a></li>
-              <li><a href="appointment.html">Janji Temu</a></li>
-              <li><a href="starter-page.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimonials.html">Testimoni</a></li>
+              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
+              <li><a href="detail-layanan.html">Detail Layanan</a></li>
+              <li><a href="janji-temu.html">Janji Temu</a></li>
+              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
               <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="gallery.html">Galeri</a></li>
-              <li><a href="terms.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="privacy.html">Kebijakan Privasi</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="appointment.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
 
     </div>
   </header>
@@ -138,7 +191,7 @@
                   </ul>
 
                   <div class="action-row">
-                    <a href="appointment.html" class="sh-btn primary"><i class="bi bi-calendar2-check"></i> Jadwalkan Kunjungan</a>
+                    <a href="janji-temu.html" class="sh-btn primary"><i class="bi bi-calendar2-check"></i> Jadwalkan Kunjungan</a>
                   </div>
                 </div>
               </div>
@@ -184,9 +237,9 @@
                   <label class="sh-label">Lokasi</label>
                   <select class="sh-input">
                     <option>Semua Cabang</option>
-                    <option>RS Pusat Kota Blitar</option>
-                    <option>Klinik Wlingi</option>
-                    <option>Klinik Kanigoro</option>
+                    <option>RS Pusat Seluruh Indonesia</option>
+                    <option>RS Medical Bandung</option>
+                    <option>RS Medical Surabaya</option>
                   </select>
                 </div>
               </div>
@@ -221,13 +274,13 @@
                   <p class="card-desc">Pengalaman luas dalam diagnosis dan terapi penyakit jantung koroner dan hipertensi.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.JP, FIHA</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Kota Blitar</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Jantung</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -250,8 +303,8 @@
                   <div class="card-footer">
                     <span class="sh-badge">Anak</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -275,8 +328,8 @@
                   <div class="card-footer">
                     <span class="sh-badge">Kulit</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -294,13 +347,13 @@
                   <p class="card-desc">Ahli cedera tulang, sendi, dan olahraga dengan tindakan minimal invasif.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.OT</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Kota Blitar</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Ortopedi</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -323,8 +376,8 @@
                   <div class="card-footer">
                     <span class="sh-badge">Jantung</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -347,8 +400,8 @@
                   <div class="card-footer">
                     <span class="sh-badge">Anak</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -366,13 +419,13 @@
                   <p class="card-desc">Perawatan estetika medis dan kesehatan kulit wajah dengan prosedur terukur dan aman.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.DV</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Kota Blitar</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Kulit</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -395,8 +448,8 @@
                   <div class="card-footer">
                     <span class="sh-badge">Ortopedi</span>
                     <div class="footer-actions">
-                      <a href="doctors.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="appointment.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
@@ -536,7 +589,7 @@
                         </div>
                       </div>
                       <div class="mt-3">
-                        <a href="appointment.html" class="sh-btn primary"><i class="bi bi-calendar-event"></i> Reservasi Jadwal</a>
+                        <a href="janji-temu.html" class="sh-btn primary"><i class="bi bi-calendar-event"></i> Reservasi Jadwal</a>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="health-doctors-3-tab-3" role="tabpanel">
@@ -574,15 +627,15 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">MediCare Blitar</span>
+              <img src="assets/img/logo.webp" alt="Medical">
+              <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Jl. Merdeka No. 123, Kepanjenkidul</p>
-              <p>Kota Blitar, Jawa Timur 66117</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(0342) 555-123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(0342) 555-911</span></p>
+              <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
+              <p>DKI Jakarta, Indonesia 10220</p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
               <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
-              <p><strong>Email:</strong> <span>info@medicare-blitar.id</span></p>
             </div>
           </div>
 
@@ -590,34 +643,34 @@
             <h4>Tautan Cepat</h4>
             <ul>
               <li><a href="index.html">Beranda</a></li>
-              <li><a href="about.html">Tentang Kami</a></li>
-              <li><a href="services.html">Layanan</a></li>
-              <li><a href="doctors.html">Dokter</a></li>
-              <li><a href="appointment.html">Janji Temu</a></li>
-              <li><a href="contact.html">Kontak</a></li>
+              <li><a href="tentang.html">Tentang Kami</a></li>
+              <li><a href="layanan.html">Layanan</a></li>
+              <li><a href="dokter.html">Dokter</a></li>
+              <li><a href="janji-temu.html">Janji Temu</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="department-details.html">Poli Jantung</a></li>
-              <li><a href="departments.html">Poli Saraf</a></li>
-              <li><a href="departments.html">Poli Anak</a></li>
-              <li><a href="services.html">Laboratorium</a></li>
-              <li><a href="services.html">IGD 24 Jam</a></li>
+              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
+              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
+              <li><a href="detail-polianak.html">Poli Anak</a></li>
+              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
+              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="starter-page.html">BPJS &amp; Asuransi</a></li>
+              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
               <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimonials.html">Testimoni</a></li>
-              <li><a href="gallery.html">Galeri</a></li>
-              <li><a href="terms.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="privacy.html">Kebijakan Privasi</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -639,7 +692,7 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © 2026 <strong><span>MediCare Blitar</span></strong>. Hak cipta dilindungi.
+            © 2026 <strong><span>Medical Indonesia</span></strong>. Hak cipta dilindungi.
           </div>
         </div>
 
@@ -648,7 +701,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20MediCare%20Blitar%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -658,7 +711,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20MediCare%20Blitar%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

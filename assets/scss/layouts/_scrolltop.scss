@@ -6,24 +6,30 @@
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 23px;
+  bottom: 80px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  transition: all 0.4s;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 
   i {
-    font-size: 24px;
+    font-size: 22px;
     color: var(--contrast-color);
     line-height: 0;
   }
 
   &:hover {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
     color: var(--contrast-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   }
 
   &.active {
