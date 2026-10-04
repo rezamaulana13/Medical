@@ -1,0 +1,29 @@
+﻿User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /forms/
+
+# AI Crawlers - Diizinkan untuk GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap
+Sitemap: https://medical.web.id/sitemap.xml

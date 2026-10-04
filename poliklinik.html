@@ -11,7 +11,7 @@
   <meta name="keywords" content="poliklinik spesialis, poli jantung, poli saraf, poli ortopedi, poli anak, poli bedah, poli onkologi, poli penyakit dalam, dokter spesialis jakarta">
   <meta name="author" content="Medical Indonesia">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://medical.id/poliklinik.html">
+  <link rel="canonical" href="https://medical.web.id/poliklinik">
 
   <!-- Geo & Local SEO (Jakarta, Indonesia) -->
   <meta name="geo.region" content="ID-JK">
@@ -21,19 +21,19 @@
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://medical.id/poliklinik.html">
+  <meta property="og:url" content="https://medical.web.id/poliklinik">
   <meta property="og:title" content="Poliklinik Spesialis & Rawat Jalan - Medical Indonesia">
   <meta property="og:description" content="Daftar lengkap 9 unit poliklinik spesialis Medical Indonesia: poli jantung, saraf, ortopedi, anak, bedah, onkologi, penyakit dalam, laboratorium, dan IGD 24 jam.">
-  <meta property="og:image" content="https://medical.id/assets/img/health/facilities-3.webp">
+  <meta property="og:image" content="https://medical.web.id/assets/img/layanan/facilities-3.webp">
   <meta property="og:site_name" content="Medical Indonesia">
   <meta property="og:locale" content="id_ID">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://medical.id/poliklinik.html">
+  <meta name="twitter:url" content="https://medical.web.id/poliklinik">
   <meta name="twitter:title" content="Poliklinik Spesialis & Rawat Jalan - Medical Indonesia">
   <meta name="twitter:description" content="Daftar lengkap 9 unit poliklinik spesialis Medical Indonesia: poli jantung, saraf, ortopedi, anak, bedah, onkologi, penyakit dalam, laboratorium, dan IGD 24 jam.">
-  <meta name="twitter:image" content="https://medical.id/assets/img/health/facilities-3.webp">
+  <meta name="twitter:image" content="https://medical.web.id/assets/img/layanan/facilities-3.webp">
 
   <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
   <script type="application/ld+json">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Poliklinik Spesialis & Rawat Jalan - Medical Indonesia",
-    "url": "https://medical.id/poliklinik.html",
+    "url": "https://medical.web.id/poliklinik",
     "description": "Daftar lengkap 9 unit poliklinik spesialis Medical Indonesia: poli jantung, saraf, ortopedi, anak, bedah, onkologi, penyakit dalam, laboratorium, dan IGD 24 jam.",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -50,13 +50,13 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Beranda",
-          "item": "https://medical.id"
+          "item": "https://medical.web.id"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Poliklinik Spesialis & Rawat Jalan",
-          "item": "https://medical.id/poliklinik.html"
+          "item": "https://medical.web.id/poliklinik"
         }
       ]
     }
@@ -68,8 +68,12 @@
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Performance: DNS prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
@@ -92,37 +96,60 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img alt="" width="160" height="160" src="assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="poliklinik.html" class="active">Poliklinik</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-          <li><a href="dokter.html">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="tentang">Tentang</a></li>
+          <li class="dropdown"><a href="poliklinik" class="active"><span>Poliklinik</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
-              <li><a href="detail-layanan.html">Detail Layanan</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="poliklinik"><strong>Lihat Halaman Poliklinik</strong></a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-poliortopedi">Poli Ortopedi</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-polibedah">Poli Bedah</a></li>
+              <li><a href="poliklinik/detail-polionkologi">Poli Onkologi</a></li>
+              <li><a href="poliklinik/detail-polidalam">Poli Penyakit Dalam</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
+          </ul>
+          </li>
+                    <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan"><strong>Lihat Halaman Layanan</strong></a></li>
+              <li><a href="layanan/detail-mcu">Medical Check-Up (MCU)</a></li>
+              <li><a href="layanan/detail-rawat-inap">Rawat Inap &amp; ICU</a></li>
+              <li><a href="layanan/detail-fisioterapi">Rehabilitasi &amp; Fisioterapi</a></li>
+              <li><a href="layanan/detail-home-care">Home Care &amp; Telemedisin</a></li>
+              <li><a href="layanan/detail-kia-vaksinasi">KIA &amp; Vaksinasi</a></li>
+              <li><a href="layanan/detail-farmasi">Farmasi &amp; Apotek 24 Jam</a></li>
             </ul>
           </li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="dokter">Dokter</a></li>
+          <li><a href="artikel">Artikel</a></li>
+          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan/detail-mcu">Detail Paket MCU</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="info-pasien">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="faq">Pertanyaan Umum (FAQ)</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+            </ul>
+          </li>
+          <li><a href="kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu">Buat Janji</a>
 
     </div>
   </header>
@@ -134,7 +161,7 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Beranda</a></li>
             <li class="breadcrumb-item active current">Poliklinik</li>
           </ol>
         </nav>
@@ -157,7 +184,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/cardiology-2.webp" alt="Cardiology Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/cardiology-2.webp" alt="Cardiology Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Jantung & Pembuluh Darah</span>
               </div>
               <div class="dept-card-body">
@@ -177,7 +204,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polijantung.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polijantung" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -189,7 +216,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/neurology-3.webp" alt="Neurology Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/neurology-3.webp" alt="Neurology Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Otak & Sistem Saraf</span>
               </div>
               <div class="dept-card-body">
@@ -209,7 +236,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polisaraf.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polisaraf" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -221,7 +248,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/orthopedics-4.webp" alt="Orthopedics Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/orthopedics-4.webp" alt="Orthopedics Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Tulang & Sendi</span>
               </div>
               <div class="dept-card-body">
@@ -241,7 +268,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-poliortopedi.html" class="dept-link-btn">
+                <a href="poliklinik/detail-poliortopedi" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -253,7 +280,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/pediatrics-2.webp" alt="Pediatrics Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/pediatrics-2.webp" alt="Pediatrics Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Kesehatan Anak</span>
               </div>
               <div class="dept-card-body">
@@ -273,7 +300,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polianak.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polianak" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -285,7 +312,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/laboratory-3.webp" alt="Laboratory Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/laboratory-3.webp" alt="Laboratory Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Layanan Penunjang</span>
               </div>
               <div class="dept-card-body">
@@ -305,7 +332,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-laboratorium.html" class="dept-link-btn">
+                <a href="poliklinik/detail-laboratorium" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -317,7 +344,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/emergency-4.webp" alt="Emergency Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/emergency-4.webp" alt="Emergency Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Gawat Darurat 24 Jam</span>
               </div>
               <div class="dept-card-body">
@@ -337,7 +364,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-igd.html" class="dept-link-btn">
+                <a href="poliklinik/detail-igd" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -349,7 +376,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/surgery-2.webp" alt="Surgery Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/surgery-2.webp" alt="Surgery Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Bedah & Laparoskopi</span>
               </div>
               <div class="dept-card-body">
@@ -369,7 +396,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polibedah.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polibedah" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -381,7 +408,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/oncology-2.webp" alt="Oncology Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/oncology-2.webp" alt="Oncology Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Pusat Kanker Terpadu</span>
               </div>
               <div class="dept-card-body">
@@ -401,7 +428,7 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polionkologi.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polionkologi" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
@@ -413,7 +440,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article class="dept-card">
               <div class="dept-card-media">
-                <img src="assets/img/health/consultation-3.webp" alt="Internal Medicine Department" class="img-fluid" loading="lazy">
+                <img src="assets/img/poliklinik/consultation-3.webp" alt="Internal Medicine Department" class="img-fluid" loading="lazy">
                 <span class="dept-tag">Penyakit Dalam & Metabolik</span>
               </div>
               <div class="dept-card-body">
@@ -433,15 +460,14 @@
                 </ul>
               </div>
               <footer class="dept-card-foot">
-                <a href="detail-polidalam.html" class="dept-link-btn">
+                <a href="poliklinik/detail-polidalam" class="dept-link-btn">
                   <span>Selengkapnya</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
               </footer>
             </article>
           </div><!-- End Department Card -->
-
-        </div>
+          </div>
 
       </div>
 
@@ -455,51 +481,52 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
               <img alt="" width="160" height="160" src="assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
               <p>DKI Jakarta, Indonesia 10220</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
-              <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>WhatsApp:</strong> <span>0889-8964-3555</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Tautan Cepat</h4>
             <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="tentang.html">Tentang Kami</a></li>
-              <li><a href="layanan.html">Layanan</a></li>
-              <li><a href="dokter.html">Dokter</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="kontak.html">Kontak</a></li>
+              <li><a href="/">Beranda</a></li>
+              <li><a href="tentang">Tentang Kami</a></li>
+              <li><a href="layanan">Layanan</a></li>
+              <li><a href="dokter">Dokter</a></li>
+              <li><a href="artikel">Artikel</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="kontak">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
-              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
-              <li><a href="detail-polianak.html">Poli Anak</a></li>
-              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
-              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
-              <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="info-pasien">BPJS &amp; Asuransi</a></li>
+              <li><a href="faq">Pertanyaan Umum</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -530,7 +557,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -540,7 +567,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
 

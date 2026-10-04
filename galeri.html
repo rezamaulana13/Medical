@@ -11,7 +11,7 @@
   <meta name="keywords" content="galeri rumah sakit, foto fasilitas medis, kamar operasi laparoskopi, ruang rawat inap vip, laboratorium rumah sakit">
   <meta name="author" content="Medical Indonesia">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://medical.id/galeri.html">
+  <link rel="canonical" href="https://medical.web.id/galeri">
 
   <!-- Geo & Local SEO (Jakarta, Indonesia) -->
   <meta name="geo.region" content="ID-JK">
@@ -21,19 +21,19 @@
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://medical.id/galeri.html">
+  <meta property="og:url" content="https://medical.web.id/galeri">
   <meta property="og:title" content="Galeri Fasilitas & Tim Medis - Medical Indonesia">
   <meta property="og:description" content="Dokumentasi visual fasilitas ruang rawat inap, kamar operasi modern, instalasi laboratorium, radiologi CT scan, dan tim medis Medical Indonesia.">
-  <meta property="og:image" content="https://medical.id/assets/img/health/facilities-3.webp">
+  <meta property="og:image" content="https://medical.web.id/assets/img/layanan/facilities-3.webp">
   <meta property="og:site_name" content="Medical Indonesia">
   <meta property="og:locale" content="id_ID">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://medical.id/galeri.html">
+  <meta name="twitter:url" content="https://medical.web.id/galeri">
   <meta name="twitter:title" content="Galeri Fasilitas & Tim Medis - Medical Indonesia">
   <meta name="twitter:description" content="Dokumentasi visual fasilitas ruang rawat inap, kamar operasi modern, instalasi laboratorium, radiologi CT scan, dan tim medis Medical Indonesia.">
-  <meta name="twitter:image" content="https://medical.id/assets/img/health/facilities-3.webp">
+  <meta name="twitter:image" content="https://medical.web.id/assets/img/layanan/facilities-3.webp">
 
   <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
   <script type="application/ld+json">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Galeri Fasilitas & Tim Medis - Medical Indonesia",
-    "url": "https://medical.id/galeri.html",
+    "url": "https://medical.web.id/galeri",
     "description": "Dokumentasi visual fasilitas ruang rawat inap, kamar operasi modern, instalasi laboratorium, radiologi CT scan, dan tim medis Medical Indonesia.",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -50,13 +50,13 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Beranda",
-          "item": "https://medical.id"
+          "item": "https://medical.web.id"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Galeri Fasilitas & Tim Medis",
-          "item": "https://medical.id/galeri.html"
+          "item": "https://medical.web.id/galeri"
         }
       ]
     }
@@ -68,14 +68,20 @@
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Performance: DNS prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
   <!-- Vendor CSS Files -->
 
   <!-- Main CSS File -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/css/bundle.min.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -92,37 +98,60 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img alt="" width="160" height="160" src="assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="poliklinik.html">Poliklinik</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-          <li><a href="dokter.html">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="tentang">Tentang</a></li>
+          <li class="dropdown"><a href="poliklinik"><span>Poliklinik</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
-              <li><a href="detail-layanan.html">Detail Layanan</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="galeri.html" class="active">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="poliklinik"><strong>Lihat Halaman Poliklinik</strong></a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-poliortopedi">Poli Ortopedi</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-polibedah">Poli Bedah</a></li>
+              <li><a href="poliklinik/detail-polionkologi">Poli Onkologi</a></li>
+              <li><a href="poliklinik/detail-polidalam">Poli Penyakit Dalam</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
+          </ul>
+          </li>
+                    <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan"><strong>Lihat Halaman Layanan</strong></a></li>
+              <li><a href="layanan/detail-mcu">Medical Check-Up (MCU)</a></li>
+              <li><a href="layanan/detail-rawat-inap">Rawat Inap &amp; ICU</a></li>
+              <li><a href="layanan/detail-fisioterapi">Rehabilitasi &amp; Fisioterapi</a></li>
+              <li><a href="layanan/detail-home-care">Home Care &amp; Telemedisin</a></li>
+              <li><a href="layanan/detail-kia-vaksinasi">KIA &amp; Vaksinasi</a></li>
+              <li><a href="layanan/detail-farmasi">Farmasi &amp; Apotek 24 Jam</a></li>
             </ul>
           </li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="dokter">Dokter</a></li>
+          <li><a href="artikel">Artikel</a></li>
+          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan/detail-mcu">Detail Paket MCU</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="info-pasien">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="faq">Pertanyaan Umum (FAQ)</a></li>
+              <li><a href="galeri" class="active">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+            </ul>
+          </li>
+          <li><a href="kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu">Buat Janji</a>
 
     </div>
   </header>
@@ -134,239 +163,264 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Beranda</a></li>
             <li class="breadcrumb-item active current">Galeri</li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
-        <h1>Galeri</h1>
-        <p>Lihat suasana fasilitas, peralatan medis, dan kegiatan pelayanan di Medical Indonesia.</p>
+        <h1>Galeri Fasilitas &amp; Pelayanan</h1>
+        <p>Jelajahi visualisasi fasilitas mutakhir, ruang tindakan modern, dan suasana pelayanan terpadu di Medical Indonesia.</p>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+    <!-- 3D Coverflow Showcase Section -->
+    <section id="gallery" class="gallery-coverflow-section">
+      <div class="gallery-coverflow-wrapper position-relative" data-aos="zoom-in" data-aos-delay="100">
+        
+        <!-- Swiper Coverflow Slider -->
+        <div class="gallery-coverflow-slider swiper">
+          <div class="swiper-wrapper">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="filter-bar" data-aos="fade-up" data-aos-delay="150">
-            <span class="filter-label">Telusuri</span>
-            <ul class="shadcn-filters isotope-filters">
-              <li data-filter="*" class="filter-active">
-                <span>Semua</span>
-                <span class="filter-count">08</span>
-              </li>
-              <li data-filter=".filter-fasilitas">
-                <span>Fasilitas</span>
-                <span class="filter-count">03</span>
-              </li>
-              <li data-filter=".filter-layanan">
-                <span>Layanan</span>
-                <span class="filter-count">03</span>
-              </li>
-              <li data-filter=".filter-tim">
-                <span>Tim Medis</span>
-                <span class="filter-count">02</span>
-              </li>
-            </ul>
-          </div><!-- End Filter Bar -->
-
-          <div class="row g-3 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-fasilitas">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/facilities-3.webp" class="img-fluid" loading="lazy" alt="Fasilitas rumah sakit">
-                  <span class="card-badge">Fasilitas</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Ruang Rawat Inap</h3>
-                    <p class="card-desc">Ruang perawatan yang bersih, terang, dan nyaman dengan privasi pasien terjaga.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/facilities-3.webp" class="glightbox btn-ghost" title="Ruang Rawat Inap">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="info-pasien.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/layanan/facilities-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Ruang Rawat Inap &amp; ICU VIP">
+                  <img src="assets/img/layanan/facilities-3.webp" alt="Ruang Rawat Inap & ICU VIP" loading="lazy">
+                  <span class="card-badge-top">Fasilitas</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Ruang Rawat Inap &amp; ICU VIP</h4>
+                    <p>Kamar rawat tenang, bersih, dan privat</p>
+                  </div>
+                  <a href="layanan/detail-rawat-inap" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-layanan">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/laboratory-3.webp" class="img-fluid" loading="lazy" alt="Pemeriksaan sampel di laboratorium">
-                  <span class="card-badge">Layanan</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Pemeriksaan Laboratorium</h3>
-                    <p class="card-desc">Analisis sampel oleh analis laboratorium bersertifikat dengan prosedur steril.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/laboratory-3.webp" class="glightbox btn-ghost" title="Pemeriksaan Laboratorium">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-laboratorium.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/laboratory-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Laboratorium Diagnostik Terpadu">
+                  <img src="assets/img/poliklinik/laboratory-3.webp" alt="Laboratorium Diagnostik Terpadu" loading="lazy">
+                  <span class="card-badge-top">Layanan</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Laboratorium Diagnostik</h4>
+                    <p>Pemeriksaan sampel cepat dan akurat</p>
+                  </div>
+                  <a href="poliklinik/detail-laboratorium" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-tim">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/surgery-2.webp" class="img-fluid" loading="lazy" alt="Tim kamar operasi">
-                  <span class="card-badge">Tim Medis</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Tim Kamar Operasi</h3>
-                    <p class="card-desc">Dokter bedah, anestesi, dan perawat bekerja sama menjaga keselamatan pasien.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/surgery-2.webp" class="glightbox btn-ghost" title="Tim Kamar Operasi">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-polibedah.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/surgery-2.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Kamar Operasi Modular Steril">
+                  <img src="assets/img/poliklinik/surgery-2.webp" alt="Kamar Operasi Modular Steril" loading="lazy">
+                  <span class="card-badge-top">Tim Medis</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Kamar Bedah &amp; Operasi</h4>
+                    <p>Sistem laminar air flow dan laparoskopi modern</p>
+                  </div>
+                  <a href="poliklinik/detail-polibedah" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-fasilitas">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/facilities-6.webp" class="img-fluid" loading="lazy" alt="Fasilitas rumah sakit">
-                  <span class="card-badge">Fasilitas</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Instalasi Laboratorium Terpadu</h3>
-                    <p class="card-desc">Peralatan otomatis modern untuk hasil pemeriksaan yang cepat dan akurat.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/facilities-6.webp" class="glightbox btn-ghost" title="Instalasi Laboratorium Terpadu">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-laboratorium.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/cardiology-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Pusat Kardiologi &amp; Jantung">
+                  <img src="assets/img/poliklinik/cardiology-3.webp" alt="Pusat Kardiologi & Jantung" loading="lazy">
+                  <span class="card-badge-top">Poliklinik</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Pusat Kardiologi Terpadu</h4>
+                    <p>Ekokardiografi &amp; rekam jantung komprehensif</p>
+                  </div>
+                  <a href="poliklinik/detail-polijantung" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-layanan">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/neurology-3.webp" class="img-fluid" loading="lazy" alt="Pembacaan hasil CT scan otak">
-                  <span class="card-badge">Layanan</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Radiologi & Pencitraan</h3>
-                    <p class="card-desc">Pembacaan hasil CT scan dan rontgen oleh dokter spesialis radiologi.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/neurology-3.webp" class="glightbox btn-ghost" title="Radiologi & Pencitraan">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-polisaraf.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/layanan/facilities-6.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Instalasi Farmasi Otomatis">
+                  <img src="assets/img/layanan/facilities-6.webp" alt="Instalasi Farmasi Otomatis" loading="lazy">
+                  <span class="card-badge-top">Fasilitas</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Instalasi Farmasi 24 Jam</h4>
+                    <p>Distribusi obat terintegrasi sistem resep digital</p>
+                  </div>
+                  <a href="layanan/detail-farmasi" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-tim">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/consultation-3.webp" class="img-fluid" loading="lazy" alt="Konsultasi dokter dan pasien">
-                  <span class="card-badge">Tim Medis</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Konsultasi Keluarga</h3>
-                    <p class="card-desc">Dokter menjelaskan kondisi dan rencana perawatan dengan bahasa yang mudah dipahami.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/consultation-3.webp" class="glightbox btn-ghost" title="Konsultasi Keluarga">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-polianak.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/neurology-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Radiologi &amp; CT Scan Otak">
+                  <img src="assets/img/poliklinik/neurology-3.webp" alt="Radiologi & CT Scan Otak" loading="lazy">
+                  <span class="card-badge-top">Layanan</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Radiologi &amp; Pencitraan</h4>
+                    <p>CT scan resolusi tinggi dengan dokter radiologi</p>
+                  </div>
+                  <a href="poliklinik/detail-polisaraf" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-fasilitas">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/consultation-4.webp" class="img-fluid" loading="lazy" alt="Konsultasi dokter dan pasien">
-                  <span class="card-badge">Fasilitas</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Ruang Konsultasi Dokter</h3>
-                    <p class="card-desc">Ruang konsultasi privat yang nyaman untuk berdiskusi langsung dengan dokter.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/consultation-4.webp" class="glightbox btn-ghost" title="Ruang Konsultasi Dokter">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="dokter.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/pediatrics-2.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Klinik Ramah Anak Pediatri">
+                  <img src="assets/img/poliklinik/pediatrics-2.webp" alt="Klinik Ramah Anak Pediatri" loading="lazy">
+                  <span class="card-badge-top">Poliklinik</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Klinik Pediatri &amp; Anak</h4>
+                    <p>Klinik ramah anak dengan dokter spesialis</p>
+                  </div>
+                  <a href="poliklinik/detail-polianak" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
 
-            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-layanan">
-              <div class="shadcn-card">
-                <div class="card-media">
-                  <img src="assets/img/health/emergency-3.webp" class="img-fluid" loading="lazy" alt="Tim ambulans dan IGD">
-                  <span class="card-badge">Layanan</span>
-                </div>
-                <div class="card-body">
-                  <header class="card-head">
-                    <h3 class="card-title">Ambulans Siaga IGD</h3>
-                    <p class="card-desc">Unit ambulans dan paramedis siap menjemput pasien gawat darurat selama 24 jam.</p>
-                  </header>
-                  <footer class="card-foot">
-                    <a href="assets/img/health/emergency-3.webp" class="glightbox btn-ghost" title="Ambulans Siaga IGD">
-                      <i class="bi bi-arrows-fullscreen"></i> Pratinjau
-                    </a>
-                    <a href="detail-igd.html" class="btn-link">
-                      Detail <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                  </footer>
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/emergency-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Unit Gawat Darurat &amp; Ambulans Siaga">
+                  <img src="assets/img/poliklinik/emergency-3.webp" alt="Unit Gawat Darurat & Ambulans Siaga" loading="lazy">
+                  <span class="card-badge-top">Layanan</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>IGD &amp; Ambulans 24 Jam</h4>
+                    <p>Respons kegawatdaruratan cepat dan tanggap</p>
+                  </div>
+                  <a href="poliklinik/detail-igd" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
                 </div>
               </div>
-            </article><!-- End Gallery Item -->
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/orthopedics-4.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Pusat Ortopedi &amp; Fisioterapi">
+                  <img src="assets/img/poliklinik/orthopedics-4.webp" alt="Pusat Ortopedi & Fisioterapi" loading="lazy">
+                  <span class="card-badge-top">Layanan</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Rehabilitasi &amp; Fisioterapi</h4>
+                    <p>Pemulihan gerak dan terapi muskuloskeletal</p>
+                  </div>
+                  <a href="layanan/detail-fisioterapi" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="swiper-slide">
+              <div class="gallery-coverflow-card">
+                <a href="assets/img/poliklinik/consultation-3.webp" class="glightbox card-img-wrap d-block" data-gallery="coverflow-gallery" title="Konsultasi Spesialis">
+                  <img src="assets/img/poliklinik/consultation-3.webp" alt="Konsultasi Spesialis" loading="lazy">
+                  <span class="card-badge-top">Tim Medis</span>
+                  <span class="card-overlay-btn" aria-hidden="true">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </span>
+                </a>
+                <div class="card-info-bottom">
+                  <div>
+                    <h4>Ruang Konsultasi Privat</h4>
+                    <p>Konsultasi menyeluruh dengan dokter spesialis</p>
+                  </div>
+                  <a href="dokter" class="card-info-link" title="Detail Layanan">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
 
-      </div>
+        <!-- Navigation Buttons -->
+        <button class="gallery-nav-btn gallery-swiper-prev" aria-label="Slide Sebelumnya">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="gallery-nav-btn gallery-swiper-next" aria-label="Slide Selanjutnya">
+          <i class="bi bi-chevron-right"></i>
+        </button>
 
-    </section><!-- /Gallery Section -->
+        <!-- Pagination Bullets -->
+        <div class="gallery-swiper-pagination"></div>
+
+      </div>
+    </section><!-- End 3D Coverflow Showcase Section -->
+
+
 
   </main>
 
@@ -376,51 +430,52 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
               <img alt="" width="160" height="160" src="assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
               <p>DKI Jakarta, Indonesia 10220</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
-              <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>WhatsApp:</strong> <span>0889-8964-3555</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Tautan Cepat</h4>
             <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="tentang.html">Tentang Kami</a></li>
-              <li><a href="layanan.html">Layanan</a></li>
-              <li><a href="dokter.html">Dokter</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="kontak.html">Kontak</a></li>
+              <li><a href="/">Beranda</a></li>
+              <li><a href="tentang">Tentang Kami</a></li>
+              <li><a href="layanan">Layanan</a></li>
+              <li><a href="dokter">Dokter</a></li>
+              <li><a href="artikel">Artikel</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="kontak">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
-              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
-              <li><a href="detail-polianak.html">Poli Anak</a></li>
-              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
-              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
-              <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="info-pasien">BPJS &amp; Asuransi</a></li>
+              <li><a href="faq">Pertanyaan Umum</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -451,7 +506,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -461,7 +516,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
 

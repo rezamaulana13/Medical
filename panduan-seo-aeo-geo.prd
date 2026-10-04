@@ -1,0 +1,911 @@
+# PANDUAN SEO · AEO · GEO
+## Versi 2026/2027 — Medical Indonesia
+**Dokumen:** panduan-seo-aeo-geo.prd
+**Dibuat:** Oktober 2026
+**Berlaku:** 2026 – 2027
+**Status:** Aktif
+
+---
+
+## DAFTAR ISI
+1. [Pendahuluan & Konteks](#1-pendahuluan)
+2. [SEO — Search Engine Optimization](#2-seo)
+3. [AEO — Answer Engine Optimization](#3-aeo)
+4. [GEO — Generative Engine Optimization](#4-geo)
+5. [Schema Structured Data](#5-schema)
+6. [Core Web Vitals & Teknis](#6-teknis)
+7. [Panduan Khusus Niche Medis (YMYL)](#7-ymyl)
+8. [Checklist Implementasi](#8-checklist)
+9. [Tools Rekomendasi](#9-tools)
+10. [Referensi & Sumber](#10-referensi)
+
+---
+
+## 1. PENDAHULUAN
+
+### Konteks 2026/2027
+Lanskap pencarian berubah drastis. Pengguna tidak hanya mencari di Google,
+tetapi juga bertanya langsung ke:
+- **AI Overviews** (Google SGE generasi ke-2)
+- **ChatGPT / Perplexity / Copilot** (AI chatbot berlangganan)
+- **Google Gemini** (asisten AI Google)
+- **Voice assistants** (Google Assistant, Siri, Alexa)
+
+**Tiga pilar optimasi modern:**
+```
+SEO → Agar ditemukan di search engine (Google, Bing)
+AEO → Agar dikutip sebagai jawaban langsung / snippet
+GEO → Agar dikutip oleh AI generatif (ChatGPT, Gemini, dll.)
+```
+
+### Prinsip Utama 2026/2027
+> "Buat konten untuk MANUSIA yang CERDAS, dioptimasi untuk MESIN yang SEMAKIN CERDAS."
+
+- **Helpful First** — Konten harus benar-benar membantu pengguna
+- **E-E-A-T Dominant** — Experience, Expertise, Authoritativeness, Trustworthiness
+- **Multi-surface Presence** — Hadir di semua permukaan pencarian
+- **Entity-Based** — Google & AI berpikir dalam entitas, bukan kata kunci
+
+---
+
+## 2. SEO — SEARCH ENGINE OPTIMIZATION
+
+### 2.1 Core Algorithm Update 2026
+Google telah memperkenalkan beberapa update besar:
+
+| Update | Fokus | Dampak |
+|--------|-------|--------|
+| Helpful Content System (v4) | Konten original & bermanfaat | Sangat tinggi |
+| Spam Policies 2025/26 | Anti-AI bulk content | Tinggi |
+| Core Update Q1-2026 | E-E-A-T + entity authority | Sangat tinggi |
+| Reviews System | Kualitas review produk/layanan | Sedang |
+
+---
+
+### 2.2 On-Page SEO
+
+#### 2.2.1 Title Tag
+```
+Format: [Kata Kunci Utama] - [Brand] | [Konteks]
+Panjang: 50–60 karakter (max 580px)
+Unik: Setiap halaman HARUS punya title unik
+
+Contoh Baik:
+"Dokter Spesialis Jantung Terbaik Jakarta | Medical Indonesia"
+
+Contoh Buruk:
+"Halaman Dokter - Medical Indonesia - Medical Indonesia"
+```
+
+#### 2.2.2 Meta Description
+```
+Panjang: 120–160 karakter
+Fungsi: CTR booster (bukan ranking factor langsung)
+Harus: Mengandung CTA + kata kunci natural
+
+Contoh:
+"Konsultasi dengan 50+ dokter spesialis berpengalaman di Medical Indonesia.
+ IGD 24 jam, BPJS diterima. Hubungi 0889-8964-3555 untuk jadwal."
+```
+
+#### 2.2.3 Heading Hierarchy
+```
+h1  → 1 per halaman, mengandung keyword utama
+h2  → Subtopik utama (3–6 per halaman)
+h3  → Sub-subtopik
+h4  → Detail tambahan (jika diperlukan)
+
+LARANGAN: Jangan skip level (h1 ke h3 tanpa h2)
+```
+
+#### 2.2.4 URL Structure
+```
+Format: domain.com/kategori/sub-kategori/slug
+Rules:
+  - Lowercase semua
+  - Gunakan tanda - (bukan _ atau spasi)
+  - Pendek dan deskriptif
+  - Mengandung kata kunci utama
+  - Jangan gunakan parameter (?id=123)
+  - Jangan duplikasi URL
+
+Contoh:
+  BAIK  : medical.com/layanan/dokter-spesialis-jantung
+  BURUK : medical.com/page?cat=service&id=45&ref=home
+```
+
+#### 2.2.5 Content Quality 2026
+```
+Panjang konten:
+  - Landing page layanan    : min. 800 kata
+  - Artikel blog/edukasi    : min. 1500 kata
+  - Artikel pillar (utama)  : 2500–4000 kata
+  - FAQ page                : 50–150 kata per jawaban
+
+Kualitas (WAJIB):
+  - Ditulis oleh atau direview dokter/ahli
+  - Ada tanggal publikasi & update terakhir
+  - Ada nama penulis + kredensial
+  - Sumber & referensi medis dicantumkan
+  - Gambar original dengan alt text deskriptif
+  - Internal link ke halaman relevan (min. 3)
+  - Konten diupdate secara berkala
+```
+
+---
+
+### 2.3 Technical SEO
+
+#### 2.3.1 Core Web Vitals 2026
+```
+Metrik wajib lulus (Google Page Experience):
+  LCP (Largest Contentful Paint) : ≤ 2.5 detik  [Good]
+  CLS (Cumulative Layout Shift)  : ≤ 0.1         [Good]
+  INP (Interaction to Next Paint): ≤ 200ms        [Good]
+
+Target ideal:
+  TTFB (Time to First Byte)     : < 800ms
+  FCP (First Contentful Paint)  : < 1.8 detik
+```
+
+#### 2.3.2 Mobile-First
+```
+Wajib:
+  - Responsive design di semua device
+  - Viewport meta tag benar
+  - Touch target min. 48x48px
+  - Font min. 16px untuk body text
+  - Tidak ada konten yang terpotong di mobile
+  - Uji di Google Mobile-Friendly Test
+```
+
+#### 2.3.3 HTTPS & Keamanan
+```
+  - SSL certificate aktif (HTTPS)
+  - Tidak ada mixed content (HTTP dalam HTTPS)
+  - Security headers: HSTS, X-Frame-Options, CSP
+  - Tidak ada malware / phishing warning
+```
+
+#### 2.3.4 Crawlability & Indexing
+```
+File penting:
+  robots.txt    → Atur crawl budget
+  sitemap.xml   → Daftar semua URL penting
+  canonical tag → Hindari konten duplikat
+
+Contoh robots.txt minimal:
+  User-agent: *
+  Allow: /
+  Disallow: /admin/
+  Sitemap: https://domain.com/sitemap.xml
+
+Contoh canonical:
+  <link rel="canonical" href="https://domain.com/halaman-ini/" />
+```
+
+#### 2.3.5 Internal Linking
+```
+Strategi:
+  - Setiap halaman dapat dicapai dalam maksimal 3 klik dari homepage
+  - Anchor text deskriptif (bukan "klik di sini")
+  - Link ke halaman terkait yang relevan
+  - Hubungkan artikel ke halaman layanan
+  - Breadcrumb navigasi di semua halaman
+
+Contoh anchor text:
+  BAIK  : "jadwal dokter spesialis anak"
+  BURUK : "klik di sini" / "baca selengkapnya"
+```
+
+---
+
+### 2.4 Off-Page SEO & E-E-A-T
+
+#### 2.4.1 Link Building 2026
+```
+KUALITAS lebih penting dari KUANTITAS
+
+Strategi efektif:
+  - HARO / PR digital (media nasional meliput RS)
+  - Guest post di website medis/kesehatan terpercaya
+  - Direktori bisnis premium (Alodokter, Halodoc, dll.)
+  - Google Business Profile aktif & lengkap
+  - Kolaborasi konten dengan dokter/influencer medis
+
+HINDARI:
+  - PBN (Private Blog Network)
+  - Link farm / link jual-beli massal
+  - Exact-match anchor text spam
+```
+
+#### 2.4.2 E-E-A-T Signals
+```
+Experience (Pengalaman):
+  - Konten ditulis oleh yang berpengalaman langsung
+  - Cerita nyata pasien (dengan izin & anonimisasi)
+  - Foto fasilitas, tim dokter asli
+
+Expertise (Keahlian):
+  - Author box dengan nama + gelar + foto dokter
+  - Referensi ke jurnal medis terindeks
+  - Konten direview oleh spesialis
+
+Authoritativeness (Otoritas):
+  - Sebutan / penghargaan RS di media nasional
+  - Backlink dari sumber medis terpercaya
+  - Brand mentions di forum & komunitas kesehatan
+
+Trustworthiness (Kepercayaan):
+  - Informasi kontak lengkap & mudah ditemukan
+  - Kebijakan privasi & syarat layanan jelas
+  - SSL aktif + ulasan pasien asli
+  - Akreditasi RS dicantumkan (JCI, KARS, dll.)
+```
+
+---
+
+## 3. AEO — ANSWER ENGINE OPTIMIZATION
+
+### 3.1 Apa itu AEO?
+AEO adalah optimasi agar konten kamu **ditampilkan sebagai jawaban langsung**
+di Google Featured Snippets, People Also Ask (PAA), Knowledge Panel,
+dan voice search results.
+
+### 3.2 Format Konten untuk AEO
+
+#### Paragraph Snippet (40–60 kata ideal)
+```
+Struktur: Pertanyaan → Jawaban langsung → Detail
+
+Contoh:
+H2: Berapa biaya konsultasi dokter spesialis?
+[Jawaban langsung, maks 60 kata, tanpa intro/basa-basi]
+"Biaya konsultasi dokter spesialis di Medical Indonesia mulai dari
+Rp 150.000 – Rp 500.000 tergantung jenis spesialis. Biaya ini belum
+termasuk pemeriksaan penunjang. Pasien BPJS dapat konsultasi tanpa
+biaya tambahan sesuai ketentuan."
+[Elaborasi lebih lanjut di paragraf berikutnya]
+```
+
+#### List Snippet (Ordered & Unordered)
+```
+Baik untuk HowTo / Langkah-langkah:
+
+H2: Cara Mendaftar Online di Medical Indonesia
+
+1. Buka website medical.web.id atau aplikasi Medical
+2. Pilih menu "Daftar Online"
+3. Pilih dokter dan jadwal yang tersedia
+4. Isi data diri dan konfirmasi pendaftaran
+5. Tunggu notifikasi konfirmasi via WhatsApp
+```
+
+#### Table Snippet
+```
+Baik untuk perbandingan, jadwal, harga:
+
+H2: Jadwal Dokter Spesialis Medical Indonesia
+
+| Spesialis | Hari Praktek  | Jam         |
+|-----------|---------------|-------------|
+| Jantung   | Senin–Jumat   | 09.00–14.00 |
+| Anak      | Senin–Sabtu   | 08.00–16.00 |
+| Bedah     | Selasa & Kamis| 10.00–15.00 |
+```
+
+### 3.3 People Also Ask (PAA) Strategy
+```
+Riset pertanyaan:
+  - Tools: AlsoAsked.com, AnswerThePublic, Semrush PAA
+  - Google autosuggest + "People Also Ask" section
+
+Implementasi:
+  - Buat halaman FAQ per layanan / spesialisasi
+  - Gunakan heading berupa pertanyaan (H2/H3)
+  - Jawab dalam 1–3 kalimat pertama, lalu elaborasi
+  - Tambahkan Schema FAQPage (lihat Seksi 5)
+```
+
+### 3.4 Voice Search Optimization
+```
+Karakteristik pencarian suara:
+  - Lebih panjang & natural
+    Contoh: "dokter anak terdekat buka sampai jam berapa"
+  - Berbasis lokasi: "rumah sakit terdekat dari sini"
+  - Berbasis pertanyaan: siapa, apa, di mana, kapan, bagaimana
+
+Strategi:
+  - Konten dalam bahasa percakapan natural
+  - Targetkan long-tail keyword berupa kalimat tanya
+  - Optimalkan Google Business Profile (untuk "terdekat")
+  - NAP konsisten di semua platform
+  - Load time halaman < 2 detik
+```
+
+---
+
+## 4. GEO — GENERATIVE ENGINE OPTIMIZATION
+
+### 4.1 Apa itu GEO?
+GEO adalah optimasi agar konten kamu **dikutip oleh AI generatif**
+seperti ChatGPT, Google Gemini, Perplexity, Microsoft Copilot, dan Meta AI
+saat menjawab pertanyaan pengguna.
+
+### 4.2 Cara AI Memilih Sumber Kutipan
+```
+AI generatif memprioritaskan sumber yang:
+  1. Punya otoritas domain tinggi (DA/DR tinggi)
+  2. Konsisten disebutkan di banyak platform (brand mentions)
+  3. Konten faktual & terstruktur dengan baik
+  4. Mudah di-crawl (tidak diblokir robots.txt)
+  5. Punya backlink dari sumber otoritatif
+  6. Memiliki structured data yang kaya
+  7. Konten terbaru & diupdate secara berkala
+```
+
+### 4.3 Strategi GEO
+
+#### 4.3.1 Buat Konten yang Layak Dikutip (Citation-Worthy)
+```
+  - Cantumkan data & statistik dengan sumber jelas
+  - Tulis definisi yang jelas dan ringkas
+  - Buat konten yang menjawab topik secara komprehensif
+  - Gunakan struktur logis & mudah dipahami AI
+  - Update konten secara rutin dengan tanggal revisi
+  - Cantumkan nama penulis ahli + kredensial
+```
+
+#### 4.3.2 Brand Entity Building
+```
+Bangun "entitas" brand yang dikenal AI:
+  - Halaman "Tentang Kami" yang komprehensif
+  - Daftarkan di Wikipedia / Wikidata (jika memungkinkan)
+  - Aktif di Google Business Profile
+  - Konsisten di direktori bisnis (Alodokter, Halodoc, dll.)
+  - Press release ke media online nasional
+  - Bangun social proof: Google review, testimoni
+```
+
+#### 4.3.3 robots.txt untuk AI Crawlers 2026
+```
+# robots.txt — Izinkan AI crawlers
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Izinkan crawler AI utama secara eksplisit
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://domain.com/sitemap.xml
+```
+
+#### 4.3.4 NAP Consistency (Name, Address, Phone)
+```
+Konsistensi data bisnis di SEMUA platform:
+  Nama    : Medical Indonesia (SAMA persis)
+  Alamat  : Jl. Jenderal Sudirman No. 123, Jakarta Pusat
+  Telepon : 0889-8964-3555
+  Website : https://medical.web.id
+
+Platform yang harus konsisten:
+  - Website (kontak.html)
+  - Google Business Profile
+  - Bing Places
+  - Facebook / Instagram Bio
+  - Direktori medis (Alodokter, Halodoc, KlikDokter)
+  - Yellow Pages Indonesia
+```
+
+---
+
+## 5. SCHEMA STRUCTURED DATA
+
+### 5.1 Mengapa Schema Penting di 2026?
+Schema markup membantu Google & AI memahami konten secara semantik.
+Pada 2026, schema menjadi sinyal terkuat untuk:
+- Featured snippets & rich results di Google
+- AI Overview citations (Google SGE)
+- Knowledge Graph entity recognition
+- AI chatbot citations (ChatGPT, Gemini, Perplexity)
+
+### 5.2 Schema Wajib — Organization / Hospital (di homepage)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": ["Hospital", "MedicalOrganization"],
+  "name": "Medical Indonesia",
+  "description": "Rumah Sakit & Layanan Kesehatan Terpadu terbaik di Jakarta",
+  "url": "https://medical.web.id",
+  "logo": "https://medical.web.id/assets/img/logo.png",
+  "image": "https://medical.web.id/assets/img/hospital.jpg",
+  "telephone": "+628898964355",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Jenderal Sudirman No. 123",
+    "addressLocality": "Jakarta Pusat",
+    "addressRegion": "DKI Jakarta",
+    "postalCode": "10220",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -6.2088,
+    "longitude": 106.8456
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "20:00"
+    }
+  ],
+  "medicalSpecialty": [
+    "Cardiology","Pediatrics","Orthopedics","GeneralPractice"
+  ],
+  "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "IGD 24 Jam"
+  },
+  "sameAs": [
+    "https://www.facebook.com/medicalindonesia",
+    "https://www.instagram.com/medicalindonesia"
+  ]
+}
+```
+
+### 5.3 Schema Physician (Halaman Dokter)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "dr. Nama Dokter, Sp.JP",
+  "image": "https://medical.web.id/assets/img/dokter/foto.jpg",
+  "description": "Dokter Spesialis Jantung berpengalaman 15 tahun",
+  "medicalSpecialty": "Cardiology",
+  "worksFor": {
+    "@type": "Hospital",
+    "name": "Medical Indonesia"
+  },
+  "telephone": "+628898964355",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Universitas Indonesia"
+  }
+}
+```
+
+### 5.4 Schema FAQPage
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apakah Medical Indonesia menerima BPJS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, Medical Indonesia menerima pasien BPJS Kesehatan untuk semua layanan rawat jalan dan rawat inap sesuai ketentuan yang berlaku."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa nomor IGD Medical Indonesia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nomor IGD 24 Jam Medical Indonesia adalah 0889-8964-3555. Layanan darurat tersedia 24 jam setiap hari termasuk hari libur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara daftar online di Medical Indonesia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daftar online di Medical Indonesia dapat dilakukan melalui website medical.web.id, menu Daftar Online. Pilih dokter, tentukan jadwal, isi data diri, dan konfirmasi. Notifikasi akan dikirim via WhatsApp ke nomor 0889-8964-3555."
+      }
+    }
+  ]
+}
+```
+
+### 5.5 Schema MedicalWebPage (Artikel Kesehatan)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "headline": "Judul Artikel Kesehatan",
+  "description": "Deskripsi singkat artikel",
+  "datePublished": "2026-01-15",
+  "dateModified": "2026-10-01",
+  "author": {
+    "@type": "Person",
+    "name": "dr. Nama Penulis, Sp.XX",
+    "jobTitle": "Dokter Spesialis",
+    "url": "https://medical.web.id/dokter/nama"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medical Indonesia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://medical.web.id/assets/img/logo.png"
+    }
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "dr. Nama Reviewer, Sp.XX"
+  },
+  "medicalAudience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Patient"
+  },
+  "lastReviewed": "2026-10-01"
+}
+```
+
+### 5.6 Schema BreadcrumbList
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "https://medical.web.id"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Layanan",
+      "item": "https://medical.web.id/layanan"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dokter Spesialis Jantung",
+      "item": "https://medical.web.id/layanan/jantung"
+    }
+  ]
+}
+```
+
+---
+
+## 6. CORE WEB VITALS & TEKNIS
+
+### 6.1 Target Metrik 2026
+```
+Wajib Lulus (Google Page Experience):
+  LCP  ≤ 2.5 detik    [Largest Contentful Paint]
+  CLS  ≤ 0.1          [Cumulative Layout Shift]
+  INP  ≤ 200ms        [Interaction to Next Paint]
+
+Target Ideal:
+  TTFB  < 600ms       [Time to First Byte]
+  FCP   < 1.5 detik   [First Contentful Paint]
+  TTI   < 3.5 detik   [Time to Interactive]
+  TBT   < 150ms       [Total Blocking Time]
+```
+
+### 6.2 Optimasi Gambar
+```
+Format gambar prioritas 2026:
+  1. AVIF  → Kompresi terbaik, browser modern
+  2. WebP  → Kompresi baik, dukungan luas
+  3. JPEG  → Fallback untuk foto
+  4. PNG   → Fallback untuk grafis transparan
+
+Atribut HTML wajib:
+  <img
+    src="foto.webp"
+    alt="Deskripsi spesifik dan informatif"
+    width="800"
+    height="600"
+    loading="lazy"         [untuk gambar di bawah fold]
+    decoding="async"
+    fetchpriority="high"   [untuk gambar hero/LCP saja]
+  />
+```
+
+### 6.3 Kecepatan Halaman
+```
+Strategi optimasi:
+  - Minify HTML, CSS, JavaScript
+  - Enable Gzip/Brotli compression di server
+  - Browser caching (Cache-Control header)
+  - CDN untuk asset statik
+  - Defer/async JavaScript non-kritis
+  - Critical CSS inline di dalam <head>
+  - Preconnect ke domain penting
+
+Contoh di <head>:
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preload" as="image" href="hero.webp">
+```
+
+### 6.4 Sitemap XML Contoh
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://medical.web.id/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://medical.web.id/layanan/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://medical.web.id/artikel/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+```
+
+---
+
+## 7. PANDUAN KHUSUS NICHE MEDIS (YMYL)
+
+### 7.1 Apa itu YMYL?
+**YMYL = Your Money or Your Life**
+
+Website kesehatan/medis termasuk kategori YMYL — konten yang bisa
+berdampak pada kesehatan, keselamatan, atau keuangan seseorang.
+
+Google & AI menerapkan **standar lebih tinggi** untuk YMYL sites.
+Salah satu konten yang tidak memenuhi standar bisa menurunkan seluruh domain.
+
+### 7.2 Persyaratan Konten Artikel Kesehatan
+```
+WAJIB ADA di setiap artikel kesehatan:
+  - Nama penulis (dokter/tenaga medis) tertulis jelas
+  - Gelar & spesialisasi penulis
+  - Tanggal publikasi & terakhir diupdate
+  - Reviewed by: nama dokter reviewer
+  - Disclaimer medis
+  - Sumber referensi (jurnal, WHO, Kemenkes)
+  - Ajakan konsultasi ke dokter
+
+DISCLAIMER STANDAR:
+  "Artikel ini bersifat informatif dan tidak menggantikan
+   konsultasi medis profesional. Selalu konsultasikan
+   kondisi kesehatan Anda dengan dokter yang berkualifikasi."
+```
+
+### 7.3 Persyaratan Halaman Profil Dokter
+```
+WAJIB per profil dokter:
+  - Foto dokter asli (profesional)
+  - Nama lengkap + gelar akademik
+  - Nomor STR (Surat Tanda Registrasi)
+  - Spesialisasi & sub-spesialisasi
+  - Pendidikan & almamater
+  - Pengalaman kerja (tahun)
+  - Jadwal praktik
+  - Karya ilmiah / publikasi (opsional, sangat dianjurkan)
+```
+
+### 7.4 Akreditasi & Legalitas
+```
+Tampilkan di halaman Tentang Kami & Footer:
+  - Nomor izin operasional RS
+  - Sertifikat akreditasi (KARS / JCI)
+  - Tahun berdiri
+  - Kepemilikan / badan hukum
+  - Terdaftar di SIRS (Sistem Informasi RS Kemenkes)
+```
+
+### 7.5 Local SEO untuk Rumah Sakit
+```
+Google Business Profile — WAJIB diisi lengkap:
+  - Nama resmi RS (konsisten)
+  - Kategori: "Hospital" / "Medical Clinic"
+  - Alamat lengkap & terverifikasi
+  - Telepon: 0889-8964-3555
+  - Website: https://medical.web.id
+  - Jam operasional (termasuk IGD 24 jam)
+  - Foto fasilitas (min. 10 foto berkualitas)
+  - Deskripsi layanan
+  - List spesialisasi
+  - Aksesibilitas (kursi roda, parkir, dll.)
+  - Metode pembayaran (BPJS, kartu kredit, dll.)
+
+Review Management:
+  - Minta pasien puas untuk review
+  - Balas SEMUA review secara profesional
+  - Target rating: min. 4.5/5.0
+```
+
+---
+
+## 8. CHECKLIST IMPLEMENTASI
+
+### 8.1 Checklist SEO On-Page (Per Halaman)
+```
+[ ] Title tag unik (50–60 karakter)
+[ ] Meta description unik (120–160 karakter)
+[ ] Satu H1 per halaman
+[ ] Hierarki heading logis (H1 > H2 > H3)
+[ ] URL pendek & deskriptif
+[ ] Canonical tag terpasang
+[ ] Alt text di semua gambar
+[ ] Internal link minimal 3 per halaman
+[ ] Breadcrumb terpasang
+[ ] Schema structured data relevan
+[ ] Konten asli & berkualitas
+[ ] Tidak ada thin content (kurang dari 300 kata)
+[ ] Open Graph meta tags (social sharing)
+[ ] Twitter Card meta tags
+```
+
+### 8.2 Checklist Technical SEO
+```
+[ ] HTTPS aktif & valid
+[ ] sitemap.xml tersedia & ter-submit ke Google Search Console
+[ ] robots.txt benar & mengizinkan crawling
+[ ] Tidak ada 404 error pada internal link
+[ ] Redirect chain tidak lebih dari 2 hop
+[ ] LCP ≤ 2.5 detik
+[ ] CLS ≤ 0.1
+[ ] INP ≤ 200ms
+[ ] Mobile-friendly (uji Google Mobile Test)
+[ ] Gambar di-compress & format WebP/AVIF
+[ ] JavaScript di-defer/async
+[ ] Tidak ada duplicate content
+```
+
+### 8.3 Checklist AEO
+```
+[ ] Halaman FAQ tersedia dengan Schema FAQPage
+[ ] Setiap artikel menjawab pertanyaan spesifik di awal (maks 60 kata)
+[ ] Heading menggunakan format pertanyaan
+[ ] Tabel, list, dan definisi diformat dengan baik
+[ ] Schema HowTo untuk konten prosedur/langkah-langkah
+[ ] Konten PAA (People Also Ask) diteliti & ditargetkan
+```
+
+### 8.4 Checklist GEO
+```
+[ ] robots.txt mengizinkan: GPTBot, Google-Extended, PerplexityBot
+[ ] Halaman "Tentang Kami" komprehensif
+[ ] Nama penulis + kredensial di setiap konten
+[ ] Data & statistik bersumber jelas
+[ ] NAP konsisten di semua platform
+[ ] Google Business Profile lengkap & aktif
+[ ] Disebutkan di media online / direktori terpercaya
+[ ] Schema Organization/Hospital di homepage
+[ ] Social media aktif & terkoneksi ke website
+```
+
+### 8.5 Checklist YMYL Khusus Medis
+```
+[ ] Semua artikel memiliki penulis dokter teridentifikasi
+[ ] Schema MedicalWebPage di artikel kesehatan
+[ ] Schema Physician di halaman dokter
+[ ] Disclaimer medis ada di setiap artikel
+[ ] Referensi jurnal / sumber medis terpercaya
+[ ] Tanggal update konten terlihat jelas
+[ ] Sertifikat akreditasi ditampilkan
+[ ] Nomor izin operasional RS tercantum
+```
+
+---
+
+## 9. TOOLS REKOMENDASI
+
+### 9.1 SEO Audit & Monitoring
+| Tool | Fungsi | Biaya |
+|------|--------|-------|
+| Google Search Console | Monitoring indexing & ranking | Gratis |
+| Google Analytics 4 | Analitik traffic & konversi | Gratis |
+| PageSpeed Insights | Core Web Vitals audit | Gratis |
+| Rich Results Test | Uji Schema markup | Gratis |
+| Mobile-Friendly Test | Uji mobile | Gratis |
+| Screaming Frog | Crawl audit lengkap | Freemium |
+| Ahrefs | Keyword research + backlink | Berbayar |
+| Semrush | All-in-one SEO suite | Berbayar |
+
+### 9.2 AEO Research Tools
+| Tool | Fungsi | Biaya |
+|------|--------|-------|
+| AlsoAsked.com | Riset pertanyaan PAA | Freemium |
+| AnswerThePublic | Visualisasi pertanyaan | Freemium |
+| Google Search (autosuggest) | Long-tail query research | Gratis |
+| Semrush Q&A | Featured snippet research | Berbayar |
+
+### 9.3 GEO Monitoring Tools
+| Tool | Fungsi | Biaya |
+|------|--------|-------|
+| Perplexity.ai | Cek apakah dikutip AI | Freemium |
+| ChatGPT | Uji brand mention | Freemium |
+| Google AI Overviews | Cek kehadiran di SGE | Gratis |
+| BrandMentions.com | Monitor brand mention online | Berbayar |
+
+### 9.4 Schema Generator
+| Tool | URL | Biaya |
+|------|-----|-------|
+| Schema Markup Generator | schema.dev | Gratis |
+| Google Rich Results Test | search.google.com/test/rich-results | Gratis |
+| Merkle Schema Generator | technicalseo.com/tools/schema | Gratis |
+
+---
+
+## 10. REFERENSI & SUMBER
+
+```
+Sumber Resmi Google:
+  - Google Search Central Documentation
+    developers.google.com/search
+  - Google Search Quality Evaluator Guidelines (2024–2026)
+    guidelines.raterhub.com
+  - Core Web Vitals
+    web.dev/vitals
+  - Google Business Profile Help
+    support.google.com/business
+
+Schema & Structured Data:
+  - Schema.org Vocabulary
+    schema.org
+  - Google Supported Schema Types
+    developers.google.com/search/docs/appearance/structured-data
+
+Panduan Medis Digital:
+  - WHO Digital Health Strategy 2020–2025
+  - Kemenkes RI — Regulasi Teknologi Informasi Kesehatan
+  - Permenkes No. 24 Tahun 2022 tentang Rekam Medis Elektronik
+```
+
+---
+
+## CATATAN AKHIR — PRIORITAS IMPLEMENTASI
+
+```
+URUTAN PENGERJAAN (dari yang paling kritis):
+
+1. [KRITIS]  Technical SEO dasar (HTTPS, sitemap, robots.txt)
+2. [KRITIS]  Core Web Vitals (LCP, CLS, INP) lulus standar
+3. [KRITIS]  Schema Hospital + FAQPage di homepage
+4. [TINGGI]  Author box + disclaimer di semua artikel
+5. [TINGGI]  Google Business Profile lengkap & terverifikasi
+6. [TINGGI]  Schema Physician di halaman dokter
+7. [TINGGI]  robots.txt update untuk AI crawlers
+8. [SEDANG]  NAP consistency audit di semua platform
+9. [SEDANG]  FAQ page per layanan spesialisasi
+10. [RENDAH] Wikipedia / brand entity building
+11. [RENDAH] PR digital / media mentions
+12. [RENDAH] Link building campaign
+```
+
+---
+
+*Dokumen ini dibuat untuk keperluan internal Medical Indonesia.*
+*Versi: 2.0 | Update: Oktober 2026 | Review berikutnya: April 2027*

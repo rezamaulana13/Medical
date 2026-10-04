@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -11,7 +11,7 @@
   <meta name="keywords" content="jadwal dokter spesialis, cari dokter, dokter jantung jakarta, dokter anak, dokter ortopedi, dokter bedah, dokter penyakit dalam">
   <meta name="author" content="Medical Indonesia">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://medical.id/dokter.html">
+  <link rel="canonical" href="https://medical.web.id/dokter">
 
   <!-- Geo & Local SEO (Jakarta, Indonesia) -->
   <meta name="geo.region" content="ID-JK">
@@ -21,19 +21,19 @@
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://medical.id/dokter.html">
+  <meta property="og:url" content="https://medical.web.id/dokter">
   <meta property="og:title" content="Direktori Dokter Spesialis - Medical Indonesia">
   <meta property="og:description" content="Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.">
-  <meta property="og:image" content="https://medical.id/assets/img/health/staff-1.webp">
+  <meta property="og:image" content="https://medical.web.id/assets/img/dokter/staff-1.webp">
   <meta property="og:site_name" content="Medical Indonesia">
   <meta property="og:locale" content="id_ID">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://medical.id/dokter.html">
+  <meta name="twitter:url" content="https://medical.web.id/dokter">
   <meta name="twitter:title" content="Direktori Dokter Spesialis - Medical Indonesia">
   <meta name="twitter:description" content="Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.">
-  <meta name="twitter:image" content="https://medical.id/assets/img/health/staff-1.webp">
+  <meta name="twitter:image" content="https://medical.web.id/assets/img/dokter/staff-1.webp">
 
   <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
   <script type="application/ld+json">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Direktori Dokter Spesialis - Medical Indonesia",
-    "url": "https://medical.id/dokter.html",
+    "url": "https://medical.web.id/dokter",
     "description": "Temukan dan jadwalkan konsultasi dengan dokter spesialis kardiologi, neurologi, ortopedi, pediatri, onkologi, dan bedah berpengalaman di Medical Indonesia.",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -50,13 +50,13 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Beranda",
-          "item": "https://medical.id"
+          "item": "https://medical.web.id"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Direktori Dokter Spesialis",
-          "item": "https://medical.id/dokter.html"
+          "item": "https://medical.web.id/dokter"
         }
       ]
     }
@@ -68,8 +68,12 @@
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Performance: DNS prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
@@ -92,37 +96,60 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img alt="" width="160" height="160" src="assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="poliklinik.html">Poliklinik</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-          <li><a href="dokter.html" class="active">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="tentang">Tentang</a></li>
+          <li class="dropdown"><a href="poliklinik"><span>Poliklinik</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
-              <li><a href="detail-layanan.html">Detail Layanan</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="poliklinik"><strong>Lihat Halaman Poliklinik</strong></a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-poliortopedi">Poli Ortopedi</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-polibedah">Poli Bedah</a></li>
+              <li><a href="poliklinik/detail-polionkologi">Poli Onkologi</a></li>
+              <li><a href="poliklinik/detail-polidalam">Poli Penyakit Dalam</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
+          </ul>
+          </li>
+                    <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan"><strong>Lihat Halaman Layanan</strong></a></li>
+              <li><a href="layanan/detail-mcu">Medical Check-Up (MCU)</a></li>
+              <li><a href="layanan/detail-rawat-inap">Rawat Inap &amp; ICU</a></li>
+              <li><a href="layanan/detail-fisioterapi">Rehabilitasi &amp; Fisioterapi</a></li>
+              <li><a href="layanan/detail-home-care">Home Care &amp; Telemedisin</a></li>
+              <li><a href="layanan/detail-kia-vaksinasi">KIA &amp; Vaksinasi</a></li>
+              <li><a href="layanan/detail-farmasi">Farmasi &amp; Apotek 24 Jam</a></li>
             </ul>
           </li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="dokter" class="active">Dokter</a></li>
+          <li><a href="artikel">Artikel</a></li>
+          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan/detail-mcu">Detail Paket MCU</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="info-pasien">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="faq">Pertanyaan Umum (FAQ)</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+            </ul>
+          </li>
+          <li><a href="kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu">Buat Janji</a>
 
     </div>
   </header>
@@ -134,7 +161,7 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Beranda</a></li>
             <li class="breadcrumb-item active current">Dokter</li>
           </ol>
         </nav>
@@ -157,7 +184,7 @@
             <div class="row g-0">
               <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="featured-media">
-                  <img src="assets/img/health/staff-12.webp" class="img-fluid" alt="dr. Dewi Anggraeni, Sp.B">
+                  <img src="assets/img/dokter/staff-12.webp" class="img-fluid" alt="dr. Dewi Anggraeni, Sp.B" loading="lazy">
                   <span class="status-pill"><i class="bi bi-circle-fill"></i> Praktik Minggu Ini</span>
                 </div>
               </div>
@@ -186,7 +213,8 @@
                   </ul>
 
                   <div class="action-row">
-                    <a href="janji-temu.html" class="sh-btn primary"><i class="bi bi-calendar2-check"></i> Jadwalkan Kunjungan</a>
+                    <a href="dokter/dr-dewi-anggraeni" class="sh-btn ghost"><i class="bi bi-person-badge"></i> Lihat Profil Lengkap</a>
+                    <a href="janji-temu" class="sh-btn primary"><i class="bi bi-calendar2-check"></i> Jadwalkan Kunjungan</a>
                   </div>
                 </div>
               </div>
@@ -208,38 +236,39 @@
             <div class="row g-3 align-items-end">
               <div class="col-lg-4">
                 <div class="sh-input-group">
-                  <label for="doctor-search" class="sh-label">Cari</label>
+                  <label for="doctor-search" class="sh-label">Cari Dokter</label>
                   <div class="input-wrap">
                     <i class="bi bi-search"></i>
-                    <input id="doctor-search" type="text" class="sh-input" placeholder="Cari nama dokter atau spesialisasi">
+                    <input id="doctor-search" type="text" class="sh-input" placeholder="Ketik nama dokter atau spesialisasi..." aria-label="Cari nama dokter atau spesialisasi">
                   </div>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="sh-input-group">
-                  <label class="sh-label">Poliklinik</label>
-                  <select class="sh-input" aria-label="Poliklinik">
+                  <label for="doctor-department-filter" class="sh-label">Poliklinik</label>
+                  <select id="doctor-department-filter" class="sh-input" aria-label="Pilih Poliklinik">
                     <option value="*">Semua Poliklinik</option>
                     <option value=".filter-cardiology">Jantung</option>
                     <option value=".filter-pediatrics">Anak</option>
-                    <option value=".filter-dermatology">Kulit & Kelamin</option>
+                    <option value=".filter-internal">Penyakit Dalam</option>
+                    <option value=".filter-dermatology">Kulit &amp; Kelamin</option>
                     <option value=".filter-orthopedics">Ortopedi</option>
                   </select>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="sh-input-group">
-                  <label class="sh-label">Lokasi</label>
-                  <select class="sh-input" aria-label="Lokasi">
-                    <option>Semua Cabang</option>
-                    <option>RS Pusat Seluruh Indonesia</option>
-                    <option>RS Medical Bandung</option>
-                    <option>RS Medical Surabaya</option>
+                  <label for="doctor-location-filter" class="sh-label">Lokasi Cabang</label>
+                  <select id="doctor-location-filter" class="sh-input" aria-label="Pilih Lokasi Cabang">
+                    <option value="*">Semua Cabang</option>
+                    <option value="jakarta">RS Pusat Jakarta</option>
+                    <option value="bandung">RS Medical Bandung</option>
+                    <option value="surabaya">RS Medical Surabaya</option>
                   </select>
                 </div>
               </div>
               <div class="col-lg-2 d-grid">
-                <button class="sh-btn primary">Terapkan Filter</button>
+                <button id="doctor-filter-btn" type="button" class="sh-btn primary"><i class="bi bi-funnel"></i> Terapkan</button>
               </div>
             </div>
           </div>
@@ -250,16 +279,42 @@
               <li data-filter="*" class="filter-active">Semua</li>
               <li data-filter=".filter-cardiology">Jantung</li>
               <li data-filter=".filter-pediatrics">Anak</li>
+              <li data-filter=".filter-internal">Penyakit Dalam</li>
               <li data-filter=".filter-dermatology">Kulit</li>
               <li data-filter=".filter-orthopedics">Ortopedi</li>
             </ul><!-- End Directory Filters -->
 
             <div class="row g-3 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-cardiology">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-internal" data-category="internal" data-location="jakarta">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-3.webp" class="avatar" alt="dr. Anindya Maharani, Sp.JP" loading="lazy">
+                    <img src="assets/img/dokter/staff-8.webp" class="avatar" alt="dr. Reza Maulana Nehru, Sp.PD" loading="lazy">
+                    <div class="card-headline">
+                      <h4 class="name">dr. Reza Maulana Nehru, Sp.PD</h4>
+                      <p class="role">Dokter Spesialis Penyakit Dalam</p>
+                    </div>
+                    <span class="sh-badge primary small">Baru</span>
+                  </div>
+                  <p class="card-desc">Pakar tata laksana diabetes, hipertensi, gangguan pencernaan, dan medical check-up.</p>
+                  <div class="card-meta">
+                    <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.PD, FINASIM</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Pusat Jakarta</span>
+                  </div>
+                  <div class="card-footer">
+                    <span class="sh-badge">Penyakit Dalam</span>
+                    <div class="footer-actions">
+                      <a href="dokter/dr-reza-maulana-nehru" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
+                    </div>
+                  </div>
+                </article>
+              </div><!-- End Directory Item -->
+
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-cardiology" data-category="cardiology" data-location="jakarta">
+                <article class="sh-doctor-card">
+                  <div class="card-top">
+                    <img src="assets/img/dokter/staff-3.webp" class="avatar" alt="dr. Anindya Maharani, Sp.JP" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Anindya Maharani, Sp.JP</h4>
                       <p class="role">Dokter Spesialis Jantung</p>
@@ -269,22 +324,22 @@
                   <p class="card-desc">Pengalaman luas dalam diagnosis dan terapi penyakit jantung koroner dan hipertensi.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.JP, FIHA</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Pusat Jakarta</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Jantung</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-anindya-maharani" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-pediatrics">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-pediatrics" data-category="pediatrics" data-location="bandung">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-7.webp" class="avatar" alt="dr. Wahyu Hidayat, Sp.A" loading="lazy">
+                    <img src="assets/img/dokter/staff-7.webp" class="avatar" alt="dr. Wahyu Hidayat, Sp.A" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Wahyu Hidayat, Sp.A</h4>
                       <p class="role">Dokter Spesialis Anak</p>
@@ -293,22 +348,22 @@
                   <p class="card-desc">Menangani tumbuh kembang, imunisasi, dan penyakit anak dengan pendekatan yang hangat.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.A, M.Kes</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Wlingi</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Medical Bandung</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Anak</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-wahyu-hidayat" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-dermatology">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-dermatology" data-category="dermatology" data-location="surabaya">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-4.webp" class="avatar" alt="dr. Larasati Pramesti, Sp.DV" loading="lazy">
+                    <img src="assets/img/dokter/staff-5.webp" class="avatar" alt="dr. Larasati Pramesti, Sp.DV" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Larasati Pramesti, Sp.DV</h4>
                       <p class="role">Dokter Spesialis Kulit</p>
@@ -318,22 +373,22 @@
                   <p class="card-desc">Perawatan jerawat, alergi, dan kelainan kulit dengan terapi aman dan berbasis bukti.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.DV</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Kanigoro</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Medical Surabaya</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Kulit</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-larasati-pramesti" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-orthopedics">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-orthopedics" data-category="orthopedics" data-location="jakarta">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-5.webp" class="avatar" alt="dr. Hendra Prasetyo, Sp.OT" loading="lazy">
+                    <img src="assets/img/dokter/staff-5.webp" class="avatar" alt="dr. Hendra Prasetyo, Sp.OT" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Hendra Prasetyo, Sp.OT</h4>
                       <p class="role">Dokter Spesialis Bedah Ortopedi</p>
@@ -342,22 +397,22 @@
                   <p class="card-desc">Ahli cedera tulang, sendi, dan olahraga dengan tindakan minimal invasif.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.OT</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Pusat Jakarta</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Ortopedi</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-hendra-prasetyo" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-cardiology">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-cardiology" data-category="cardiology" data-location="bandung">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-10.webp" class="avatar" alt="dr. Kartika Sari, Sp.JP(K)" loading="lazy">
+                    <img src="assets/img/dokter/staff-10.webp" class="avatar" alt="dr. Kartika Sari, Sp.JP(K)" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Kartika Sari, Sp.JP(K)</h4>
                       <p class="role">Kardiolog Intervensi</p>
@@ -366,22 +421,22 @@
                   <p class="card-desc">Kateterisasi dan pemasangan ring jantung untuk pasien penyakit jantung koroner.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.JP(K)</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Wlingi</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Medical Bandung</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Jantung</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-kartika-sari" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-pediatrics">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-pediatrics" data-category="pediatrics" data-location="surabaya">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-2.webp" class="avatar" alt="dr. Fajar Nugroho, Sp.A" loading="lazy">
+                    <img src="assets/img/dokter/staff-2.webp" class="avatar" alt="dr. Fajar Nugroho, Sp.A" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Fajar Nugroho, Sp.A</h4>
                       <p class="role">Dokter Spesialis Anak</p>
@@ -390,22 +445,22 @@
                   <p class="card-desc">Konsultasi tumbuh kembang, nutrisi, dan penyakit infeksi pada bayi dan anak.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.A</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Kanigoro</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Medical Surabaya</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Anak</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-fajar-nugroho" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-dermatology">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-dermatology" data-category="dermatology" data-location="jakarta">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-9.webp" class="avatar" alt="dr. Salsabila Nurhaliza, Sp.DV" loading="lazy">
+                    <img src="assets/img/dokter/staff-9.webp" class="avatar" alt="dr. Salsabila Nurhaliza, Sp.DV" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Salsabila Nurhaliza, Sp.DV</h4>
                       <p class="role">Dokter Kulit Estetika</p>
@@ -414,22 +469,22 @@
                   <p class="card-desc">Perawatan estetika medis dan kesehatan kulit wajah dengan prosedur terukur dan aman.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.DV</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Seluruh Indonesia</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Pusat Jakarta</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Kulit</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-salsabila-nurhaliza" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
-              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-orthopedics">
+              <div class="col-lg-4 col-md-6 doctor-item isotope-item filter-orthopedics" data-category="orthopedics" data-location="bandung">
                 <article class="sh-doctor-card">
                   <div class="card-top">
-                    <img src="assets/img/health/staff-6.webp" class="avatar" alt="dr. Citra Ayuningtyas, Sp.KO" loading="lazy">
+                    <img src="assets/img/dokter/staff-6.webp" class="avatar" alt="dr. Citra Ayuningtyas, Sp.KO" loading="lazy">
                     <div class="card-headline">
                       <h4 class="name">dr. Citra Ayuningtyas, Sp.KO</h4>
                       <p class="role">Kedokteran Olahraga</p>
@@ -438,71 +493,102 @@
                   <p class="card-desc">Rehabilitasi cedera dan program kebugaran bagi atlet maupun masyarakat umum.</p>
                   <div class="card-meta">
                     <span class="meta-item"><i class="bi bi-mortarboard"></i> Sp.KO</span>
-                    <span class="meta-item"><i class="bi bi-geo-alt"></i> Wlingi</span>
+                    <span class="meta-item"><i class="bi bi-geo-alt"></i> RS Medical Bandung</span>
                   </div>
                   <div class="card-footer">
                     <span class="sh-badge">Ortopedi</span>
                     <div class="footer-actions">
-                      <a href="dokter.html" class="sh-btn ghost sm">Profil</a>
-                      <a href="janji-temu.html" class="sh-btn primary sm">Janji</a>
+                      <a href="dokter/dr-citra-ayuningtyas" class="sh-btn ghost sm">Profil</a>
+                      <a href="janji-temu" class="sh-btn primary sm">Janji</a>
                     </div>
                   </div>
                 </article>
               </div><!-- End Directory Item -->
 
             </div><!-- End Directory Items Container -->
+
+            <!-- No Results Feedback Container -->
+            <div id="doctor-no-results" class="col-12 text-center py-5 d-none">
+              <div class="p-4 rounded-3 border border-secondary-subtle bg-light text-center">
+                <i class="bi bi-search fs-1 text-primary mb-2 d-inline-block"></i>
+                <h4 class="fw-bold mb-1">Dokter Tidak Ditemukan</h4>
+                <p class="text-muted mb-3">Tidak ada dokter spesialis yang sesuai dengan kriteria filter atau pencarian Anda.</p>
+                <button type="button" id="doctor-filter-reset" class="sh-btn ghost sm"><i class="bi bi-arrow-counterclockwise"></i> Reset Semua Filter</button>
+              </div>
+            </div>
           </div>
         </div><!-- End Filterable Doctor Directory -->
 
         <!-- Quick Reference Roster -->
         <div class="compact-roster mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="roster-header">
-            <h3 class="roster-title">Daftar Cepat</h3>
-            <span class="roster-hint">Ketuk avatar untuk melihat profil</span>
+            <h3 class="roster-title"><i class="bi bi-person-lines-fill text-primary me-2"></i>Daftar Cepat Dokter Spesialis</h3>
+            <span class="roster-hint">Ketuk dokter untuk melihat jadwal &amp; profil lengkap</span>
           </div>
-          <div class="roster-grid">
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/health/staff-2.webp" alt="dr. Fajar Nugroho, Sp.A" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Fajar Nugroho, Sp.A</span>
-                <span class="roster-role">Anak</span>
-              </div>
-            </a>
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="150">
-              <img src="assets/img/health/staff-7.webp" alt="dr. Wahyu Hidayat, Sp.A" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Wahyu Hidayat, Sp.A</span>
-                <span class="roster-role">Anak</span>
-              </div>
-            </a>
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/health/staff-6.webp" alt="dr. Citra Ayuningtyas, Sp.KO" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Citra Ayuningtyas, Sp.KO</span>
-                <span class="roster-role">Ortopedi</span>
-              </div>
-            </a>
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="250">
-              <img src="assets/img/health/staff-3.webp" alt="dr. Anindya Maharani, Sp.JP" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Anindya Maharani, Sp.JP</span>
-                <span class="roster-role">Jantung</span>
-              </div>
-            </a>
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/img/health/staff-9.webp" alt="dr. Salsabila Nurhaliza, Sp.DV" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Salsabila Nurhaliza, Sp.DV</span>
-                <span class="roster-role">Kulit</span>
-              </div>
-            </a>
-            <a href="#profil-spesialis" class="roster-item" data-aos="fade-up" data-aos-delay="350">
-              <img src="assets/img/health/staff-11.webp" alt="dr. Dimas Aryo Saputra, Sp.P" loading="lazy">
-              <div class="roster-info">
-                <span class="roster-name">dr. Dimas Aryo Saputra, Sp.P</span>
-                <span class="roster-role">Paru</span>
-              </div>
-            </a>
+          <div class="row g-3">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-reza-maulana-nehru" class="roster-item">
+                <img src="assets/img/dokter/staff-8.webp" alt="dr. Reza Maulana Nehru, Sp.PD" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Reza Maulana Nehru, Sp.PD">dr. Reza Maulana Nehru, Sp.PD</span>
+                  <span class="roster-role">Penyakit Dalam</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-fajar-nugroho" class="roster-item">
+                <img src="assets/img/dokter/staff-2.webp" alt="dr. Fajar Nugroho, Sp.A" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Fajar Nugroho, Sp.A">dr. Fajar Nugroho, Sp.A</span>
+                  <span class="roster-role">Spesialis Anak</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-wahyu-hidayat" class="roster-item">
+                <img src="assets/img/dokter/staff-7.webp" alt="dr. Wahyu Hidayat, Sp.A" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Wahyu Hidayat, Sp.A">dr. Wahyu Hidayat, Sp.A</span>
+                  <span class="roster-role">Spesialis Anak</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-citra-ayuningtyas" class="roster-item">
+                <img src="assets/img/dokter/staff-6.webp" alt="dr. Citra Ayuningtyas, Sp.KO" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Citra Ayuningtyas, Sp.KO">dr. Citra Ayuningtyas, Sp.KO</span>
+                  <span class="roster-role">Kedokteran Olahraga</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-anindya-maharani" class="roster-item">
+                <img src="assets/img/dokter/staff-3.webp" alt="dr. Anindya Maharani, Sp.JP" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Anindya Maharani, Sp.JP">dr. Anindya Maharani, Sp.JP</span>
+                  <span class="roster-role">Kardiologi</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-salsabila-nurhaliza" class="roster-item">
+                <img src="assets/img/dokter/staff-9.webp" alt="dr. Salsabila Nurhaliza, Sp.DV" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Salsabila Nurhaliza, Sp.DV">dr. Salsabila Nurhaliza, Sp.DV</span>
+                  <span class="roster-role">Dermatologi</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+              <a href="dokter/dr-dewi-anggraeni" class="roster-item">
+                <img src="assets/img/dokter/staff-12.webp" alt="dr. Dewi Anggraeni, Sp.B" loading="lazy">
+                <div class="roster-info">
+                  <span class="roster-name" title="dr. Dewi Anggraeni, Sp.B">dr. Dewi Anggraeni, Sp.B</span>
+                  <span class="roster-role">Bedah Umum</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div><!-- End Quick Roster -->
 
@@ -512,11 +598,11 @@
             <div class="row g-0">
               <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="tabs-side">
-                  <img src="assets/img/health/staff-4.webp" class="img-fluid" alt="dr. Bagas Wicaksono, Sp.PD-KHOM" loading="lazy">
+                  <img src="assets/img/dokter/staff-5.webp" class="img-fluid" alt="dr. Hendra Prasetyo, Sp.OT" loading="lazy">
                   <div class="tabs-side-body" id="profil-spesialis">
-                    <span class="label-text muted">Profil Spesialis</span>
-                    <h3 class="tabs-name">dr. Bagas Wicaksono, Sp.PD-KHOM</h3>
-                    <p class="tabs-role">Onkologi — Sp.PD-KHOM</p>
+                    <span class="label-text muted">Profil Spesialis</span> <a href="dokter/dr-hendra-prasetyo" class="badge bg-primary text-white text-decoration-none ms-2"><i class="bi bi-box-arrow-up-right"></i> Buka Halaman Profil</a>
+                    <h3 class="tabs-name">dr. Hendra Prasetyo, Sp.OT</h3>
+                    <p class="tabs-role">Bedah Ortopedi — Sp.OT</p>
                     <div class="badge-stack">
                       <span class="sh-badge">Bersertifikat</span>
                       <span class="sh-badge">16 Tahun</span>
@@ -553,7 +639,7 @@
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane fade show active" id="health-doctors-3-tab-1" role="tabpanel">
-                      <p>Berfokus pada hematologi dan onkologi medik dengan pendekatan multidisiplin. Aktif mendampingi pasien kanker dan keluarganya dari diagnosis hingga perawatan paliatif.</p>
+                      <p>Berfokus pada pemulihan sendi, cedera olahraga, dan trauma tulang dengan tindakan invasif minimal dan rehabilitasi komprehensif.</p>
                       <ul class="check-list">
                         <li><i class="bi bi-check2-circle"></i> Minat khusus pada imunoterapi</li>
                         <li><i class="bi bi-check2-circle"></i> Anggota Perhimpunan Hematologi Onkologi Medik Indonesia</li>
@@ -584,7 +670,7 @@
                         </div>
                       </div>
                       <div class="mt-3">
-                        <a href="janji-temu.html" class="sh-btn primary"><i class="bi bi-calendar-event"></i> Reservasi Jadwal</a>
+                        <a href="janji-temu" class="sh-btn primary"><i class="bi bi-calendar-event"></i> Reservasi Jadwal</a>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="health-doctors-3-tab-3" role="tabpanel">
@@ -621,51 +707,52 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
               <img alt="" width="160" height="160" src="assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
               <p>DKI Jakarta, Indonesia 10220</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
-              <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>WhatsApp:</strong> <span>0889-8964-3555</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Tautan Cepat</h4>
             <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="tentang.html">Tentang Kami</a></li>
-              <li><a href="layanan.html">Layanan</a></li>
-              <li><a href="dokter.html">Dokter</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="kontak.html">Kontak</a></li>
+              <li><a href="/">Beranda</a></li>
+              <li><a href="tentang">Tentang Kami</a></li>
+              <li><a href="layanan">Layanan</a></li>
+              <li><a href="dokter">Dokter</a></li>
+          <li><a href="artikel">Artikel</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="kontak">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
-              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
-              <li><a href="detail-polianak.html">Poli Anak</a></li>
-              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
-              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
-              <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="info-pasien">BPJS &amp; Asuransi</a></li>
+              <li><a href="faq">Pertanyaan Umum</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -696,7 +783,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -706,7 +793,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
 

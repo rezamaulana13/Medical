@@ -11,7 +11,7 @@
   <meta name="keywords" content="rumah sakit Indonesia, klinik spesialis Jakarta, dokter spesialis, IGD 24 jam, BPJS Kesehatan, medical check up, Medical Indonesia">
   <meta name="author" content="Medical Indonesia">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://medical.id/">
+  <link rel="canonical" href="https://medical.web.id/">
 
   <!-- Geo & Local SEO (Jakarta, Indonesia) -->
   <meta name="geo.region" content="ID-JK">
@@ -21,98 +21,160 @@
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://medical.id/">
+  <meta property="og:url" content="https://medical.web.id/">
   <meta property="og:title" content="Medical Indonesia - Rumah Sakit & Layanan Kesehatan Terpadu">
   <meta property="og:description" content="Jaringan rumah sakit dan klinik spesialis terpercaya di Indonesia: dokter spesialis berpengalaman, IGD 24 jam, laboratorium digital, dan layanan BPJS Kesehatan.">
-  <meta property="og:image" content="https://medical.id/assets/img/health/showcase-1.webp">
+  <meta property="og:image" content="https://medical.web.id/assets/img/layanan/showcase-1.webp">
   <meta property="og:site_name" content="Medical Indonesia">
   <meta property="og:locale" content="id_ID">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://medical.id/">
+  <meta name="twitter:url" content="https://medical.web.id/">
   <meta name="twitter:title" content="Medical Indonesia - Rumah Sakit & Layanan Kesehatan Terpadu">
   <meta name="twitter:description" content="Jaringan rumah sakit dan klinik spesialis terpercaya di Indonesia: dokter spesialis berpengalaman, IGD 24 jam, laboratorium digital, dan layanan BPJS Kesehatan.">
-  <meta name="twitter:image" content="https://medical.id/assets/img/health/showcase-1.webp">
+  <meta name="twitter:image" content="https://medical.web.id/assets/img/layanan/showcase-1.webp">
 
-  <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
+    <!-- Structured Data (Schema.org / JSON-LD / Google Search Console & Sitelinks Rich Results) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Hospital",
-    "name": "Rumah Sakit Medical Indonesia",
-    "alternateName": "Medical Indonesia",
-    "url": "https://medical.id",
-    "logo": "https://medical.id/assets/img/logo.webp",
-    "image": "https://medical.id/assets/img/health/showcase-1.webp",
-    "description": "Jaringan rumah sakit dan klinik spesialis terpercaya di Indonesia: dokter spesialis berpengalaman, IGD 24 jam, laboratorium digital, dan layanan BPJS Kesehatan.",
-    "telephone": "+62-21-555-0123",
-    "emergencyTelephone": "+62-21-555-0911",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jl. Jenderal Sudirman No. 123",
-      "addressLocality": "Jakarta Pusat",
-      "addressRegion": "DKI Jakarta",
-      "postalCode": "10220",
-      "addressCountry": "ID"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -6.2088,
-      "longitude": 106.8456
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
+        "@type": "WebSite",
+        "@id": "https://medical.web.id/#website",
+        "url": "https://medical.web.id/",
+        "name": "Medical Indonesia",
+        "description": "Jaringan Rumah Sakit & Layanan Kesehatan Spesialis Terpadu di Indonesia",
+        "publisher": {
+          "@id": "https://medical.web.id/#hospital"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://medical.web.id/dokter.html?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "Hospital",
+        "@id": "https://medical.web.id/#hospital",
+        "name": "Medical Indonesia",
+        "alternateName": "Rumah Sakit Medical Indonesia",
+        "url": "https://medical.web.id/",
+        "logo": "https://medical.web.id/assets/img/logo.webp",
+        "image": "https://medical.web.id/assets/img/layanan/showcase-1.webp",
+        "description": "Jaringan rumah sakit dan klinik spesialis terpercaya di Indonesia: 9 unit poliklinik spesialis, MCU eksekutif, rawat inap VVIP & ICU, IGD 24 jam, dan tim dokter spesialis berpengalaman.",
+        "telephone": "+62-889-8964-3555",
+        "emergencyTelephone": "+62-889-8964-3555",
+                "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Jenderal Sudirman No. 123",
+          "addressLocality": "Jakarta Pusat",
+          "addressRegion": "DKI Jakarta",
+          "postalCode": "10220",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.2088,
+          "longitude": 106.8456
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
         ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "department": [
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Jantung & Kardiovaskular"
+        "department": [
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Jantung & Kardiovaskular",
+            "url": "https://medical.web.id/poliklinik/detail-polijantung"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Saraf & Neurologi",
+            "url": "https://medical.web.id/poliklinik/detail-polisaraf"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Ortopedi & Traumatologi",
+            "url": "https://medical.web.id/poliklinik/detail-poliortopedi"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Anak & Pediatri",
+            "url": "https://medical.web.id/poliklinik/detail-polianak"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Bedah Umum & Laparoskopi",
+            "url": "https://medical.web.id/poliklinik/detail-polibedah"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Onkologi & Kanker",
+            "url": "https://medical.web.id/poliklinik/detail-polionkologi"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Poli Penyakit Dalam",
+            "url": "https://medical.web.id/poliklinik/detail-polidalam"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Laboratorium Diagnostik 24 Jam",
+            "url": "https://medical.web.id/poliklinik/detail-laboratorium"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Instalasi Gawat Darurat (IGD) 24 Jam",
+            "url": "https://medical.web.id/poliklinik/detail-igd"
+          }
+        ],
+        "sameAs": [
+          "https://facebook.com/medicalindonesia",
+          "https://instagram.com/medicalindonesia",
+          "https://twitter.com/medical_id",
+          "https://linkedin.com/company/medical-indonesia"
+        ]
       },
       {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Saraf & Neurologi"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Ortopedi & Traumatologi"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Anak & Pediatri"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Bedah Umum & Laparoskopi"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Onkologi & Kanker"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Poli Penyakit Dalam"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Laboratorium Klinik 24 Jam"
-      },
-      {
-        "@type": "MedicalSpecialty",
-        "name": "Instalasi Gawat Darurat (IGD)"
+        "@type": "FAQPage",
+        "@id": "https://medical.web.id/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Apakah Medical Indonesia melayani pasien BPJS Kesehatan dan asuransi swasta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, Medical Indonesia bekerja sama dengan BPJS Kesehatan serta lebih dari 40 mitra asuransi kesehatan swasta dan korporasi terkemuka dengan fasilitas klaim direct-billing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara membuat janji temu dengan dokter spesialis di Medical Indonesia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anda dapat membuat janji temu secara online melalui halaman Janji Temu di website resmi kami, menghubungi Call Center 0889-8964-3555, atau melalui WhatsApp resmi 0889-8964-3555."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah layanan IGD dan Farmasi buka 24 jam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, Instalasi Gawat Darurat (IGD), Ambulans Siaga, dan Instalasi Farmasi kami beroperasi 24 jam nonstop setiap hari termasuk hari libur nasional."
+            }
+          }
+        ]
       }
     ]
   }
@@ -122,12 +184,14 @@
   <link href="assets/img/logo.webp" rel="icon" type="image/webp">
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
-  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/img/health/facilities-3.webp" fetchpriority="high">
+
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Performance: DNS prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
@@ -143,27 +207,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Hospital",
-    "name": "Medical Indonesia",
-    "description": "Jaringan rumah sakit dan klinik spesialis di seluruh Indonesia dengan IGD 24 jam.",
-    "telephone": "+62215550123",
-    "email": "info@medical.id",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jl. Jenderal Sudirman No. 123, Jakarta Pusat",
-      "addressLocality": "Seluruh Indonesia",
-      "addressRegion": "Jawa Timur",
-      "postalCode": "66117",
-      "addressCountry": "ID"
-    },
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "20:00"}
-    ]
-  }
-  </script>
+  
 </head>
 
 <body class="index-page">
@@ -171,37 +215,60 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img alt="" width="160" height="160" src="assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="poliklinik.html">Poliklinik</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-          <li><a href="dokter.html">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/" class="active">Beranda</a></li>
+          <li><a href="tentang">Tentang</a></li>
+          <li class="dropdown"><a href="poliklinik"><span>Poliklinik</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="detail-polijantung.html">Detail Poliklinik</a></li>
-              <li><a href="detail-layanan.html">Detail Layanan</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="info-pasien.html">Info Pasien (BPJS &amp; Asuransi)</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="faq.html">Pertanyaan Umum (FAQ)</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="poliklinik"><strong>Lihat Halaman Poliklinik</strong></a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-poliortopedi">Poli Ortopedi</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-polibedah">Poli Bedah</a></li>
+              <li><a href="poliklinik/detail-polionkologi">Poli Onkologi</a></li>
+              <li><a href="poliklinik/detail-polidalam">Poli Penyakit Dalam</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
+          </ul>
+          </li>
+                    <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan"><strong>Lihat Halaman Layanan</strong></a></li>
+              <li><a href="layanan/detail-mcu">Medical Check-Up (MCU)</a></li>
+              <li><a href="layanan/detail-rawat-inap">Rawat Inap &amp; ICU</a></li>
+              <li><a href="layanan/detail-fisioterapi">Rehabilitasi &amp; Fisioterapi</a></li>
+              <li><a href="layanan/detail-home-care">Home Care &amp; Telemedisin</a></li>
+              <li><a href="layanan/detail-kia-vaksinasi">KIA &amp; Vaksinasi</a></li>
+              <li><a href="layanan/detail-farmasi">Farmasi &amp; Apotek 24 Jam</a></li>
             </ul>
           </li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="dokter">Dokter</a></li>
+          <li><a href="artikel">Artikel</a></li>
+          <li class="dropdown"><a href="#"><span>Info Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="layanan/detail-mcu">Detail Paket MCU</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="info-pasien">Info Pasien (BPJS &amp; Asuransi)</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="faq">Pertanyaan Umum (FAQ)</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+            </ul>
+          </li>
+          <li><a href="kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="janji-temu.html">Buat Janji</a>
+      <a class="btn-getstarted" href="janji-temu">Buat Janji</a>
 
     </div>
   </header>
@@ -227,49 +294,41 @@
           }
         </script>
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('assets/img/health/facilities-3.webp');"></div>
-          <div class="swiper-slide" data-bg="assets/img/health/showcase-7.webp"></div>
-          <div class="swiper-slide" data-bg="assets/img/health/showcase-11.webp"></div>
+          <div class="swiper-slide" style="background-image: url('assets/img/layanan/facilities-3.webp');"></div>
+          <div class="swiper-slide" data-bg="assets/img/layanan/showcase-7.webp"></div>
+          <div class="swiper-slide" data-bg="assets/img/layanan/showcase-11.webp"></div>
         </div>
         <div class="slide-overlay"></div>
       </div><!-- End Hero Slider Background -->
 
       <div class="container">
-        <div class="row align-items-center g-5">
+        <div class="row justify-content-center text-center">
 
-          <div class="col-lg-7">
-            <div class="hero-content">
-              <span class="hero-badge">
-                <span class="badge-dot"></span>
-                Jaringan Medis Terakreditasi
-              </span>
-
-              <h1 class="hero-headline">Layanan Kesehatan Berkualitas, Berpusat pada Setiap Pasien</h1>
+          <div class="col-lg-11 col-xl-10">
+            <div class="hero-content hero-content-center">
+              <h1 class="hero-headline">Layanan Kesehatan Berkualitas,<br class="d-none d-md-inline"> Berpusat pada Setiap Pasien</h1>
               <p class="hero-subtext">Dari pemeriksaan rutin hingga penanganan gawat darurat, tim dokter spesialis dan perawat kami siap mendampingi Anda dan keluarga dengan ramah, cepat, dan profesional di berbagai penjuru wilayah seluruh Indonesia.</p>
 
-              <div class="action-row">
-                <a href="janji-temu.html" class="btn btn-solid">Buat Janji Kunjungan</a>
-                <a href="tentang.html" class="btn btn-outline" aria-label="Lihat Profil Kami">
-                  <i class="bi bi-play-circle"></i>
-                  <span>Lihat Profil Kami</span>
-                </a>
+              <div class="action-row justify-content-center">
+                <a href="janji-temu" class="btn btn-solid">Buat Janji Kunjungan</a>
+                <a href="tentang" class="btn btn-outline" aria-label="Lihat Profil Kami">Lihat Profil Kami</a>
               </div>
 
-              <ul class="meta-row">
+              <ul class="meta-row justify-content-center">
                 <li>
-                  <a href="janji-temu.html" class="meta-link">
+                  <a href="janji-temu" class="meta-link">
                     <i class="bi bi-calendar-check"></i>
                     <span>Slot Tersedia Hari Ini</span>
                   </a>
                 </li>
                 <li>
-                  <a href="kontak.html" class="meta-link">
+                  <a href="kontak" class="meta-link">
                     <i class="bi bi-chat-dots"></i>
                     <span>Hubungi Kami</span>
                   </a>
                 </li>
                 <li>
-                  <a href="kontak.html" class="meta-link">
+                  <a href="kontak" class="meta-link">
                     <i class="bi bi-file-medical"></i>
                     <span>Portal Pasien</span>
                   </a>
@@ -278,481 +337,383 @@
             </div>
           </div><!-- End Hero Content -->
 
-          <div class="col-lg-5">
-            <div class="info-stack">
-
-              <div class="info-card emergency-card">
-                <div class="card-icon">
-                  <i class="bi bi-telephone-fill"></i>
-                </div>
-                <div class="card-meta">
-                  <span class="card-label">Hotline IGD 24 Jam</span>
-                  <span class="card-value">(021) 555-0911</span>
-                </div>
-                <a href="tel:+62215550123" class="card-action" aria-label="Telepon sekarang">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div><!-- End Emergency Card -->
-
-              <div class="info-card stats-card">
-                <div class="stat-cell">
-                  <span class="stat-number">35K+</span>
-                  <span class="stat-label">Pasien Ditangani</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-cell">
-                  <span class="stat-number">98%</span>
-                  <span class="stat-label">Tingkat Kepuasan</span>
-                </div>
-              </div><!-- End Stats Card -->
-
-              <div class="info-card review-card">
-                <div class="review-header">
-                  <div class="review-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <span class="review-score">4.9 / 5.0</span>
-                </div>
-                <p class="review-quote">“Dokter dan perawatnya ramah sekali, sabar menjelaskan, dan penanganannya cepat dari awal sampai pulang.”</p>
-                <div class="review-author">
-                  <span class="author-avatar">
-                    <img src="assets/img/person/person-f-3.webp" alt="Patient Avatar" loading="lazy">
-                  </span>
-                  <div class="author-info">
-                    <span class="author-name">Ibu Siti Marlina</span>
-                    <span class="author-role">Pasien Terverifikasi</span>
-                  </div>
-                </div>
-              </div><!-- End Review Card -->
-
-            </div>
-          </div><!-- End Info Stack -->
-
         </div>
 
-        <div class="metrics-bar">
-          <div class="metric-item">
-            <div class="metric-icon">
-              <i class="bi bi-award"></i>
-            </div>
-            <div class="metric-text">
-              <span class="metric-number">17+</span>
-              <span class="metric-label">Tahun Melayani</span>
+                        <!-- Sponsor / Mitra Asuransi & Rekanan (Continuous Seamless Marquee) -->
+        <div class="hero-clients-wrapper" data-aos="fade-up" data-aos-delay="200">
+          <div class="clients-slider-header text-center">
+            <span class="clients-badge"><i class="bi bi-shield-check"></i> Mitra Asuransi &amp; Rekanan Resmi</span>
+          </div>
+          <div class="marquee-track-container">
+            <div class="marquee-track">
+              <!-- Set 1 -->
+              <div class="marquee-item"><img src="assets/img/clients/clients-6.webp" class="client-logo" alt="TomTom" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-7.webp" class="client-logo" alt="Viatris" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-8.webp" class="client-logo" alt="Zoetis" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-9.webp" class="client-logo" alt="Rohto" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-10.webp" class="client-logo" alt="DaVita" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-11.webp" class="client-logo" alt="Chewy" loading="lazy"></div>
+              <!-- Set 2 -->
+              <div class="marquee-item"><img src="assets/img/clients/clients-6.webp" class="client-logo" alt="TomTom" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-7.webp" class="client-logo" alt="Viatris" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-8.webp" class="client-logo" alt="Zoetis" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-9.webp" class="client-logo" alt="Rohto" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-10.webp" class="client-logo" alt="DaVita" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-11.webp" class="client-logo" alt="Chewy" loading="lazy"></div>
+              <!-- Set 3 -->
+              <div class="marquee-item"><img src="assets/img/clients/clients-6.webp" class="client-logo" alt="TomTom" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-7.webp" class="client-logo" alt="Viatris" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-8.webp" class="client-logo" alt="Zoetis" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-9.webp" class="client-logo" alt="Rohto" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-10.webp" class="client-logo" alt="DaVita" loading="lazy"></div>
+              <div class="marquee-item"><img src="assets/img/clients/clients-11.webp" class="client-logo" alt="Chewy" loading="lazy"></div>
             </div>
           </div>
-          <div class="metric-item">
-            <div class="metric-icon">
-              <i class="bi bi-people"></i>
-            </div>
-            <div class="metric-text">
-              <span class="metric-number">85+</span>
-              <span class="metric-label">Dokter Spesialis</span>
-            </div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-icon">
-              <i class="bi bi-geo-alt"></i>
-            </div>
-            <div class="metric-text">
-              <span class="metric-number">3</span>
-              <span class="metric-label">Jaringan Rumah Sakit Nasional</span>
-            </div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-icon">
-              <i class="bi bi-shield-check"></i>
-            </div>
-            <div class="metric-text">
-              <span class="metric-number">KARS</span>
-              <span class="metric-label">Akreditasi Paripurna</span>
-            </div>
-          </div>
-        </div><!-- End Metrics Bar -->
+        </div><!-- End Clients Slider -->
 
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- Home About Section -->
+    <!-- Home About Section (Keunggulan & Standar Medis) -->
     <section id="home-about" class="home-about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center mb-5 gy-4">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <span class="eyebrow-badge">
-              <i class="bi bi-shield-check"></i>
-              Dipercaya Sejak 2009
-            </span>
-            <h2 class="display-heading">Standar Pelayanan Kesehatan Modern untuk Seluruh Indonesia</h2>
-          </div>
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
-            <p class="intro-copy">Kami menghadirkan pengobatan presisi berbasis bukti ilmiah (evidence-based medicine) dengan fasilitas diagnostik modern, tenaga medis berpengalaman, dan layanan yang menjunjung keselamatan pasien.</p>
-          </div>
+        <div class="section-header-block mb-4" data-aos="fade-up" data-aos-delay="100">
+          <span class="eyebrow-badge mb-2 d-inline-flex">
+            <i class="bi bi-shield-check"></i>
+            Keunggulan Fasilitas Medis
+          </span>
+          <h2 class="display-heading mb-2">Pelayanan Medis Presisi &amp; Terintegrasi untuk Anda</h2>
+          <p class="intro-copy text-muted mb-0" style="max-width: 800px; font-size: 1.05rem; line-height: 1.7;">Kami menggabungkan keahlian klinis dokter spesialis terbaik, teknologi diagnostik canggih, dan komitmen keselamatan pasien untuk memberikan perawatan kesehatan berstandar tinggi di Indonesia.</p>
         </div><!-- End Heading Block -->
 
-        <div class="stats-strip" data-aos="fade-up" data-aos-delay="200">
-          <div class="stat-cell">
-            <div class="stat-value">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="0">98</span>%
-            </div>
-            <div class="stat-label">Kepuasan Pasien</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-value">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="0">35</span>K+
-            </div>
-            <div class="stat-label">Pasien Pulih Sehat</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-value">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="0">17</span>+
-            </div>
-            <div class="stat-label">Tahun Praktik</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-value">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="0">24</span>/7
-            </div>
-            <div class="stat-label">Akses Perawatan Kritis</div>
-          </div>
-        </div><!-- End Stats Strip -->
+        <div class="row gy-4 align-items-center mt-1">
 
-        <div class="row gy-4 mt-2">
+          <!-- Left Column: Visual Showcase with Certificate Grade A -->
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="media-stack">
-              <figure class="media-card primary">
-                <img src="assets/img/health/facilities-6.webp" alt="Modern facility" class="img-fluid" loading="lazy">
-                <figcaption class="media-tag">
-                  <i class="bi bi-award"></i>
-                  <span>Terakreditasi KARS</span>
-                </figcaption>
-              </figure>
-              <div class="media-row">
-                <figure class="media-card">
-                  <img src="assets/img/health/consultation-3.webp" alt="Consultation room" class="img-fluid" loading="lazy">
-                </figure>
-                <figure class="media-card">
-                  <img src="assets/img/health/surgery-2.webp" alt="Surgery suite" class="img-fluid" loading="lazy">
-                </figure>
+            <div class="about-visual-wrap">
+              <img src="assets/img/layanan/facilities-6.webp" alt="Fasilitas Rumah Sakit Medical Indonesia" class="img-fluid" loading="lazy">
+              
+              <!-- Certificate Grade A Seal -->
+              <div class="accreditation-seal">
+                <span class="seal-grade">A</span>
+                <span class="seal-text">AKREDITASI</span>
+                <span class="seal-sub">PARIPURNA KARS</span>
               </div>
-            </div>
-          </div><!-- End Media Stack -->
 
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="150">
-            <div class="feature-card primary-card">
-              <div class="card-head">
-                <span class="icon-square">
-                  <i class="bi bi-heart-pulse-fill"></i>
-                </span>
-                <div class="head-text">
-                  <span class="meta-label">Filosofi Pelayanan</span>
-                  <h3 class="card-title">Pendekatan Berpusat pada Pasien</h3>
+              <!-- Bottom Info Caption -->
+              <div class="about-img-caption">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; min-width: 38px;">
+                  <i class="bi bi-hospital fs-5"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-dark" style="font-size: 13px;">Fasilitas Medis Terstandarisasi</div>
+                  <small class="text-muted" style="font-size: 11px;">Kemenkes RI &amp; Higienis</small>
                 </div>
               </div>
-              <p class="card-description">Setiap rencana terapi disusun berdasarkan riwayat kesehatan, gaya hidup, dan target pemulihan Anda, dengan penjelasan yang jelas agar Anda ikut mengambil keputusan.</p>
-            </div><!-- End Primary Card -->
+            </div>
+          </div><!-- End Visual -->
 
-            <div class="row g-3 capabilities-grid">
+          <!-- Right Column: 4 Core Pillars with Verified Icons -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="150">
+
+            <div class="row g-3">
               <div class="col-sm-6">
                 <div class="feature-card compact">
                   <i class="bi bi-activity"></i>
                   <div class="compact-text">
-                    <h4>Diagnostik Canggih</h4>
-                    <p>Radiologi dan laboratorium modern dengan hasil cepat dan akurat.</p>
+                    <h4>Diagnostik &amp; Lab Digital</h4>
+                    <p>Hasil laboratorium cepat dan akurat terhubung langsung ke rekam medis digital Anda.</p>
                   </div>
                 </div>
               </div>
+
               <div class="col-sm-6">
                 <div class="feature-card compact">
                   <i class="bi bi-person-badge"></i>
                   <div class="compact-text">
-                    <h4>Dokter Spesialis Bersertifikat</h4>
-                    <p>Dokter spesialis dan subspesialis di berbagai bidang klinis.</p>
+                    <h4>10 Dokter Spesialis Ahli</h4>
+                    <p>Dokter spesialis berpengalaman di berbagai poliklinik dengan jadwal praktik terjadwal.</p>
                   </div>
                 </div>
               </div>
+
               <div class="col-sm-6">
                 <div class="feature-card compact">
-                  <i class="bi bi-clipboard-pulse"></i>
+                  <i class="bi bi-shield-check"></i>
                   <div class="compact-text">
-                    <h4>Rehabilitasi Terpadu</h4>
-                    <p>Program fisioterapi dan rehabilitasi medik untuk pemulihan yang berkelanjutan.</p>
+                    <h4>BPJS &amp; 40+ Asuransi</h4>
+                    <p>Administrasi klaim direct-billing tanpa repot untuk kenyamanan perawatan medis Anda.</p>
                   </div>
                 </div>
               </div>
+
               <div class="col-sm-6">
                 <div class="feature-card compact">
-                  <i class="bi bi-stopwatch"></i>
+                  <i class="bi bi-clock-history"></i>
                   <div class="compact-text">
-                    <h4>Siaga 24 Jam</h4>
-                    <p>IGD dan perawatan intensif siap melayani setiap saat.</p>
+                    <h4>IGD &amp; Ambulans 24 Jam</h4>
+                    <p>Respons triase gawat darurat cepat &lt; 5 menit dengan armada ambulans siaga nonstop.</p>
                   </div>
                 </div>
               </div>
             </div><!-- End Capabilities Grid -->
 
-            <div class="action-row">
-              <a href="layanan.html" class="btn-primary-shadcn">
-                Lihat Layanan Kami
+            <div class="action-row mt-4 d-flex flex-wrap gap-3">
+              <a href="tentang" class="btn-primary-shadcn">
+                Profil Rumah Sakit
                 <i class="bi bi-arrow-right"></i>
               </a>
-              <a href="kontak.html" class="btn-ghost-shadcn">
+              <a href="kontak" class="btn-ghost-shadcn">
                 <i class="bi bi-telephone"></i>
-                Konsultasi Sekarang
+                Hubungi Kami
               </a>
             </div><!-- End Action Row -->
-          </div>
+
+          </div><!-- End Right Column -->
+
         </div>
 
       </div>
 
     </section><!-- /Home About Section -->
 
-    <!-- Featured Departments Section -->
+    <!-- Featured Departments Section (Poliklinik) -->
+    
+    <!-- How It Works Section (Alur Pelayanan Pasien) -->
+    <section id="how-it-works" class="how-it-works section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="container section-title text-center" data-aos="fade-up">
+          <span class="eyebrow-badge mb-2 d-inline-flex"><i class="bi bi-compass"></i> Alur Pelayanan Pasien</span>
+          <h2>3 Langkah Mudah Berobat di Medical Indonesia</h2>
+          <p>Prosedur pendaftaran dan konsultasi medis yang cepat, transparan, dan tanpa antrean panjang</p>
+        </div>
+
+        <div class="row g-4 justify-content-center mt-1">
+
+          <!-- Step 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-card h-100 p-4 rounded-4 bg-white shadow-sm border border-light-subtle position-relative d-flex flex-column">
+              <div class="step-number-badge mb-3 d-flex align-items-center justify-content-between">
+                <span class="badge px-3 py-2 rounded-pill fw-bold" style="background-color: rgba(13, 110, 253, 0.12) !important; color: #0d6efd !important; font-size: 0.875rem !important;">Langkah 01</span>
+                <div class="step-icon text-primary fs-3"><i class="bi bi-person-lines-fill"></i></div>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Pilih Poliklinik &amp; Dokter</h3>
+              <p class="text-muted flex-grow-1 mb-3" style="font-size: 0.95rem; line-height: 1.6;">Cari dokter spesialis sesuai kebutuhan medis Anda dan periksa ketersediaan jadwal praktiknya secara transparan.</p>
+              <a href="dokter" class="fw-semibold text-primary text-decoration-none mt-auto d-inline-flex align-items-center gap-1">
+                <span>Cari Dokter Spesialis</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="step-card h-100 p-4 rounded-4 bg-white shadow-sm border border-primary border-opacity-25 position-relative d-flex flex-column">
+              <div class="step-number-badge mb-3 d-flex align-items-center justify-content-between">
+                <span class="badge px-3 py-2 rounded-pill fw-bold" style="background-color: #0d6efd !important; color: #ffffff !important; font-size: 0.875rem !important;">Langkah 02</span>
+                <div class="step-icon text-primary fs-3"><i class="bi bi-calendar-check-fill"></i></div>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Buat Janji Temu Online</h3>
+              <p class="text-muted flex-grow-1 mb-3" style="font-size: 0.95rem; line-height: 1.6;">Tentukan tanggal dan jam konsultasi langsung dari website atau WhatsApp resmi tanpa harus antre fisik di loket.</p>
+              <a href="janji-temu" class="fw-semibold text-primary text-decoration-none mt-auto d-inline-flex align-items-center gap-1">
+                <span>Reservasi Jadwal Sekarang</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card h-100 p-4 rounded-4 bg-white shadow-sm border border-light-subtle position-relative d-flex flex-column">
+              <div class="step-number-badge mb-3 d-flex align-items-center justify-content-between">
+                <span class="badge px-3 py-2 rounded-pill fw-bold" style="background-color: rgba(13, 110, 253, 0.12) !important; color: #0d6efd !important; font-size: 0.875rem !important;">Langkah 03</span>
+                <div class="step-icon text-primary fs-3"><i class="bi bi-heart-pulse-fill"></i></div>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Datang &amp; Konsultasi Nyaman</h3>
+              <p class="text-muted flex-grow-1 mb-3" style="font-size: 0.95rem; line-height: 1.6;">Tunjukkan bukti reservasi di meja registrasi, nikmati ruang tunggu modern, dan dapatkan penanganan medis terpadu.</p>
+              <a href="info-pasien" class="fw-semibold text-primary text-decoration-none mt-auto d-inline-flex align-items-center gap-1">
+                <span>Panduan Kunjungan Pasien</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /How It Works Section -->
+
     <section id="featured-departments" class="featured-departments section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="departments-wrapper">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Poliklinik &amp; Spesialisasi Medis</h2>
+          <p>Layanan konsultasi dan pemeriksaan komprehensif oleh tim dokter spesialis berpengalaman di fasilitas poliklinik modern</p>
+        </div><!-- End Section Title -->
 
-          <div class="spotlight-panel" data-aos="fade-up" data-aos-delay="150">
-            <div class="row g-0 align-items-stretch">
-              <div class="col-lg-7">
-                <div class="spotlight-body">
-                  <div class="spotlight-meta">
-                    <span class="badge-pill">
-                      <span class="pulse-dot"></span>
-                      <span>Aktif 24 Jam</span>
-                    </span>
-                    <span class="meta-label">Unit Gawat Darurat (IGD)</span>
-                  </div>
-                  <h2 class="spotlight-title">Penanganan Darurat Sepanjang Waktu</h2>
-                  <p class="spotlight-text">Tim IGD kami terdiri dari dokter jaga, perawat bersertifikat BTCLS/ACLS, serta ambulans siaga untuk menjemput pasien di seluruh wilayah jangkauan jaringan kami di Indonesia. Setiap menit sangat berharga bagi keselamatan Anda.</p>
-                  <ul class="checklist">
-                    <li>
-                      <i class="bi bi-check2"></i>
-                      <div>
-                        <span class="check-title">Triase Cepat</span>
-                        <span class="check-sub">Respons rata-rata kurang dari 5 menit</span>
-                      </div>
-                    </li>
-                    <li>
-                      <i class="bi bi-check2"></i>
-                      <div>
-                        <span class="check-title">Bantuan Hidup Lanjut</span>
-                        <span class="check-sub">Dokter jaga bersertifikat ACLS & ATLS</span>
-                      </div>
-                    </li>
-                    <li>
-                      <i class="bi bi-check2"></i>
-                      <div>
-                        <span class="check-title">Spesialis Trauma</span>
-                        <span class="check-sub">Didukung dokter bedah dan ortopedi siaga</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="spotlight-actions">
-                    <a href="poliklinik.html" class="btn-shadcn primary">Lihat Poliklinik</a>
-                    <a href="info-pasien.html" class="btn-shadcn ghost">Panduan Pasien IGD <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
+        <div class="row g-3">
+
+          <!-- Poli Jantung -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-heart-pulse"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Jantung</h4>
+                <p class="card-text">Pemeriksaan dan terapi penyakit jantung koroner, hipertensi, gagal jantung, dan gangguan irama jantung oleh kardiolog berpengalaman.</p>
               </div>
-              <div class="col-lg-5">
-                <div class="spotlight-visual">
-                  <img src="assets/img/health/emergency-3.webp" alt="Emergency Care Department" class="img-fluid" loading="lazy">
-                  <div class="visual-overlay">
-                    <div class="overlay-card">
-                      <div class="overlay-stat">
-                        <span class="stat-value">98,7%</span>
-                        <span class="stat-caption">Kepuasan Pasien</span>
-                      </div>
-                      <div class="overlay-divider"></div>
-                      <div class="overlay-stat">
-                        <span class="stat-value">12 menit</span>
-                        <span class="stat-caption">Rata-rata Tunggu</span>
-                      </div>
-                    </div>
-                  </div>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">15+</span>
+                  <span class="caption">Dokter Spesialis</span>
                 </div>
+                <div class="foot-stat">
+                  <span class="value">500+</span>
+                  <span class="caption">Tindakan</span>
+                </div>
+                <a href="poliklinik/detail-polijantung" class="foot-link" aria-label="Buka Poli Jantung"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Poli Saraf -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-activity"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Saraf</h4>
+                <p class="card-text">Penanganan stroke, epilepsi, vertigo, migrain, dan gangguan saraf dengan dukungan CT scan, MRI, dan EEG terkini.</p>
               </div>
-            </div>
-          </div><!-- End Spotlight Panel -->
-
-          <div class="section-heading" data-aos="fade-up" data-aos-delay="200">
-            <div>
-              <span class="meta-label">Spesialisasi Medis</span>
-              <h3 class="heading-title">Telusuri Poliklinik</h3>
-            </div>
-            <a href="poliklinik.html" class="btn-shadcn secondary">Semua Spesialisasi <i class="bi bi-grid"></i></a>
-          </div><!-- End Section Heading -->
-
-          <div class="row g-3">
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-heart-pulse"></i></span>
-                  <span class="badge-pill subtle">Spesialis</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">Poli Jantung</h4>
-                  <p class="card-text">Pemeriksaan dan terapi penyakit jantung koroner, hipertensi, gagal jantung, dan gangguan irama jantung oleh kardiolog berpengalaman.</p>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">8+</span>
+                  <span class="caption">Dokter Spesialis</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">15+</span>
-                    <span class="caption">Dokter Spesialis</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">500+</span>
-                    <span class="caption">Tindakan</span>
-                  </div>
-                  <a href="detail-polijantung.html" class="foot-link" aria-label="Buka Poli Jantung"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-activity"></i></span>
-                  <span class="badge-pill subtle">Spesialis</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">Poli Saraf</h4>
-                  <p class="card-text">Penanganan stroke, epilepsi, vertigo, migrain, dan nyeri saraf dengan dukungan CT scan, MRI, dan EEG terkini.</p>
+                <div class="foot-stat">
+                  <span class="value">200+</span>
+                  <span class="caption">Terapi</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">8+</span>
-                    <span class="caption">Dokter Spesialis</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">200+</span>
-                    <span class="caption">Terapi</span>
-                  </div>
-                  <a href="detail-polisaraf.html" class="foot-link" aria-label="Buka Poli Saraf"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
+                <a href="poliklinik/detail-polisaraf" class="foot-link" aria-label="Buka Poli Saraf"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-bandaid"></i></span>
-                  <span class="badge-pill subtle">Spesialis</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">Poli Ortopedi</h4>
-                  <p class="card-text">Layanan cedera olahraga, patah tulang, nyeri punggung, dan penggantian sendi dengan rehabilitasi pascatindakan terpadu.</p>
+          <!-- Poli Ortopedi -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-bandaid"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Ortopedi</h4>
+                <p class="card-text">Layanan cedera olahraga, patah tulang, nyeri punggung, dan penggantian sendi dengan rehabilitasi pascatindakan terpadu.</p>
+              </div>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">12+</span>
+                  <span class="caption">Dokter Spesialis</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">12+</span>
-                    <span class="caption">Dokter Spesialis</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">1000+</span>
-                    <span class="caption">Tindakan</span>
-                  </div>
-                  <a href="detail-poliortopedi.html" class="foot-link" aria-label="Buka Poli Ortopedi"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-balloon-heart"></i></span>
-                  <span class="badge-pill subtle">Spesialis</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">Poli Anak</h4>
-                  <p class="card-text">Imunisasi, tumbuh kembang, gizi anak, dan perawatan anak sakit dalam suasana dan fasilitas ramah anak.</p>
+                <div class="foot-stat">
+                  <span class="value">1000+</span>
+                  <span class="caption">Tindakan</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">10+</span>
-                    <span class="caption">Dokter Anak</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">2K+</span>
-                    <span class="caption">Pasien Anak</span>
-                  </div>
-                  <a href="detail-polianak.html" class="foot-link" aria-label="Buka Poli Anak"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
+                <a href="poliklinik/detail-poliortopedi" class="foot-link" aria-label="Buka Poli Ortopedi"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-eyedropper"></i></span>
-                  <span class="badge-pill subtle">Penunjang</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">Laboratorium</h4>
-                  <p class="card-text">Pemeriksaan darah, urin, dan kimia klinik dengan peralatan otomatis, hasil cepat, dan akurasi digital terverifikasi.</p>
+          <!-- Poli Anak -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-balloon-heart"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Anak</h4>
+                <p class="card-text">Imunisasi, tumbuh kembang, gizi anak, dan perawatan anak sakit dalam suasana dan fasilitas ramah anak.</p>
+              </div>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">10+</span>
+                  <span class="caption">Dokter Anak</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">24 Jam</span>
-                    <span class="caption">Layanan Cepat</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">50+</span>
-                    <span class="caption">Panel Uji</span>
-                  </div>
-                  <a href="detail-laboratorium.html" class="foot-link" aria-label="Buka Laboratorium"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <article class="shadcn-card">
-                <header class="card-head">
-                  <span class="card-icon"><i class="bi bi-shield-plus"></i></span>
-                  <span class="badge-pill subtle">Gawat Darurat</span>
-                </header>
-                <div class="card-body">
-                  <h4 class="card-heading">IGD 24 Jam</h4>
-                  <p class="card-text">Dokter jaga, perawat terlatih, dan ambulans siaga menangani kasus gawat darurat dan trauma setiap saat nonstop.</p>
+                <div class="foot-stat">
+                  <span class="value">2K+</span>
+                  <span class="caption">Pasien Anak</span>
                 </div>
-                <footer class="card-foot">
-                  <div class="foot-stat">
-                    <span class="value">24/7</span>
-                    <span class="caption">Siaga Penuh</span>
-                  </div>
-                  <div class="foot-stat">
-                    <span class="value">&lt; 5 Mnt</span>
-                    <span class="caption">Respon Cepat</span>
-                  </div>
-                  <a href="detail-igd.html" class="foot-link" aria-label="Buka IGD 24 Jam"><i class="bi bi-arrow-up-right"></i></a>
-                </footer>
-              </article>
-            </div>
+                <a href="poliklinik/detail-polianak" class="foot-link" aria-label="Buka Poli Anak"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
 
-          </div><!-- End Departments Grid -->
+          <!-- Poli Penyakit Dalam -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-capsule"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Penyakit Dalam</h4>
+                <p class="card-text">Diagnosis dan terapi gangguan metabolik, diabetes, hipertensi, saluran cerna, hati, dan penyakit ginjal oleh internis.</p>
+              </div>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">10+</span>
+                  <span class="caption">Dokter Internis</span>
+                </div>
+                <div class="foot-stat">
+                  <span class="value">1.5K+</span>
+                  <span class="caption">Konsultasi</span>
+                </div>
+                <a href="poliklinik/detail-polidalam" class="foot-link" aria-label="Buka Poli Penyakit Dalam"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
 
-          <div class="banner-cta" data-aos="fade-up" data-aos-delay="250">
-            <div class="banner-icon">
-              <i class="bi bi-hospital"></i>
-            </div>
-            <div class="banner-text">
-              <h4 class="banner-title">Jelajahi Seluruh Unit Layanan Kami</h4>
-              <p class="banner-sub">Dari poliklinik rawat jalan, rawat inap, hingga penunjang diagnostik, semua tersedia dalam satu atap untuk kemudahan Anda.</p>
-            </div>
-            <div class="banner-actions">
-              <a href="poliklinik.html" class="btn-shadcn primary">Lihat Poliklinik</a>
-              <a href="galeri.html" class="btn-shadcn ghost">Kunjungi Fasilitas</a>
-            </div>
-          </div><!-- End Banner CTA -->
+          <!-- Poli Bedah Umum -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <article class="shadcn-card">
+              <header class="card-head">
+                <span class="card-icon"><i class="bi bi-scissors"></i></span>
+                <span class="badge-pill subtle">Spesialis</span>
+              </header>
+              <div class="card-body">
+                <h4 class="card-heading">Poli Bedah Umum</h4>
+                <p class="card-text">Tindakan bedah terencana dan darurat, laparoskopi invasif minimal, usus buntu, hernia, dan bedah digestif modern.</p>
+              </div>
+              <footer class="card-foot">
+                <div class="foot-stat">
+                  <span class="value">8+</span>
+                  <span class="caption">Dokter Bedah</span>
+                </div>
+                <div class="foot-stat">
+                  <span class="value">800+</span>
+                  <span class="caption">Operasi Sukses</span>
+                </div>
+                <a href="poliklinik/detail-polibedah" class="foot-link" aria-label="Buka Poli Bedah"><i class="bi bi-arrow-up-right"></i></a>
+              </footer>
+            </article>
+          </div>
 
+        </div><!-- End Departments Grid -->
+
+        <div class="text-center mt-5 pt-4 pb-2" data-aos="fade-up" data-aos-delay="200">
+          <a href="poliklinik" class="btn-shadcn primary">
+            Lihat Seluruh 9 Poliklinik Spesialis <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
 
       </div>
@@ -764,22 +725,37 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <!-- Section Heading & Prominent Top Action -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end gap-3 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-bold mb-2 d-inline-flex align-items-center gap-1">
+              <i class="bi bi-grid-fill"></i> Program &amp; Fasilitas
+            </span>
+            <h2 class="display-6 fw-bold text-dark mb-1">Layanan Unggulan Rumah Sakit</h2>
+            <p class="text-muted mb-0" style="font-size: 1rem;">Paket perawatan terpadu, rawat inap modern, fisioterapi, dan instalasi farmasi 24 jam.</p>
+          </div>
+          <a href="layanan" class="btn-shadcn primary flex-shrink-0">
+            <span>Lihat Seluruh Layanan</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
         <div class="row g-4">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/cardiology-2.webp" alt="Cardiology" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-heart-pulse"></i> Spesialis</span>
+                <img src="assets/img/layanan/showcase-1.webp" alt="Medical Check Up" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-heart-pulse"></i> Preventif</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Layanan Jantung Terpadu</h3>
-                  <span class="meta-tag">01 / Layanan</span>
+                  <h3>Paket Medical Check-Up (MCU)</h3>
+                  <span class="meta-tag">01 / MCU</span>
                 </div>
-                <p>Deteksi dini hingga rehabilitasi jantung: EKG, echo, treadmill, Holter monitor, dan kateterisasi dengan pendampingan kardiolog.</p>
+                <p>Pemeriksaan kesehatan menyeluruh mulai dari paket Basic, Pra-Nikah, Eksekutif, hingga Skrining Korporat dengan hasil digital cepat dan akurat.</p>
                 <div class="card-foot">
-                  <a href="detail-polijantung.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-mcu" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -789,17 +765,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/neurology-3.webp" alt="Neurology" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-activity"></i> Spesialis</span>
+                <img src="assets/img/layanan/facilities-6.webp" alt="Rawat Inap dan ICU" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-hospital"></i> Rawat Inap</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Layanan Saraf Komprehensif</h3>
-                  <span class="meta-tag">02 / Layanan</span>
+                  <h3>Rawat Inap &amp; Unit ICU / ICCU</h3>
+                  <span class="meta-tag">02 / Rawat Inap</span>
                 </div>
-                <p>Evaluasi dan terapi stroke, epilepsi, nyeri kepala, dan vertigo, didukung EEG, EMG, serta pencitraan otak modern.</p>
+                <p>Akomodasi perawatan medis modern dari VVIP, VIP, hingga Kelas 1-3 serta fasilitas ICU berstandar tinggi dengan pengawasan intensif 24 jam.</p>
                 <div class="card-foot">
-                  <a href="detail-polisaraf.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-rawat-inap" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -809,17 +785,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/orthopedics-1.webp" alt="Orthopedics" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-bandaid"></i> Spesialis</span>
+                <img src="assets/img/layanan/showcase-5.webp" alt="Fisioterapi" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-activity"></i> Terapi</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Tindakan Ortopedi & Trauma</h3>
-                  <span class="meta-tag">03 / Layanan</span>
+                  <h3>Fisioterapi &amp; Rehabilitasi Medik</h3>
+                  <span class="meta-tag">03 / Rehabilitasi</span>
                 </div>
-                <p>Penanganan patah tulang, cedera olahraga, nyeri sendi, dan penggantian sendi dengan rehabilitasi pascaoperasi.</p>
+                <p>Program pemulihan gerak tubuh pascastroke, pascaoperasi, cedera saraf tulang belakang, dan terapi muskuloskeletal oleh fisioterapis ahli.</p>
                 <div class="card-foot">
-                  <a href="detail-poliortopedi.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-fisioterapi" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -829,17 +805,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/pediatrics-4.webp" alt="Pediatrics" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-emoji-smile"></i> Spesialis</span>
+                <img src="assets/img/layanan/showcase-7.webp" alt="Home Care" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-house-heart"></i> Home Care</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Unit Kesehatan Anak</h3>
-                  <span class="meta-tag">04 / Layanan</span>
+                  <h3>Home Care &amp; Telemedisin</h3>
+                  <span class="meta-tag">04 / Home Care</span>
                 </div>
-                <p>Imunisasi lengkap, pemantauan tumbuh kembang, konsultasi laktasi, dan perawatan anak sakit dengan pendekatan ramah anak.</p>
+                <p>Kunjungan dokter dan perawat ke rumah untuk perawatan luka, lansia, dan pascarawat inap, serta telekonsultasi dokter spesialis via video call.</p>
                 <div class="card-foot">
-                  <a href="detail-polianak.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-home-care" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -849,17 +825,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/oncology-2.webp" alt="Oncology" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-shield-plus"></i> Spesialis</span>
+                <img src="assets/img/layanan/pediatrics-2.webp" alt="KIA dan Vaksinasi" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-balloon-heart"></i> KIA &amp; Vaksin</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Rencana Terapi Onkologi</h3>
-                  <span class="meta-tag">05 / Layanan</span>
+                  <h3>KIA &amp; Vaksinasi Keluarga</h3>
+                  <span class="meta-tag">05 / KIA</span>
                 </div>
-                <p>Skrining kanker, kemoterapi, dan pendampingan pasien serta keluarga oleh tim multidisiplin.</p>
+                <p>Pemeriksaan antenatal kehamilan, pendampingan persalinan, imunisasi wajib &amp; tambahan bayi/anak, serta vaksinasi dewasa (HPV &amp; Influenza).</p>
                 <div class="card-foot">
-                  <a href="layanan.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-kia-vaksinasi" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -869,17 +845,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
             <article class="service-card">
               <div class="card-media">
-                <img src="assets/img/health/laboratory-3.webp" alt="Laboratory" class="img-fluid" loading="lazy">
-                <span class="badge-label"><i class="bi bi-eyedropper"></i> Penunjang</span>
+                <img src="assets/img/layanan/showcase-11.webp" alt="Farmasi 24 Jam" class="img-fluid" loading="lazy">
+                <span class="badge-label"><i class="bi bi-capsule"></i> Farmasi 24 Jam</span>
               </div>
               <div class="card-body">
                 <div class="card-head">
-                  <h3>Laboratorium Klinik</h3>
-                  <span class="meta-tag">06 / Layanan</span>
+                  <h3>Instalasi Farmasi &amp; Apotek 24 Jam</h3>
+                  <span class="meta-tag">06 / Farmasi</span>
                 </div>
-                <p>Pemeriksaan darah lengkap, kimia klinik, hingga kultur kuman dengan hasil cepat dan dapat diakses secara digital.</p>
+                <p>Penyediaan obat resep dan non-resep terjamin 100% keasliannya, konsultasi apoteker, peracikan cepat, dan layanan pesan-antar siaga 24 jam.</p>
                 <div class="card-foot">
-                  <a href="detail-laboratorium.html" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+                  <a href="layanan/detail-farmasi" class="link-action">Lihat Detail <i class="bi bi-arrow-right"></i></a>
                   <span role="img" class="status-dot" aria-label="Tersedia"></span>
                 </div>
               </div>
@@ -897,166 +873,27 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Cari Dokter</h2>
-        <p>Temukan dokter spesialis yang tepat dan jadwalkan konsultasi hanya dalam hitungan menit</p>
+        <h2>Dokter Spesialis Kami</h2>
+        <p>Kenali tim dokter spesialis berdedikasi tinggi dengan keahlian klinis teruji dan pendekatan berorientasi pada keselamatan pasien</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="directory-toolbar" data-aos="fade-up" data-aos-delay="100">
-          <div class="toolbar-intro">
-            <span class="eyebrow">Direktori Dokter</span>
-            <h2>Temukan Dokter yang Sesuai Kebutuhan Anda</h2>
-            <p>Telusuri dokter terseleksi di jaringan kami dan buat janji konsultasi dengan mudah.</p>
-          </div>
+        <div class="row g-3 directory-grid" id="homeDoctorGrid" data-aos="fade-up" data-aos-delay="150">
 
-          <form class="filter-form php-email-form" action="forms/doctor-search.php" method="get">
-            <div class="row g-3">
-              <div class="col-12 col-md-6 col-lg-4">
-                <label class="field-label">Dokter</label>
-                <div class="field-wrap">
-                  <i class="bi bi-search"></i>
-                  <input type="text" class="form-control" name="doctor_name" placeholder="Ketik nama dokter">
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <label class="field-label">Spesialisasi</label>
-                <div class="field-wrap">
-                  <i class="bi bi-clipboard2-pulse"></i>
-                  <select class="form-select" name="specialty" aria-label="Spesialisasi">
-                    <option value="">Semua spesialisasi</option>
-                    <option value="cardiology">Jantung & Pembuluh Darah</option>
-                    <option value="neurology">Saraf</option>
-                    <option value="orthopedics">Bedah Ortopedi</option>
-                    <option value="pediatrics">Anak</option>
-                    <option value="dermatology">Kulit & Kelamin</option>
-                    <option value="oncology">Onkologi</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <label class="field-label">Lokasi</label>
-                <div class="field-wrap">
-                  <i class="bi bi-geo-alt"></i>
-                  <select class="form-select" name="location" aria-label="Lokasi">
-                    <option value="">Semua lokasi</option>
-                    <option value="downtown">RS Medical Pusat – Seluruh Indonesia</option>
-                    <option value="northside">RS Medical Bandung</option>
-                    <option value="westend">RS Medical Surabaya</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-2">
-                <label class="field-label d-none d-lg-block">&nbsp;</label>
-                <button type="submit" class="btn-apply w-100">
-                  <i class="bi bi-funnel"></i>
-                  <span>Terapkan</span>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div><!-- End Directory Toolbar -->
-
-        <div class="results-meta" data-aos="fade-up" data-aos-delay="150">
-          <div class="results-count">
-            <span class="count-number">85</span>
-            <span class="count-label">Dokter spesialis tersedia</span>
-          </div>
-          <div class="sort-tags">
-            <span class="tag active">Rating Tertinggi</span>
-            <span class="tag">Praktik Hari Ini</span>
-            <span class="tag">Paling Banyak Diulas</span>
-          </div>
-        </div><!-- End Results Meta -->
-
-        <div class="row g-3 directory-grid" data-aos="fade-up" data-aos-delay="200">
-
+          <!-- Dokter 1: dr. Reza Maulana Nehru -->
           <div class="col-12 col-lg-6">
             <article class="clinician-row featured">
               <div class="row-media">
-                <img src="assets/img/health/staff-1.webp" alt="dr. Bagas Wicaksono, Sp.PD-KHOM" class="img-fluid" loading="lazy">
+                <img src="assets/img/dokter/staff-8.webp" alt="dr. Reza Maulana Nehru, Sp.PD" class="img-fluid" loading="lazy">
                 <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
                   <div>
                     <span class="chip chip-accent">Unggulan</span>
-                    <h3>dr. Bagas Wicaksono, Sp.PD-KHOM</h3>
-                    <p class="role">Dokter Spesialis Onkologi</p>
-                  </div>
-                  <div class="score-block">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <span class="value">4.9</span>
-                    <span class="reviews">142 ulasan</span>
-                  </div>
-                </div>
-                <ul class="meta-row">
-                  <li><i class="bi bi-patch-check"></i> Sp.PD-KHOM</li>
-                  <li><i class="bi bi-briefcase"></i> 18 thn</li>
-                  <li><i class="bi bi-geo"></i> RS Medical Pusat Jakarta</li>
-                </ul>
-                <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
-                </div>
-              </div>
-            </article>
-          </div><!-- End Clinician Row -->
-
-          <div class="col-12 col-lg-6">
-            <article class="clinician-row">
-              <div class="row-media">
-                <img src="assets/img/health/staff-3.webp" alt="dr. Anindya Maharani, Sp.JP" class="img-fluid" loading="lazy">
-                <span role="img" class="presence busy" aria-label="Sedang praktik"></span>
-              </div>
-              <div class="row-body">
-                <div class="row-head">
-                  <div>
-                    <h3>dr. Anindya Maharani, Sp.JP</h3>
-                    <p class="role">Dokter Spesialis Jantung</p>
-                  </div>
-                  <div class="score-block">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <span class="value">4.8</span>
-                    <span class="reviews">98 ulasan</span>
-                  </div>
-                </div>
-                <ul class="meta-row">
-                  <li><i class="bi bi-patch-check"></i> Sp.JP, FIHA</li>
-                  <li><i class="bi bi-briefcase"></i> 14 thn</li>
-                  <li><i class="bi bi-geo"></i> RS Medical Bandung</li>
-                </ul>
-                <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
-                </div>
-              </div>
-            </article>
-          </div><!-- End Clinician Row -->
-
-          <div class="col-12 col-lg-6">
-            <article class="clinician-row">
-              <div class="row-media">
-                <img src="assets/img/health/staff-5.webp" alt="dr. Hendra Prasetyo, Sp.OT" class="img-fluid" loading="lazy">
-                <span role="img" class="presence active" aria-label="Tersedia"></span>
-              </div>
-              <div class="row-body">
-                <div class="row-head">
-                  <div>
-                    <h3>dr. Hendra Prasetyo, Sp.OT</h3>
-                    <p class="role">Dokter Spesialis Ortopedi</p>
+                    <h3>dr. Reza Maulana Nehru, Sp.PD</h3>
+                    <p class="role">Dokter Spesialis Penyakit Dalam</p>
                   </div>
                   <div class="score-block">
                     <div class="stars">
@@ -1067,105 +904,33 @@
                       <i class="bi bi-star-fill"></i>
                     </div>
                     <span class="value">5.0</span>
-                    <span class="reviews">156 ulasan</span>
+                    <span class="reviews">180 ulasan</span>
                   </div>
                 </div>
                 <ul class="meta-row">
-                  <li><i class="bi bi-patch-check"></i> Sp.OT</li>
-                  <li><i class="bi bi-briefcase"></i> 12 thn</li>
-                  <li><i class="bi bi-geo"></i> RS Medical Surabaya</li>
-                </ul>
-                <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
-                </div>
-              </div>
-            </article>
-          </div><!-- End Clinician Row -->
-
-          <div class="col-12 col-lg-6">
-            <article class="clinician-row">
-              <div class="row-media">
-                <img src="assets/img/health/staff-7.webp" alt="dr. Wahyu Hidayat, Sp.A" class="img-fluid" loading="lazy">
-                <span role="img" class="presence offline" aria-label="Tidak praktik"></span>
-              </div>
-              <div class="row-body">
-                <div class="row-head">
-                  <div>
-                    <h3>dr. Wahyu Hidayat, Sp.A</h3>
-                    <p class="role">Dokter Spesialis Anak</p>
-                  </div>
-                  <div class="score-block">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <span class="value">4.7</span>
-                    <span class="reviews">134 ulasan</span>
-                  </div>
-                </div>
-                <ul class="meta-row">
-                  <li><i class="bi bi-patch-check"></i> Sp.A, M.Kes</li>
-                  <li><i class="bi bi-briefcase"></i> 20 thn</li>
+                  <li><i class="bi bi-patch-check"></i> Sp.PD, FINASIM</li>
+                  <li><i class="bi bi-briefcase"></i> 15 thn</li>
                   <li><i class="bi bi-geo"></i> RS Medical Pusat Jakarta</li>
                 </ul>
                 <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
+                  <a href="dokter/dr-reza-maulana-nehru" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
                 </div>
               </div>
             </article>
-          </div><!-- End Clinician Row -->
+          </div>
 
+          <!-- Dokter 2: dr. Dewi Anggraeni -->
           <div class="col-12 col-lg-6">
-            <article class="clinician-row">
+            <article class="clinician-row featured">
               <div class="row-media">
-                <img src="assets/img/health/staff-9.webp" alt="dr. Salsabila Nurhaliza, Sp.DV" class="img-fluid" loading="lazy">
+                <img src="assets/img/dokter/staff-12.webp" alt="dr. Dewi Anggraeni, Sp.B" class="img-fluid" loading="lazy">
                 <span role="img" class="presence active" aria-label="Tersedia"></span>
               </div>
               <div class="row-body">
                 <div class="row-head">
                   <div>
-                    <h3>dr. Salsabila Nurhaliza, Sp.DV</h3>
-                    <p class="role">Dokter Spesialis Kulit</p>
-                  </div>
-                  <div class="score-block">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star"></i>
-                    </div>
-                    <span class="value">4.6</span>
-                    <span class="reviews">89 ulasan</span>
-                  </div>
-                </div>
-                <ul class="meta-row">
-                  <li><i class="bi bi-patch-check"></i> Sp.DV</li>
-                  <li><i class="bi bi-briefcase"></i> 15 thn</li>
-                  <li><i class="bi bi-geo"></i> RS Medical Surabaya</li>
-                </ul>
-                <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
-                </div>
-              </div>
-            </article>
-          </div><!-- End Clinician Row -->
-
-          <div class="col-12 col-lg-6">
-            <article class="clinician-row">
-              <div class="row-media">
-                <img src="assets/img/health/staff-12.webp" alt="dr. Dewi Anggraeni, Sp.B" class="img-fluid" loading="lazy">
-                <span role="img" class="presence active" aria-label="Tersedia"></span>
-              </div>
-              <div class="row-body">
-                <div class="row-head">
-                  <div>
+                    <span class="chip chip-accent">Kepala Instalasi</span>
                     <h3>dr. Dewi Anggraeni, Sp.B</h3>
                     <p class="role">Dokter Spesialis Bedah Umum</p>
                   </div>
@@ -1187,20 +952,171 @@
                   <li><i class="bi bi-geo"></i> RS Medical Bandung</li>
                 </ul>
                 <div class="row-actions">
-                  <a href="dokter.html" class="btn-ghost">Lihat Profil</a>
-                  <a href="janji-temu.html" class="btn-solid">Buat Janji</a>
+                  <a href="dokter/dr-dewi-anggraeni" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
                 </div>
               </div>
             </article>
-          </div><!-- End Clinician Row -->
+          </div>
+
+          <!-- Dokter 3: dr. Bagas Wicaksono -->
+          <div class="col-12 col-lg-6">
+            <article class="clinician-row">
+              <div class="row-media">
+                <img src="assets/img/dokter/staff-10.webp" alt="dr. Kartika Sari, Sp.JP(K)" class="img-fluid" loading="lazy">
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
+              </div>
+              <div class="row-body">
+                <div class="row-head">
+                  <div>
+                    <h3>dr. Kartika Sari, Sp.JP(K)</h3>
+                    <p class="role">Dokter Spesialis Jantung Intervensi</p>
+                  </div>
+                  <div class="score-block">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="value">4.9</span>
+                    <span class="reviews">142 ulasan</span>
+                  </div>
+                </div>
+                <ul class="meta-row">
+                  <li><i class="bi bi-patch-check"></i> Sp.JP(K), FIHA</li>
+                  <li><i class="bi bi-briefcase"></i> 16 thn</li>
+                  <li><i class="bi bi-geo"></i> RS Medical Bandung</li>
+                </ul>
+                <div class="row-actions">
+                  <a href="dokter/dr-kartika-sari" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dokter 4: dr. Anindya Maharani -->
+          <div class="col-12 col-lg-6">
+            <article class="clinician-row">
+              <div class="row-media">
+                <img src="assets/img/dokter/staff-3.webp" alt="dr. Anindya Maharani, Sp.JP" class="img-fluid" loading="lazy">
+                <span role="img" class="presence busy" aria-label="Sedang Praktik"></span>
+              </div>
+              <div class="row-body">
+                <div class="row-head">
+                  <div>
+                    <h3>dr. Anindya Maharani, Sp.JP</h3>
+                    <p class="role">Dokter Spesialis Jantung &amp; Pembuluh Darah</p>
+                  </div>
+                  <div class="score-block">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="value">4.8</span>
+                    <span class="reviews">98 ulasan</span>
+                  </div>
+                </div>
+                <ul class="meta-row">
+                  <li><i class="bi bi-patch-check"></i> Sp.JP, FIHA</li>
+                  <li><i class="bi bi-briefcase"></i> 14 thn</li>
+                  <li><i class="bi bi-geo"></i> RS Medical Bandung</li>
+                </ul>
+                <div class="row-actions">
+                  <a href="dokter/dr-anindya-maharani" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dokter 5: dr. Hendra Prasetyo -->
+          <div class="col-12 col-lg-6">
+            <article class="clinician-row">
+              <div class="row-media">
+                <img src="assets/img/dokter/staff-5.webp" alt="dr. Hendra Prasetyo, Sp.OT" class="img-fluid" loading="lazy">
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
+              </div>
+              <div class="row-body">
+                <div class="row-head">
+                  <div>
+                    <h3>dr. Hendra Prasetyo, Sp.OT</h3>
+                    <p class="role">Dokter Spesialis Bedah Ortopedi</p>
+                  </div>
+                  <div class="score-block">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="value">5.0</span>
+                    <span class="reviews">156 ulasan</span>
+                  </div>
+                </div>
+                <ul class="meta-row">
+                  <li><i class="bi bi-patch-check"></i> Sp.OT</li>
+                  <li><i class="bi bi-briefcase"></i> 12 thn</li>
+                  <li><i class="bi bi-geo"></i> RS Medical Surabaya</li>
+                </ul>
+                <div class="row-actions">
+                  <a href="dokter/dr-hendra-prasetyo" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dokter 6: dr. Wahyu Hidayat -->
+          <div class="col-12 col-lg-6">
+            <article class="clinician-row">
+              <div class="row-media">
+                <img src="assets/img/dokter/staff-7.webp" alt="dr. Wahyu Hidayat, Sp.A" class="img-fluid" loading="lazy">
+                <span role="img" class="presence active" aria-label="Tersedia"></span>
+              </div>
+              <div class="row-body">
+                <div class="row-head">
+                  <div>
+                    <h3>dr. Wahyu Hidayat, Sp.A</h3>
+                    <p class="role">Dokter Spesialis Anak &amp; Pediatri</p>
+                  </div>
+                  <div class="score-block">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="value">4.7</span>
+                    <span class="reviews">134 ulasan</span>
+                  </div>
+                </div>
+                <ul class="meta-row">
+                  <li><i class="bi bi-patch-check"></i> Sp.A, M.Kes</li>
+                  <li><i class="bi bi-briefcase"></i> 20 thn</li>
+                  <li><i class="bi bi-geo"></i> RS Medical Pusat Jakarta</li>
+                </ul>
+                <div class="row-actions">
+                  <a href="dokter/dr-wahyu-hidayat" class="btn-ghost">Lihat Profil</a>
+                  <a href="janji-temu" class="btn-solid">Buat Janji</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
         </div><!-- End Directory Grid -->
 
-        <div class="directory-footer" data-aos="fade-up" data-aos-delay="250">
-          <span class="footer-note">Menampilkan 6 dari 85 dokter spesialis di jaringan kami</span>
-          <a href="dokter.html" class="btn-link">
-            Buka Direktori Lengkap
-            <i class="bi bi-arrow-up-right"></i>
+        <div class="directory-footer d-flex flex-column flex-sm-row justify-content-between align-items-center mt-5 pt-4 pb-2 border-top" data-aos="fade-up" data-aos-delay="200">
+          <span class="footer-note mb-3 mb-sm-0 text-muted">Menampilkan 6 dokter pilihan dari 10 dokter spesialis aktif di Medical Indonesia</span>
+          <a href="dokter" class="btn-shadcn primary">
+            Lihat Seluruh 10 Dokter Spesialis <i class="bi bi-arrow-right"></i>
           </a>
         </div>
 
@@ -1208,186 +1124,341 @@
 
     </section><!-- /Find A Doctor Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
+    <!-- Patient Testimonials Section -->
+    <section id="home-testimonials" class="testimonials section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="hero-panel" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-0">
-            <div class="col-lg-7">
-              <div class="panel-content">
-                <span class="badge-pill">
-                  <i class="bi bi-shield-check"></i>
-                  <span>Penyedia Layanan Kesehatan Terpercaya</span>
-                </span>
-                <h2>Kedokteran Modern, Pendekatan yang Penuh Empati</h2>
-                <p class="lead-text">Rasakan perawatan berbasis bukti dengan alur pelayanan pasien yang mudah. Para spesialis kami memadukan keahlian klinis dan pelayanan yang tulus untuk mendukung kesehatan Anda di setiap tahap.</p>
+        <div class="container section-title text-center" data-aos="fade-up">
+          <span class="eyebrow-badge mb-2 d-inline-flex"><i class="bi bi-chat-heart"></i> Pengalaman Pasien</span>
+          <h2>Apa Kata Mereka Tentang Medical Indonesia</h2>
+          <p>Kisah nyata dan apresiasi dari pasien serta keluarga yang telah mempercayakan perawatannya kepada kami</p>
+        </div>
 
-                <div class="button-row">
-                  <a href="janji-temu.html" class="btn-primary-shad">Buat Janji Temu</a>
-                  <a href="layanan.html" class="btn-ghost-shad">
-                    <span>Lihat Spesialisasi</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
+        <div class="row g-4 mt-1">
 
-                <div class="trust-row">
-                  <div class="trust-item">
-                    <i class="bi bi-patch-check"></i>
-                    <span>Terakreditasi KARS</span>
-                  </div>
-                  <div class="trust-item">
-                    <i class="bi bi-clock-history"></i>
-                    <span>Layanan 24 Jam</span>
-                  </div>
-                  <div class="trust-item">
-                    <i class="bi bi-people"></i>
-                    <span>Tim Bersertifikat</span>
-                  </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="review-card h-100">
+              <div class="review-card-header">
+                <span class="review-badge">Terverifikasi</span>
+                <div class="review-rating" aria-label="Peringkat 5 dari 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="panel-visual">
-                <img src="assets/img/health/consultation-4.webp" alt="Ruang konsultasi dokter dan pasien" class="img-fluid" loading="lazy">
+              <div class="review-card-content">
+                <p class="review-text">Pelayanan di IGD sangat cepat. Begitu datang, ayah saya langsung ditangani dan kami diberi penjelasan yang jelas tentang kondisinya.</p>
               </div>
-            </div>
-          </div>
-        </div><!-- End Hero Panel -->
-
-        <div class="metrics-strip" data-aos="fade-up" data-aos-delay="150">
-          <div class="row g-0">
-            <div class="col-lg-3 col-md-6">
-              <div class="metric-cell">
-                <div class="metric-label">Tahun Praktik</div>
-                <div class="metric-value">17<span>+</span></div>
-                <div class="metric-meta">Berdiri sejak 2009</div>
+              <div class="review-card-footer">
+                <img src="assets/img/testimoni/person-m-9.webp" class="review-avatar" alt="Foto Agus Setiawan" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Agus Setiawan</h3>
+                  <span class="review-role">Keluarga Pasien IGD</span>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="metric-cell">
-                <div class="metric-label">Pasien Dilayani</div>
-                <div class="metric-value">35<span>K+</span></div>
-                <div class="metric-meta">Dari 12 spesialisasi</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="metric-cell">
-                <div class="metric-label">Dokter Spesialis</div>
-                <div class="metric-value">85<span>+</span></div>
-                <div class="metric-meta">Tenaga medis bersertifikat</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="metric-cell">
-                <div class="metric-label">Layanan Darurat</div>
-                <div class="metric-value">24<span>/7</span></div>
-                <div class="metric-meta">Setiap hari, sepanjang tahun</div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Metrics Strip -->
-
-        <div class="specialties-section" data-aos="fade-up" data-aos-delay="200">
-          <div class="specialties-header">
-            <span class="section-eyebrow">Spesialisasi</span>
-            <h3>Perawatan yang dirancang sesuai kebutuhan Anda</h3>
+            </article>
           </div>
 
-          <div class="row g-3">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="shad-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-head">
-                  <div class="card-icon">
-                    <i class="bi bi-heart-pulse"></i>
-                  </div>
-                  <span class="card-tag">Aktif</span>
-                </div>
-                <div class="card-body-shad">
-                  <h4>Kesehatan Jantung</h4>
-                  <p>Pencitraan diagnostik, pemantauan irama jantung, dan program rehabilitasi oleh kardiolog berpengalaman.</p>
-                </div>
-                <div class="card-foot">
-                  <a href="detail-polijantung.html" class="card-link">
-                    <span>Lihat poliklinik</span>
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="review-card h-100">
+              <div class="review-card-header">
+                <span class="review-badge">Terverifikasi</span>
+                <div class="review-rating" aria-label="Peringkat 5 dari 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="shad-card" data-aos="fade-up" data-aos-delay="150">
-                <div class="card-head">
-                  <div class="card-icon">
-                    <i class="bi bi-activity"></i>
-                  </div>
-                  <span class="card-tag">Aktif</span>
-                </div>
-                <div class="card-body-shad">
-                  <h4>Ilmu Saraf</h4>
-                  <p>Evaluasi dan terapi menyeluruh untuk gangguan otak, tulang belakang, dan sistem saraf tepi.</p>
-                </div>
-                <div class="card-foot">
-                  <a href="detail-polisaraf.html" class="card-link">
-                    <span>Lihat poliklinik</span>
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
+              <div class="review-card-content">
+                <p class="review-text">Dokter anak di sini sabar sekali. Anak saya yang biasanya takut ke dokter malah betah, dan imunisasinya jadi lancar.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="assets/img/testimoni/person-f-5.webp" class="review-avatar" alt="Foto Dwi Rahmawati" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Dwi Rahmawati</h3>
+                  <span class="review-role">Orang Tua Pasien Anak</span>
                 </div>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="shad-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="card-head">
-                  <div class="card-icon">
-                    <i class="bi bi-clipboard2-pulse"></i>
-                  </div>
-                  <span class="card-tag">Aktif</span>
-                </div>
-                <div class="card-body-shad">
-                  <h4>Kesehatan Preventif</h4>
-                  <p>Medical check-up, konseling gaya hidup, dan penilaian risiko agar Anda selangkah lebih maju dari penyakit yang bisa dicegah.</p>
-                </div>
-                <div class="card-foot">
-                  <a href="detail-layanan.html" class="card-link">
-                    <span>Lihat layanan</span>
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            </article>
           </div>
-        </div><!-- End Specialties Section -->
 
-        <div class="alert-strip" data-aos="fade-up" data-aos-delay="250">
-          <div class="alert-row">
-            <div class="alert-meta">
-              <div class="alert-icon">
-                <i class="bi bi-telephone-inbound"></i>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="review-card h-100">
+              <div class="review-card-header">
+                <span class="review-badge">Terverifikasi</span>
+                <div class="review-rating" aria-label="Peringkat 5 dari 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
               </div>
-              <div class="alert-text">
-                <span class="alert-eyebrow">Dukungan Siaga</span>
-                <h5>Butuh arahan medis sekarang?</h5>
-                <p>Bicara langsung dengan perawat triase atau jadwalkan konsultasi virtual di hari yang sama dengan dokter spesialis kami.</p>
+              <div class="review-card-content">
+                <p class="review-text">Pendaftaran online memudahkan saya, tidak perlu antre lama. Hasil laboratorium keluar di hari yang sama dan bisa dilihat di ponsel.</p>
               </div>
-            </div>
-            <div class="alert-actions">
-              <a href="tel:+62215550123" class="btn-primary-shad">
-                <i class="bi bi-telephone"></i>
-                <span>(021) 555-0123</span>
-              </a>
-              <a href="kontak.html" class="btn-outline-shad">Rencanakan Kunjungan</a>
-            </div>
+              <div class="review-card-footer">
+                <img src="assets/img/testimoni/person-m-12.webp" class="review-avatar" alt="Foto Rudi Hartono" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Rudi Hartono</h3>
+                  <span class="review-role">Pasien Medical Check-Up</span>
+                </div>
+              </div>
+            </article>
           </div>
-        </div><!-- End Alert Strip -->
+
+        </div>
+
+        <div class="text-center mt-5 pt-5 pb-3" data-aos="fade-up" data-aos-delay="250" style="margin-top: 3.5rem !important;">
+          <a href="testimoni" class="btn-shadcn primary">
+            <span>Lihat Semua Testimoni Pasien</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
 
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section><!-- /Patient Testimonials Section -->
+
+
+    <!-- Latest Articles Section -->
+    <section id="latest-articles" class="article-listing-section section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="container section-title text-center" data-aos="fade-up">
+          <span class="eyebrow-badge mb-2 d-inline-flex"><i class="bi bi-journal-medical"></i> Edukasi Kesehatan</span>
+          <h2>Artikel &amp; Panduan Medis Terkini</h2>
+          <p>Wawasan kesehatan terpercaya, tips gaya hidup sehat, dan panduan pencegahan penyakit oleh tim dokter spesialis</p>
+        </div>
+
+        <div class="row g-4 mt-1">
+
+          <!-- Card 1: Jantung -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="medical-related-card h-100">
+              <div class="medical-related-thumb">
+                <img src="assets/img/poliklinik/cardiology-3.webp" alt="Penyakit Jantung Koroner" width="400" height="240" loading="lazy">
+                <span class="medical-related-category">Kardiologi</span>
+              </div>
+              <div class="medical-related-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 text-muted small mb-2">
+                  <span><i class="bi bi-person-circle text-primary"></i> dr. Kartika Sari, Sp.JP(K)</span>
+                  <span><i class="bi bi-calendar3"></i> Terkini</span>
+                </div>
+                <h3 class="medical-related-title">
+                  <a href="artikel/detail-artikel-jantung">7 Tanda Awal Penyakit Jantung Koroner yang Kerap Diabaikan</a>
+                </h3>
+                <p class="medical-related-desc flex-grow-1">
+                  Mengenal gejala awal serangan jantung, faktor risiko penyumbatan arteri, dan langkah pencegahan sebelum terjadi komplikasi fatal.
+                </p>
+                <div class="d-flex align-items-center justify-content-between pt-2 mt-auto border-top">
+                  <span class="text-muted" style="font-size: 12px;"><i class="bi bi-patch-check-fill text-primary"></i> Ditinjau Spesialis</span>
+                  <a href="artikel/detail-artikel-jantung" class="medical-related-link">
+                    Baca Selengkapnya <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Diabetes -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="medical-related-card h-100">
+              <div class="medical-related-thumb">
+                <img src="assets/img/poliklinik/consultation-3.webp" alt="Pola Makan Diabetes" width="400" height="240" loading="lazy">
+                <span class="medical-related-category">Penyakit Dalam</span>
+              </div>
+              <div class="medical-related-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 text-muted small mb-2">
+                  <span><i class="bi bi-person-circle text-primary"></i> dr. Reza Maulana Nehru, Sp.PD</span>
+                  <span><i class="bi bi-calendar3"></i> Terkini</span>
+                </div>
+                <h3 class="medical-related-title">
+                  <a href="artikel/detail-artikel-diabetes">Panduan Pola Makan Sehat &amp; Manajemen Gula Darah bagi Penderita Diabetes</a>
+                </h3>
+                <p class="medical-related-desc flex-grow-1">
+                  Terapkan aturan 3J (Jadwal, Jumlah, Jenis) dan metode Piring Sehat Model T untuk menjaga kestabilan glukosa darah penderita diabetes.
+                </p>
+                <div class="d-flex align-items-center justify-content-between pt-2 mt-auto border-top">
+                  <span class="text-muted" style="font-size: 12px;"><i class="bi bi-patch-check-fill text-primary"></i> Ditinjau Spesialis</span>
+                  <a href="artikel/detail-artikel-diabetes" class="medical-related-link">
+                    Baca Selengkapnya <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Tumbuh Kembang Anak -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="medical-related-card h-100">
+              <div class="medical-related-thumb">
+                <img src="assets/img/poliklinik/pediatrics-2.webp" alt="Tumbuh Kembang Anak" width="400" height="240" loading="lazy">
+                <span class="medical-related-category">Pediatri</span>
+              </div>
+              <div class="medical-related-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 text-muted small mb-2">
+                  <span><i class="bi bi-person-circle text-primary"></i> dr. Wahyu Hidayat, Sp.A</span>
+                  <span><i class="bi bi-calendar3"></i> Terkini</span>
+                </div>
+                <h3 class="medical-related-title">
+                  <a href="artikel/detail-artikel-tumbuh-kembang-anak">Panduan Penting Tumbuh Kembang &amp; Jadwal Imunisasi Anak Usia 0–5 Tahun</a>
+                </h3>
+                <p class="medical-related-desc flex-grow-1">
+                  Optimalkan periode emas 1000 hari pertama kehidupan si kecil dengan pemantauan milestone motorik, sensorik, dan kelengkapan imunisasi IDAI.
+                </p>
+                <div class="d-flex align-items-center justify-content-between pt-2 mt-auto border-top">
+                  <span class="text-muted" style="font-size: 12px;"><i class="bi bi-patch-check-fill text-primary"></i> Ditinjau Spesialis</span>
+                  <a href="artikel/detail-artikel-tumbuh-kembang-anak" class="medical-related-link">
+                    Baca Selengkapnya <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5 pt-4 pb-2" data-aos="fade-up" data-aos-delay="250">
+          <a href="artikel" class="btn-shadcn primary">
+            Lihat Seluruh Artikel &amp; Panduan Medis <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section><!-- /Latest Articles Section -->
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <aside class="faq-sidebar">
+              <span class="sidebar-badge"><i class="bi bi-question-circle"></i> Pusat Bantuan</span>
+              <h3 class="sidebar-title">Pertanyaan yang Sering Diajukan</h3>
+              <p class="sidebar-desc">Temukan jawaban cepat seputar pendaftaran janji temu, BPJS Kesehatan, asuransi, serta jadwal layanan medis di Medical Indonesia.</p>
+
+              <div class="sidebar-divider"></div>
+
+              <ul class="sidebar-meta">
+                <li><i class="bi bi-clock"></i><span>Layanan IGD &amp; Farmasi 24 Jam</span></li>
+                <li><i class="bi bi-shield-check"></i><span>Bekerja sama dengan BPJS &amp; 40+ Asuransi</span></li>
+                <li><i class="bi bi-chat-dots"></i><span>Call Center Cepat Tanggap</span></li>
+              </ul>
+
+              <a href="kontak" class="sidebar-cta">
+                <span>Hubungi Layanan Pasien</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </aside>
+
+          </div><!-- End Sidebar -->
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <div class="faq-meta">
+                  <span class="faq-index">01</span>
+                  <span class="faq-tag">Pendaftaran</span>
+                </div>
+                <h3>Bagaimana cara membuat janji temu dengan dokter spesialis?</h3>
+                <div class="faq-content">
+                  <p>Anda dapat membuat janji temu secara online melalui menu <a href="janji-temu"><strong>Janji Temu</strong></a> di website ini, menghubungi Call Center kami di 0889-8964-3555, atau chat WhatsApp resmi ke 0889-8964-3555.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-down"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <div class="faq-meta">
+                  <span class="faq-index">02</span>
+                  <span class="faq-tag">BPJS &amp; Asuransi</span>
+                </div>
+                <h3>Apakah Medical Indonesia melayani pasien BPJS Kesehatan dan asuransi swasta?</h3>
+                <div class="faq-content">
+                  <p>Ya, kami melayani pasien BPJS Kesehatan dengan sistem rujukan berjenjang (FKTP/Faskes 1) serta bekerja sama dengan lebih dari 40 mitra asuransi kesehatan swasta dan korporat terkemuka dengan fasilitas klaim direct-billing.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-down"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <div class="faq-meta">
+                  <span class="faq-index">03</span>
+                  <span class="faq-tag">Layanan 24 Jam</span>
+                </div>
+                <h3>Apakah layanan IGD, Farmasi, dan Laboratorium buka 24 jam?</h3>
+                <div class="faq-content">
+                  <p>Ya. Instalasi Gawat Darurat (IGD), Ambulans Siaga, Laboratorium Diagnostik Darurat, dan Instalasi Farmasi kami beroperasi 24 jam nonstop setiap hari termasuk hari Minggu dan hari libur nasional.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-down"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <div class="faq-meta">
+                  <span class="faq-index">04</span>
+                  <span class="faq-tag">MCU &amp; Skrining</span>
+                </div>
+                <h3>Bagaimana prosedur pemeriksaan Medical Check-Up (MCU)?</h3>
+                <div class="faq-content">
+                  <p>Anda disarankan berpuasa selama 10–12 jam sebelum pemeriksaan laboratorium darah. Pendaftaran paket MCU dapat dilakukan H-1 melalui halaman <a href="layanan/detail-mcu"><strong>Detail Paket MCU</strong></a> atau langsung di loket Medical Check-Up.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-down"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <div class="faq-meta">
+                  <span class="faq-index">05</span>
+                  <span class="faq-tag">Hasil Pemeriksaan</span>
+                </div>
+                <h3>Kapan dan bagaimana cara mengambil hasil laboratorium atau radiologi?</h3>
+                <div class="faq-content">
+                  <p>Hasil laboratorium rutin umumnya selesai dalam 2–4 jam pada hari yang sama. Anda dapat mengambil hasil fisik di loket hasil atau mengunduh dokumen hasil digital melalui Portal Pasien online kami.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-down"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End FAQ Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Emergency Callout Banner (IGD 24 Jam) -->
+    <section id="emergency-banner" class="emergency-banner section py-4" style="background: linear-gradient(135deg, #0d3b66 0%, #0056b3 100%); color: #ffffff;">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center gy-4 justify-content-between">
+          
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-2 bg-danger bg-opacity-25 border border-danger border-opacity-50 text-white" style="font-size: 13px; font-weight: 600;">
+              <span class="spinner-grow spinner-grow-sm text-danger" role="status" aria-hidden="true"></span>
+              Layanan Medis Darurat 24 Jam Nonstop
+            </div>
+            <h2 class="h3 fw-bold text-white mb-2">Butuh Penanganan Medis Cepat atau Ambulans?</h2>
+            <p class="mb-0 text-white-50" style="font-size: 0.95rem;">Tim triase gawat darurat dan armada ambulans bersertifikasi ICU kami siaga 24 jam setiap hari untuk keselamatan Anda dan keluarga.</p>
+          </div>
+
+          <div class="col-lg-5 text-center text-lg-end">
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end gap-3">
+              <a href="tel:088989643555" class="btn btn-danger btn-lg px-4 py-3 fw-bold rounded-pill d-inline-flex align-items-center justify-content-center gap-2 shadow">
+                <i class="bi bi-telephone-fill fs-5"></i>
+                <span>Hotline IGD: 0889-8964-3555</span>
+              </a>
+              <a href="poliklinik/detail-igd" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+                <span>Informasi IGD</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Emergency Callout Banner -->
+
 
   </main>
 
@@ -1397,51 +1468,52 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
               <img alt="" width="160" height="160" src="assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat</p>
               <p>DKI Jakarta, Indonesia 10220</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>(021) 555-0123</span></p>
-              <p><strong>IGD 24 Jam:</strong> <span>(021) 555-0911</span></p>
-              <p><strong>WhatsApp:</strong> <span>0812-3456-7890</span></p>
+              <p class="mt-3"><strong>Telepon:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>IGD 24 Jam:</strong> <span>0889-8964-3555</span></p>
+              <p><strong>WhatsApp:</strong> <span>0889-8964-3555</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Tautan Cepat</h4>
             <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="tentang.html">Tentang Kami</a></li>
-              <li><a href="layanan.html">Layanan</a></li>
-              <li><a href="dokter.html">Dokter</a></li>
-              <li><a href="janji-temu.html">Janji Temu</a></li>
-              <li><a href="kontak.html">Kontak</a></li>
+              <li><a href="/">Beranda</a></li>
+              <li><a href="tentang">Tentang Kami</a></li>
+              <li><a href="layanan">Layanan</a></li>
+              <li><a href="dokter">Dokter</a></li>
+              <li><a href="artikel">Artikel</a></li>
+              <li><a href="janji-temu">Janji Temu</a></li>
+              <li><a href="kontak">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><a href="detail-polijantung.html">Poli Jantung</a></li>
-              <li><a href="detail-polisaraf.html">Poli Saraf</a></li>
-              <li><a href="detail-polianak.html">Poli Anak</a></li>
-              <li><a href="detail-laboratorium.html">Laboratorium</a></li>
-              <li><a href="detail-igd.html">IGD 24 Jam</a></li>
+              <li><a href="poliklinik/detail-polijantung">Poli Jantung</a></li>
+              <li><a href="poliklinik/detail-polisaraf">Poli Saraf</a></li>
+              <li><a href="poliklinik/detail-polianak">Poli Anak</a></li>
+              <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
+              <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Informasi Pasien</h4>
             <ul>
-              <li><a href="info-pasien.html">BPJS &amp; Asuransi</a></li>
-              <li><a href="faq.html">Pertanyaan Umum</a></li>
-              <li><a href="testimoni.html">Testimoni</a></li>
-              <li><a href="galeri.html">Galeri</a></li>
-              <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
-              <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+              <li><a href="info-pasien">BPJS &amp; Asuransi</a></li>
+              <li><a href="faq">Pertanyaan Umum</a></li>
+              <li><a href="testimoni">Testimoni</a></li>
+              <li><a href="galeri">Galeri</a></li>
+              <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+              <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
@@ -1472,7 +1544,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
         </div>
 
       </div>
@@ -1482,7 +1554,7 @@
 
   <!-- Scroll Top -->
     <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/6281234567890?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
+  <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
 
