@@ -12,3 +12,13 @@
 ## Penting kalau mengedit CSS
 `bundle.min.css` adalah hasil gabungan. Jika Anda mengubah `assets/css/main.css`, perubahan itu tidak akan terlihat sampai bundle dibuat ulang. Untuk perubahan kecil, edit langsung `bundle.min.css` atau minta saya membuat ulang bundle-nya.
 File vendor lama tetap ada di folder `assets/vendor` (tidak lagi dipakai halaman) sebagai cadangan.
+
+---
+
+## Putaran 2 (4 Okt 2026)
+1. **Bug font ikon**: `bundle.min.css` masih memuat @font-face Bootstrap Icons penuh (131 KB, `font-display: block`) di bagian atas, sehingga browser tetap mengunduhnya. Dihapus. Karena 40 ikon yang dipakai halaman ternyata tidak ada di font subset, subset dibuat ulang dari font penuh (kini 147 ikon, ~12 KB) agar semua ikon tetap tampil.
+2. **CSS**: 2.078 aturan ikon (hanya 147 dipakai) + duplikat dihapus. Ukuran gzip bundle 67 KB -> 50 KB.
+3. **Font self-host**: Google Fonts diganti file lokal di `assets/fonts` (Inter variabel + Roboto 400/500/700, subset latin) dengan `preload` Inter dan Roboto 400. Tidak ada lagi koneksi ke fonts.googleapis.com / fonts.gstatic.com.
+4. **Gambar**: logo 160 -> 128 px; logo klien 400x150 -> 360x135 px, plus atribut `width`/`height`.
+5. **Aksesibilitas**: `role="img"` pada `.review-rating`; urutan heading diperbaiki (h2 -> h3, footer h4 -> h3, CSS disesuaikan); tautan "Lihat Detail" diberi `aria-label` unik.
+6. **Cache**: `vercel.json` kini cache 1 tahun + immutable untuk semua aset. `bundle.min.css` dan `main.js` diberi `?v=20261004`; **ubah angka ini setiap kali Anda mengedit CSS/JS** supaya pengunjung mendapat versi terbaru.

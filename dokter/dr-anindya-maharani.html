@@ -70,16 +70,13 @@
 
   <!-- Fonts -->
   <!-- Performance: DNS prefetch & Preconnect -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400..700&display=swap"></noscript>
 
   <!-- Main CSS File -->
-  <link href="../assets/css/bundle.min.css" rel="stylesheet">
+  <link rel="preload" href="../assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="../assets/css/bundle.min.css?v=20261004" rel="stylesheet">
 
   <style>
     /* ===================================================
@@ -662,7 +659,7 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img alt="Medical Logo" width="160" height="160" src="../assets/img/logo.webp">
+        <img alt="Medical Logo" width="128" height="128" src="../assets/img/logo.webp">
         <span class="sitename">Medical</span>
       </a>
 
@@ -1030,7 +1027,7 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="/" class="logo d-flex align-items-center">
-              <img alt="Medical Logo" width="160" height="160" src="../assets/img/logo.webp">
+              <img alt="Medical Logo" width="128" height="128" src="../assets/img/logo.webp">
               <span class="sitename">Medical Indonesia</span>
             </a>
             <div class="footer-contact pt-3">
@@ -1043,7 +1040,7 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Tautan Cepat</h4>
+            <h3>Tautan Cepat</h3>
             <ul>
               <li><a href="/">Beranda</a></li>
               <li><a href="../tentang">Tentang Kami</a></li>
@@ -1056,7 +1053,7 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Layanan Kami</h4>
+            <h3>Layanan Kami</h3>
             <ul>
               <li><a href="../poliklinik/detail-polijantung">Poli Jantung</a></li>
               <li><a href="../poliklinik/detail-polisaraf">Poli Saraf</a></li>
@@ -1067,7 +1064,7 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Informasi Pasien</h4>
+            <h3>Informasi Pasien</h3>
             <ul>
               <li><a href="../info-pasien">BPJS &amp; Asuransi</a></li>
               <li><a href="../faq">Pertanyaan Umum</a></li>
@@ -1079,7 +1076,7 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Jam Operasional</h4>
+            <h3>Jam Operasional</h3>
             <ul>
               <li style="display:block;padding:4px 0">Poliklinik<br><small>Sen – Sab, 07.00 – 20.00</small></li>
               <li style="display:block;padding:4px 0">IGD<br><small>Buka 24 jam setiap hari</small></li>
@@ -1128,7 +1125,7 @@
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js?v=20261004"></script>
 
 </body>
 </html>
