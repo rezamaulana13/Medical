@@ -7,8 +7,8 @@
 
   <!-- Primary SEO -->
   <title>Buat Janji Temu & Konsultasi Dokter - Medical Indonesia</title>
-  <meta name="description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan di Rumah Sakit Medical Indonesia.">
-  <meta name="keywords" content="buat janji dokter, pendaftaran online rumah sakit, reservasi dokter spesialis, booking jadwal konsultasi medis">
+  <meta name="description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan via WhatsApp di Rumah Sakit Medical Indonesia.">
+  <meta name="keywords" content="buat janji dokter, pendaftaran online rumah sakit, reservasi dokter spesialis, booking jadwal konsultasi medis, janji temu whatsapp">
   <meta name="author" content="Medical Indonesia">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://medical.web.id/janji-temu">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://medical.web.id/janji-temu">
   <meta property="og:title" content="Buat Janji Temu & Konsultasi Dokter - Medical Indonesia">
-  <meta property="og:description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan di Rumah Sakit Medical Indonesia.">
+  <meta property="og:description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan via WhatsApp di Rumah Sakit Medical Indonesia.">
   <meta property="og:image" content="https://medical.web.id/assets/img/layanan/consultation-4.webp">
   <meta property="og:site_name" content="Medical Indonesia">
   <meta property="og:locale" content="id_ID">
@@ -32,7 +32,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://medical.web.id/janji-temu">
   <meta name="twitter:title" content="Buat Janji Temu & Konsultasi Dokter - Medical Indonesia">
-  <meta name="twitter:description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan di Rumah Sakit Medical Indonesia.">
+  <meta name="twitter:description" content="Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan via WhatsApp di Rumah Sakit Medical Indonesia.">
   <meta name="twitter:image" content="https://medical.web.id/assets/img/layanan/consultation-4.webp">
 
   <!-- Structured Data (Schema.org / JSON-LD / AEO) -->
@@ -42,7 +42,7 @@
     "@type": "MedicalWebPage",
     "name": "Buat Janji Temu & Konsultasi Dokter - Medical Indonesia",
     "url": "https://medical.web.id/janji-temu",
-    "description": "Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan di Rumah Sakit Medical Indonesia.",
+    "description": "Reservasi jadwal konsultasi dokter spesialis secara online cepat dan praktis dengan konfirmasi instan via WhatsApp di Rumah Sakit Medical Indonesia.",
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
@@ -67,25 +67,101 @@
   <link href="assets/img/logo.webp" rel="icon" type="image/webp">
   <link href="assets/img/logo.webp" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <!-- Performance: DNS prefetch & Preconnect -->
+  <!-- Fonts & Performance Preload -->
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-
-  <!-- Vendor CSS Files -->
-
-  <!-- Main CSS File -->
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link href="assets/css/bundle.min.css?v=20261004" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medical
-  * Template URL: https://bootstrapmade.com/medicare-bootstrap-template/
-  * Updated: Apr 28 2026 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom Page Style for WhatsApp Appointment -->
+  <style>
+    .btn-whatsapp-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 48px;
+      padding: 0 26px;
+      background-color: #25D366;
+      background-image: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #ffffff !important;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: all 0.25s ease;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn-whatsapp-action:hover {
+      background-image: linear-gradient(135deg, #20ba5a 0%, #0d6e63 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+      color: #ffffff !important;
+    }
+    .btn-whatsapp-action i {
+      font-size: 20px;
+    }
+    .appointment-success-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 10px 0;
+      animation: fadeInSlide 0.35s ease-out;
+    }
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .success-icon-wrap {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #e8f9ee;
+      color: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      box-shadow: 0 0 0 8px rgba(37, 211, 102, 0.12);
+    }
+    .booking-summary-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-top: 22px;
+    }
+    .summary-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px 20px;
+    }
+    .summary-item {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+    }
+    .summary-label {
+      color: #64748b;
+      margin-bottom: 2px;
+      font-size: 12px;
+    }
+    .summary-value {
+      color: #0f172a;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body class="appointment-page">
@@ -114,9 +190,9 @@
               <li><a href="poliklinik/detail-polidalam">Poli Penyakit Dalam</a></li>
               <li><a href="poliklinik/detail-laboratorium">Laboratorium</a></li>
               <li><a href="poliklinik/detail-igd">IGD 24 Jam</a></li>
-          </ul>
+            </ul>
           </li>
-                    <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="layanan"><strong>Lihat Halaman Layanan</strong></a></li>
               <li><a href="layanan/detail-mcu">Medical Check-Up (MCU)</a></li>
@@ -165,8 +241,8 @@
       </div>
 
       <div class="title-wrapper">
-        <h1>Janji Temu</h1>
-        <p>Buat janji konsultasi dengan dokter spesialis kami secara online tanpa antre.</p>
+        <h1>Janji Temu Online</h1>
+        <p>Buat janji konsultasi dengan dokter spesialis secara praktis dengan konfirmasi instan via WhatsApp.</p>
       </div>
     </div><!-- End Page Title -->
 
@@ -183,10 +259,10 @@
               <div class="step-card">
                 <div class="step-head">
                   <span class="step-badge">Langkah 01</span>
-                  <span class="step-icon"><i class="bi bi-person"></i></span>
+                  <span class="step-icon"><i class="bi bi-person-lines-fill"></i></span>
                 </div>
                 <h5>Isi Data Diri</h5>
-                <p>Lengkapi data pribadi dan pilih poliklinik sesuai kebutuhan Anda.</p>
+                <p>Lengkapi identitas pasien, kontak, dan pilih poliklinik tujuan.</p>
               </div>
             </div><!-- End Step -->
 
@@ -194,10 +270,10 @@
               <div class="step-card">
                 <div class="step-head">
                   <span class="step-badge">Langkah 02</span>
-                  <span class="step-icon"><i class="bi bi-calendar2-week"></i></span>
+                  <span class="step-icon"><i class="bi bi-calendar2-check"></i></span>
                 </div>
-                <h5>Pilih Jadwal</h5>
-                <p>Lihat slot waktu yang tersedia dan pilih tanggal yang paling sesuai.</p>
+                <h5>Pilih Jadwal &amp; Dokter</h5>
+                <p>Tentukan tanggal rencana, sesi waktu, dan dokter spesialis.</p>
               </div>
             </div><!-- End Step -->
 
@@ -205,10 +281,10 @@
               <div class="step-card">
                 <div class="step-head">
                   <span class="step-badge">Langkah 03</span>
-                  <span class="step-icon"><i class="bi bi-envelope-check"></i></span>
+                  <span class="step-icon text-success"><i class="bi bi-whatsapp"></i></span>
                 </div>
-                <h5>Terima Konfirmasi</h5>
-                <p>Detail pendaftaran dikirim langsung ke WhatsApp atau email Anda.</p>
+                <h5>Kirim via WhatsApp</h5>
+                <p>Data langsung terformat dan diteruskan ke WhatsApp Admin RS.</p>
               </div>
             </div><!-- End Step -->
 
@@ -216,10 +292,10 @@
               <div class="step-card">
                 <div class="step-head">
                   <span class="step-badge">Langkah 04</span>
-                  <span class="step-icon"><i class="bi bi-activity"></i></span>
+                  <span class="step-icon"><i class="bi bi-hospital"></i></span>
                 </div>
-                <h5>Datang ke Klinik</h5>
-                <p>Hadir sesuai jadwal dan dapatkan pelayanan medis personal dari para ahli.</p>
+                <h5>Konfirmasi &amp; Datang</h5>
+                <p>Terima verifikasi antrean dan kunjungi poli tanpa antre lama.</p>
               </div>
             </div><!-- End Step -->
 
@@ -233,69 +309,91 @@
             <div class="form-card" data-aos="fade-up" data-aos-delay="150">
 
               <div class="form-card-header">
-                <span class="badge-label">Formulir Pendaftaran</span>
+                <span class="badge-label"><i class="bi bi-whatsapp text-success me-1"></i> Reservasi WhatsApp</span>
                 <h3>Jadwalkan Kunjungan Anda</h3>
-                <p class="form-card-desc">Isi formulir berikut dan tim kami akan mengonfirmasi janji Anda dalam 15 menit pada jam layanan.</p>
+                <p class="form-card-desc">Lengkapi formulir berikut. Setelah menekan tombol konfirmasi, data Anda akan langsung diteruskan ke WhatsApp resmi Rumah Sakit Medical Indonesia untuk verifikasi jadwal dan nomor antrean.</p>
               </div>
 
-              <form action="forms/appointment.php" method="post" class="appointment-form php-email-form">
+              <!-- Formulir Pendaftaran -->
+              <form id="appointment-whatsapp-form" class="appointment-form" novalidate>
                 <div class="row gy-3">
 
                   <div class="col-md-6">
                     <div class="input-group">
-                      <label for="app-name">Nama Lengkap</label>
-                      <input type="text" name="name" id="app-name" class="form-control" placeholder="contoh: Budi Santoso" required="">
+                      <label for="app-name">Nama Lengkap Pasien <span class="text-danger">*</span></label>
+                      <input type="text" name="name" id="app-name" class="form-control" placeholder="contoh: Budi Santoso" required autocomplete="name">
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="input-group">
-                      <label for="app-email">Alamat Email</label>
-                      <input type="email" name="email" id="app-email" class="form-control" placeholder="nama@email.com" required="">
+                      <label for="app-phone">Nomor WhatsApp Pasien <span class="text-danger">*</span></label>
+                      <input type="tel" name="phone" id="app-phone" class="form-control" placeholder="contoh: 081234567890" required inputmode="tel" autocomplete="tel">
+                      <span class="input-help">Admin akan membalas konfirmasi ke nomor ini</span>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="input-group">
-                      <label for="app-phone">Nomor Telepon / WhatsApp</label>
-                      <input type="tel" name="phone" id="app-phone" class="form-control" placeholder="0889-8964-3555" required="">
-                      <span class="input-help">Kami akan mengirim pengingat jadwal via WhatsApp</span>
+                      <label for="app-email">Alamat Email <span class="text-danger">*</span></label>
+                      <input type="email" name="email" id="app-email" class="form-control" placeholder="nama@email.com" required autocomplete="email">
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="input-group">
-                      <label for="app-date">Tanggal Pilihan</label>
-                      <input type="date" name="date" id="app-date" class="form-control" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="input-group">
-                      <label for="app-department">Poliklinik</label>
-                      <select name="department" id="app-department" class="form-select" required="">
-                        <option value="">Pilih poliklinik</option>
-                        <option value="cardiology">Jantung</option>
-                        <option value="neurology">Saraf</option>
-                        <option value="orthopedics">Ortopedi</option>
-                        <option value="pediatrics">Anak</option>
-                        <option value="dermatology">Kulit & Kelamin</option>
-                        <option value="general">Penyakit Dalam / Umum</option>
+                      <label for="app-payment">Jenis Pembayaran / Penjamin <span class="text-danger">*</span></label>
+                      <select name="payment" id="app-payment" class="form-select" required>
+                        <option value="">Pilih jenis penjamin</option>
+                        <option value="Umum / Biaya Mandiri">Pasien Umum (Biaya Mandiri)</option>
+                        <option value="BPJS Kesehatan">BPJS Kesehatan</option>
+                        <option value="Asuransi Swasta / Korporasi">Asuransi Swasta / Korporasi</option>
                       </select>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="input-group">
-                      <label for="app-doctor">Dokter Spesialis</label>
-                      <select name="doctor" id="app-doctor" class="form-select" required="">
-                        <option value="">Pilih dokter</option>
-                        <option value="dr-johnson">dr. Anindya Maharani, Sp.JP</option>
-                        <option value="dr-martinez">dr. Hendra Prasetyo, Sp.OT</option>
-                        <option value="dr-chen">dr. Wahyu Hidayat, Sp.A</option>
-                        <option value="dr-patel">dr. Salsabila Nurhaliza, Sp.DV</option>
-                        <option value="dr-williams">dr. Dimas Aryo Saputra, Sp.P</option>
-                        <option value="dr-thompson">dr. Dewi Anggraeni, Sp.B</option>
+                      <label for="app-department">Pilihan Poliklinik <span class="text-danger">*</span></label>
+                      <select name="department" id="app-department" class="form-select" required>
+                        <option value="">-- Pilih Poliklinik --</option>
+                        <option value="jantung">Poli Jantung &amp; Pembuluh Darah</option>
+                        <option value="penyakit-dalam">Poli Penyakit Dalam (Internis)</option>
+                        <option value="saraf">Poli Saraf (Neurologi)</option>
+                        <option value="ortopedi">Poli Ortopedi &amp; Bedah Tulang</option>
+                        <option value="anak">Poli Anak (Pediatri)</option>
+                        <option value="kulit">Poli Kulit &amp; Kelamin (Dermatologi)</option>
+                        <option value="bedah">Poli Bedah Umum</option>
+                        <option value="paru">Poli Paru &amp; Pernapasan</option>
+                        <option value="mcu">Medical Check-Up (MCU) &amp; Lab</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="app-doctor">Dokter Spesialis <span class="text-danger">*</span></label>
+                      <select name="doctor" id="app-doctor" class="form-select" required>
+                        <option value="">-- Pilih Poliklinik Terlebih Dahulu --</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="app-date">Tanggal Rencana Kunjungan <span class="text-danger">*</span></label>
+                      <input type="date" name="date" id="app-date" class="form-control" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="app-session">Sesi Waktu Kunjungan <span class="text-danger">*</span></label>
+                      <select name="session" id="app-session" class="form-select" required>
+                        <option value="">Pilih sesi waktu</option>
+                        <option value="Pagi (08.00 - 12.00 WIB)">Pagi (08.00 - 12.00 WIB)</option>
+                        <option value="Siang (13.00 - 16.00 WIB)">Siang (13.00 - 16.00 WIB)</option>
+                        <option value="Sore / Malam (17.00 - 20.00 WIB)">Sore / Malam (17.00 - 20.00 WIB)</option>
                       </select>
                     </div>
                   </div>
@@ -303,26 +401,83 @@
                   <div class="col-12">
                     <div class="input-group">
                       <label for="app-message">Keluhan / Alasan Kunjungan <span class="label-meta">Opsional</span></label>
-                      <textarea class="form-control" name="message" id="app-message" rows="4" placeholder="Jelaskan singkat keluhan atau kebutuhan Anda..."></textarea>
+                      <textarea class="form-control" name="message" id="app-message" rows="3" placeholder="Tuliskan keluhan atau catatan gejala singkat (opsional)..."></textarea>
                     </div>
                   </div>
 
                   <div class="col-12">
-                    <div class="loading">Memuat</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Permintaan janji temu Anda telah terkirim. Kami akan segera menghubungi Anda!</div>
+                    <div id="appointment-error-alert" class="alert alert-danger d-none py-2 px-3 small" role="alert">
+                      <i class="bi bi-exclamation-triangle-fill me-1"></i> <span id="appointment-error-text">Mohon lengkapi semua kolom yang wajib diisi.</span>
+                    </div>
 
                     <div class="form-actions">
-                      <button type="submit" class="btn btn-primary-action">
-                        <i class="bi bi-calendar-plus"></i>
-                        <span>Konfirmasi Janji Temu</span>
+                      <button type="submit" id="btn-submit-appointment" class="btn btn-whatsapp-action">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>Konfirmasi Janji Temu via WhatsApp</span>
                       </button>
-                      <button type="reset" class="btn btn-ghost-action">Atur Ulang</button>
+                      <button type="reset" id="btn-reset-form" class="btn btn-ghost-action">Atur Ulang</button>
+                    </div>
+
+                    <div class="mt-3 text-center">
+                      <small class="text-muted d-inline-flex align-items-center gap-1">
+                        <i class="bi bi-shield-check text-success"></i> Data langsung dikirim dan diverifikasi tim resmi WhatsApp (+62 889-8964-3555).
+                      </small>
                     </div>
                   </div>
 
                 </div>
               </form>
+
+              <!-- Success Card Setelah Submit -->
+              <div id="appointment-success-box" class="appointment-success-card d-none">
+                <div class="success-header text-center">
+                  <div class="success-icon-wrap">
+                    <i class="bi bi-check2-circle"></i>
+                  </div>
+                  <h4 class="fw-bold text-dark mb-1">Data Janji Temu Siap Dikonfirmasi!</h4>
+                  <p class="text-muted small mb-0">Rincian janji temu Anda telah disiapkan. Klik tombol di bawah untuk membuka WhatsApp Admin Medical Indonesia dan menyelesaikan verifikasi antrean.</p>
+                </div>
+
+                <div class="booking-summary-card">
+                  <h6 class="summary-title"><i class="bi bi-card-checklist me-1 text-primary"></i> Rincian Pendaftaran Janji Temu</h6>
+                  <div class="summary-grid">
+                    <div class="summary-item">
+                      <span class="summary-label">Nama Pasien:</span>
+                      <strong class="summary-value" id="sum-name">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">No. WhatsApp:</span>
+                      <strong class="summary-value" id="sum-phone">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Poliklinik:</span>
+                      <strong class="summary-value" id="sum-dept">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Dokter Spesialis:</span>
+                      <strong class="summary-value" id="sum-doctor">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Tanggal &amp; Sesi:</span>
+                      <strong class="summary-value" id="sum-date">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Penjamin:</span>
+                      <strong class="summary-value" id="sum-payment">-</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="success-actions mt-4 d-flex flex-column flex-sm-row gap-2">
+                  <a id="btn-open-wa-direct" href="#" target="_blank" rel="noopener" class="btn btn-whatsapp-action flex-grow-1 text-center justify-content-center">
+                    <i class="bi bi-whatsapp"></i> Buka WhatsApp Sekarang
+                  </a>
+                  <button type="button" id="btn-create-new" class="btn btn-ghost-action">
+                    <i class="bi bi-arrow-counterclockwise"></i> Buat Janji Lain
+                  </button>
+                </div>
+              </div>
+
             </div>
           </div><!-- End Appointment Form -->
 
@@ -476,14 +631,13 @@
   </footer>
 
   <!-- Scroll Top -->
-    <!-- Tombol WhatsApp -->
+  <!-- Tombol WhatsApp -->
   <a href="https://wa.me/6288989643555?text=Halo%20Medical%20Indonesia%2C%20saya%20ingin%20bertanya%20tentang%20layanan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat Admin</span></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -493,6 +647,246 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js?v=20261004"></script>
+
+  <!-- Janji Temu WhatsApp Integration Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const WHATSAPP_PHONE = '6288989643555'; // Nomor WA resmi Rumah Sakit Medical Indonesia
+
+      // Master Data Dokter berdasarkan Poliklinik
+      const doctorsDatabase = {
+        'jantung': [
+          { value: 'dr-anindya-maharani', name: 'dr. Anindya Maharani, Sp.JP (Spesialis Jantung)' },
+          { value: 'dr-kartika-sari', name: 'dr. Kartika Sari, Sp.JP(K) (Kardiolog Intervensi)' }
+        ],
+        'penyakit-dalam': [
+          { value: 'dr-reza-maulana-nehru', name: 'dr. Reza Maulana Nehru, Sp.PD (Spesialis Penyakit Dalam)' }
+        ],
+        'saraf': [
+          { value: 'dr-larasati-pramesti-saraf', name: 'dr. Larasati Pramesti, Sp.N (Spesialis Saraf/Neurologi)' }
+        ],
+        'ortopedi': [
+          { value: 'dr-hendra-prasetyo', name: 'dr. Hendra Prasetyo, Sp.OT (Spesialis Bedah Ortopedi)' },
+          { value: 'dr-citra-ayuningtyas', name: 'dr. Citra Ayuningtyas, Sp.KO (Spesialis Kedokteran Olahraga)' }
+        ],
+        'anak': [
+          { value: 'dr-wahyu-hidayat', name: 'dr. Wahyu Hidayat, Sp.A (Spesialis Anak & Tumbuh Kembang)' },
+          { value: 'dr-fajar-nugroho', name: 'dr. Fajar Nugroho, Sp.A (Spesialis Pediatri)' }
+        ],
+        'kulit': [
+          { value: 'dr-salsabila-nurhaliza', name: 'dr. Salsabila Nurhaliza, Sp.DV (Spesialis Dermatologi & Estetika)' },
+          { value: 'dr-larasati-pramesti', name: 'dr. Larasati Pramesti, Sp.DV (Spesialis Kulit & Kelamin)' }
+        ],
+        'bedah': [
+          { value: 'dr-dewi-anggraeni', name: 'dr. Dewi Anggraeni, Sp.B (Spesialis Bedah Umum)' }
+        ],
+        'paru': [
+          { value: 'dr-dimas-aryo-saputra', name: 'dr. Dimas Aryo Saputra, Sp.P (Spesialis Pulmonologi/Paru)' }
+        ],
+        'mcu': [
+          { value: 'tim-dokter-mcu', name: 'Tim Dokter Konsultan Medical Check-Up (MCU)' }
+        ]
+      };
+
+      const form = document.getElementById('appointment-whatsapp-form');
+      const deptSelect = document.getElementById('app-department');
+      const doctorSelect = document.getElementById('app-doctor');
+      const dateInput = document.getElementById('app-date');
+      const errorAlert = document.getElementById('appointment-error-alert');
+      const errorText = document.getElementById('appointment-error-text');
+      const submitBtn = document.getElementById('btn-submit-appointment');
+      const successBox = document.getElementById('appointment-success-box');
+      const openWaDirectBtn = document.getElementById('btn-open-wa-direct');
+      const createNewBtn = document.getElementById('btn-create-new');
+
+      // Set batas minimal tanggal (hari ini) dan rekomendasi besok
+      const today = new Date();
+      const todayIso = today.toISOString().split('T')[0];
+      if (dateInput) {
+        dateInput.min = todayIso;
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+      }
+
+      // Handler perubahan Poliklinik -> Update Dokter
+      function updateDoctorOptions(selectedDept, preselectedDoctor) {
+        doctorSelect.innerHTML = '';
+        if (!selectedDept || !doctorsDatabase[selectedDept]) {
+          const opt = document.createElement('option');
+          opt.value = '';
+          opt.textContent = '-- Pilih Poliklinik Terlebih Dahulu --';
+          doctorSelect.appendChild(opt);
+          return;
+        }
+
+        const doctors = doctorsDatabase[selectedDept];
+        const defaultOpt = document.createElement('option');
+        defaultOpt.value = 'dokter-tercepat';
+        defaultOpt.textContent = 'Jadwal Dokter Tercepat / Yang Tersedia';
+        doctorSelect.appendChild(defaultOpt);
+
+        doctors.forEach(function(doc) {
+          const opt = document.createElement('option');
+          opt.value = doc.value;
+          opt.textContent = doc.name;
+          if (preselectedDoctor && (doc.value === preselectedDoctor || doc.value.includes(preselectedDoctor))) {
+            opt.selected = true;
+          }
+          doctorSelect.appendChild(opt);
+        });
+      }
+
+      if (deptSelect) {
+        deptSelect.addEventListener('change', function() {
+          updateDoctorOptions(this.value);
+        });
+      }
+
+      // Dukungan Query Parameter URL (?poli=jantung atau ?dokter=dr-anindya-maharani)
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramDept = urlParams.get('poli') || urlParams.get('department');
+      const paramDoc = urlParams.get('dokter') || urlParams.get('doctor');
+
+      if (paramDept) {
+        const matchedKey = Object.keys(doctorsDatabase).find(k => paramDept.toLowerCase().includes(k) || k.includes(paramDept.toLowerCase()));
+        if (matchedKey && deptSelect) {
+          deptSelect.value = matchedKey;
+          updateDoctorOptions(matchedKey, paramDoc);
+        }
+      } else if (paramDoc) {
+        let matchedKey = '';
+        for (const [dept, docs] of Object.entries(doctorsDatabase)) {
+          if (docs.some(d => d.value.includes(paramDoc.toLowerCase()))) {
+            matchedKey = dept;
+            break;
+          }
+        }
+        if (matchedKey && deptSelect) {
+          deptSelect.value = matchedKey;
+          updateDoctorOptions(matchedKey, paramDoc);
+        }
+      }
+
+      // Handler Submit Form
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          // Reset error
+          errorAlert.classList.add('d-none');
+
+          const name = (document.getElementById('app-name').value || '').trim();
+          const phone = (document.getElementById('app-phone').value || '').trim();
+          const email = (document.getElementById('app-email').value || '').trim();
+          const payment = document.getElementById('app-payment').value;
+          const departmentKey = deptSelect.value;
+          const departmentName = deptSelect.options[deptSelect.selectedIndex]?.text || '';
+          const doctorName = doctorSelect.options[doctorSelect.selectedIndex]?.text || 'Jadwal Dokter Tercepat';
+          const dateVal = dateInput.value;
+          const session = document.getElementById('app-session').value;
+          const message = (document.getElementById('app-message').value || '').trim();
+
+          // Validasi Form
+          if (!name || !phone || !email || !payment || !departmentKey || !dateVal || !session) {
+            errorText.textContent = 'Mohon lengkapi semua kolom bertanda bintang (*) sebelum konfirmasi.';
+            errorAlert.classList.remove('d-none');
+            return;
+          }
+
+          // Format Tanggal Bahasa Indonesia
+          let formattedDateStr = dateVal;
+          try {
+            const dateObj = new Date(dateVal + 'T00:00:00');
+            formattedDateStr = dateObj.toLocaleDateString('id-ID', {
+              weekday: 'long',
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            });
+          } catch(err) {
+            formattedDateStr = dateVal;
+          }
+
+          // Rangkai Pesan WhatsApp yang Rapi & Profesional
+          const waMessage = 
+`Halo Admin Medical Indonesia,
+Saya ingin melakukan konfirmasi pendaftaran janji temu pasien dengan rincian data sebagai berikut:
+
+📋 *FORMULIR JANJI TEMU PASIEN*
+━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 *Nama Pasien* : ${name}
+📱 *No. WhatsApp* : ${phone}
+📧 *Email* : ${email}
+🏥 *Poliklinik* : ${departmentName}
+👨‍⚕️ *Dokter* : ${doctorName}
+📅 *Tanggal Rencana* : ${formattedDateStr}
+⏰ *Sesi Kunjungan* : ${session}
+💳 *Tipe Penjamin* : ${payment}
+📝 *Keluhan/Catatan* : ${message ? message : '-'}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mohon dibantu konfirmasi ketersediaan slot antrean dan jadwal dokter tersebut. Terima kasih!`;
+
+          const waUrl = 'https://wa.me/' + WHATSAPP_PHONE + '?text=' + encodeURIComponent(waMessage);
+
+          // Update Status UI Ringkasan
+          document.getElementById('sum-name').textContent = name;
+          document.getElementById('sum-phone').textContent = phone;
+          document.getElementById('sum-dept').textContent = departmentName;
+          document.getElementById('sum-doctor').textContent = doctorName;
+          document.getElementById('sum-date').textContent = formattedDateStr + ' (' + session + ')';
+          document.getElementById('sum-payment').textContent = payment;
+
+          if (openWaDirectBtn) {
+            openWaDirectBtn.href = waUrl;
+          }
+
+          // Animasi Tombol
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Menghubungkan ke WhatsApp...';
+
+          setTimeout(function() {
+            // Buka WhatsApp di tab baru
+            window.open(waUrl, '_blank');
+
+            // Tampilkan kartu sukses
+            form.classList.add('d-none');
+            successBox.classList.remove('d-none');
+
+            // Kembalikan tombol normal
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="bi bi-whatsapp"></i><span>Konfirmasi Janji Temu via WhatsApp</span>';
+
+            // Scroll halus ke form card
+            const formCard = document.querySelector('.appointmnet .form-card');
+            if (formCard) {
+              formCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 400);
+        });
+      }
+
+      // Handler Tombol Buat Janji Lain
+      if (createNewBtn) {
+        createNewBtn.addEventListener('click', function() {
+          if (form) {
+            form.reset();
+            if (dateInput) {
+              const tomorrow = new Date();
+              tomorrow.setDate(tomorrow.getDate() + 1);
+              dateInput.value = tomorrow.toISOString().split('T')[0];
+            }
+            updateDoctorOptions('');
+            form.classList.remove('d-none');
+          }
+          if (successBox) {
+            successBox.classList.add('d-none');
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
 
