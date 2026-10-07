@@ -2153,12 +2153,6 @@ section,
   transform: translateX(4px);
 }
 
-@media (max-width: 576px) {
-  .featured-services .service-card {
-    flex-direction: column;
-  }
-}
-
 .featured-services .card-media {
   position: relative;
   flex: 0 0 40%;
@@ -2194,14 +2188,6 @@ section,
 
 .featured-services .card-media .badge-label i {
   font-size: 12px;
-}
-
-@media (max-width: 576px) {
-  .featured-services .card-media {
-    flex: 0 0 200px;
-    max-width: 100%;
-    height: 200px;
-  }
 }
 
 .featured-services .card-body {
@@ -2297,6 +2283,36 @@ section,
 
   .featured-services .card-head h3 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-services .service-card {
+    flex-direction: column;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .featured-services .card-media {
+    flex: 0 0 200px;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .featured-services .card-body {
+    flex: 1 1 auto;
+    padding: 20px 20px 24px;
+  }
+
+  .featured-services .card-foot {
+    margin-top: auto;
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+
+  .featured-services .link-action {
+    padding: 4px 0;
   }
 }
 

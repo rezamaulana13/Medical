@@ -21,4 +21,11 @@ File vendor lama tetap ada di folder `assets/vendor` (tidak lagi dipakai halaman
 3. **Font self-host**: Google Fonts diganti file lokal di `assets/fonts` (Inter variabel + Roboto 400/500/700, subset latin) dengan `preload` Inter dan Roboto 400. Tidak ada lagi koneksi ke fonts.googleapis.com / fonts.gstatic.com.
 4. **Gambar**: logo 160 -> 128 px; logo klien 400x150 -> 360x135 px, plus atribut `width`/`height`.
 5. **Aksesibilitas**: `role="img"` pada `.review-rating`; urutan heading diperbaiki (h2 -> h3, footer h4 -> h3, CSS disesuaikan); tautan "Lihat Detail" diberi `aria-label` unik.
-6. **Cache**: `vercel.json` kini cache 1 tahun + immutable untuk semua aset. `bundle.min.css` dan `main.js` diberi `?v=20261004`; **ubah angka ini setiap kali Anda mengedit CSS/JS** supaya pengunjung mendapat versi terbaru.
+6. **Cache**: `vercel.json` kini cache 1 tahun + immutable untuk semua aset. `bundle.min.css` dan `main.js` diberi `?v=20261007`; **ubah angka ini setiap kali Anda mengedit CSS/JS** supaya pengunjung mendapat versi terbaru.
+
+---
+
+## Putaran 3 (7 Okt 2026)
+1. **Fix Tampilan Mobile Layanan Unggulan (`.service-card`)**: Memperbaiki urutan CSS media query yang sebelumnya menyebabkan `@media (max-width: 768px)` menimpa `@media (max-width: 576px)`. Pada tampilan mobile, banner gambar kini memenuhi lebar kartu (100%), kartu bertipe kolom vertikal dengan `height: auto; min-height: 100%`, dan padding bawah kartu diperbaiki sehingga tombol/link "Lihat Detail" tidak lagi terpotong.
+2. **Cache Buster**: Query string `bundle.min.css` diperbarui ke `?v=20261007` pada semua file HTML.
+
